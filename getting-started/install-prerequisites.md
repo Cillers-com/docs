@@ -6,7 +6,9 @@ Install Chrome. All other browsers are supported of course, but initially we may
 
 Make sure you have the latest version of Docker.&#x20;
 
-### Install Polytope CLI
+### Install Or Upgrade Polytope CLI
+
+#### If you don't have Polytope CLI
 
 ```bash
 brew tap polytopelabs/tap
@@ -18,6 +20,14 @@ Alternative installation for Linux:&#x20;
 ```
 curl --compressed https://polytope-cli-releases.s3.eu-north-1.amazonaws.com/pt-0.1.25-linux-amd64 > pt; chmod +x pt; sudo mv pt /usr/local/bin/
 ```
+
+If you already have Polytope CLI
+
+```
+brew upgrade polytope-cli
+```
+
+
 
 
 
