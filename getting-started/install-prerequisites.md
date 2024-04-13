@@ -6,5 +6,12 @@ Install Docker
 
 Install Polytope CLI
 
+```bash
+brew tap polytopelabs/tap
+brew install polytope-cli
+```
+
+
+
 
 
