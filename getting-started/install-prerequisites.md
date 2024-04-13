@@ -2,7 +2,9 @@
 
 Install Chrome. All other browsers are supported of course, but initially we may only be able to help you if you are using Chrome. &#x20;
 
-### Install Docker
+### Install Or Upgrade Docker
+
+Make sure you have the latest version of Docker.&#x20;
 
 ### Install Polytope CLI
 
