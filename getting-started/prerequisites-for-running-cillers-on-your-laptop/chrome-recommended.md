@@ -1,6 +1,6 @@
-# Chrome
+# Chrome (Recommended)
 
-We have chosen Chrome as our preferred browser. All other common browsers should also work, but we currently focus on Chrome for documentation, testing and support.&#x20;
+Chrome is our preferred browser. All other common browsers should also work, but we currently focus on Chrome for documentation, testing and support.&#x20;
 
 ### **Enable access to self-signed certificates on localhost**
 
