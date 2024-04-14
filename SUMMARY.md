@@ -11,6 +11,7 @@
     * [Docker](getting-started/prerequisites-for-running-cillers-on-your-laptop/docker.md)
     * [Polytope](getting-started/prerequisites-for-running-cillers-on-your-laptop/polytope.md)
     * [Chrome (Recommended)](getting-started/prerequisites-for-running-cillers-on-your-laptop/chrome-recommended.md)
+    * [Enable access to self-signed certificates on localhost](getting-started/prerequisites-for-running-cillers-on-your-laptop/enable-access-to-self-signed-certificates-on-localhost.md)
   * [Create A Cillers System](getting-started/create-a-cillers-system.md)
   * [Run Your Cillers System](getting-started/run-your-cillers-system.md)
   * [Web UIs](getting-started/web-uis.md)
