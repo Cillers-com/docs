@@ -13,6 +13,7 @@
     * [Chrome (Recommended)](getting-started/prerequisites-for-running-cillers-on-your-laptop/chrome-recommended.md)
     * [Enable access to self-signed certificates on localhost](getting-started/prerequisites-for-running-cillers-on-your-laptop/enable-access-to-self-signed-certificates-on-localhost.md)
     * [Insomnia](getting-started/prerequisites-for-running-cillers-on-your-laptop/insomnia.md)
+    * [Get a Curity Community Edition license](getting-started/prerequisites-for-running-cillers-on-your-laptop/get-a-curity-community-edition-license.md)
   * [Create A Cillers System](getting-started/create-a-cillers-system.md)
   * [Run Your Cillers System On Your Laptop](getting-started/run-your-cillers-system.md)
     * [Web Frontend](getting-started/run-your-cillers-system-on-your-laptop/web-frontend.md)
