@@ -10,7 +10,6 @@
     * [Git](getting-started/prerequisites-for-running-cillers-on-your-laptop/git.md)
     * [Docker](getting-started/prerequisites-for-running-cillers-on-your-laptop/docker.md)
     * [Polytope](getting-started/prerequisites-for-running-cillers-on-your-laptop/polytope.md)
-    * [Chrome (Recommended)](getting-started/prerequisites-for-running-cillers-on-your-laptop/chrome-recommended.md)
     * [Enable access to self-signed certificates on localhost](getting-started/prerequisites-for-running-cillers-on-your-laptop/enable-access-to-self-signed-certificates-on-localhost.md)
     * [Insomnia](getting-started/prerequisites-for-running-cillers-on-your-laptop/insomnia.md)
     * [Get a Curity Community Edition license](getting-started/prerequisites-for-running-cillers-on-your-laptop/get-a-curity-community-edition-license.md)

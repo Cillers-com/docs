@@ -1,3 +1,5 @@
 # Enable access to self-signed certificates on localhost
 
-Go to [chrome://flags/#allow-insecure-localhost](chrome://flags/#allow-insecure-localhost) and click enable.&#x20;
+Chrome users:&#x20;
+
+* Go to [chrome://flags/#allow-insecure-localhost](chrome://flags/#allow-insecure-localhost) and click enable.&#x20;
