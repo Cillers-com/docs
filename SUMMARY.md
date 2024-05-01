@@ -18,3 +18,4 @@
     * [GraphQL Client](getting-started/run-your-cillers-system-on-your-laptop/graphql-client.md)
     * [Curity Admin](getting-started/run-your-cillers-system-on-your-laptop/curity-admin.md)
     * [Couchbase](getting-started/run-your-cillers-system-on-your-laptop/couchbase.md)
+    * [Redpanda](getting-started/run-your-cillers-system-on-your-laptop/redpanda.md)
