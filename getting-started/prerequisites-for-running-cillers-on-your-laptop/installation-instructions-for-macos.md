@@ -32,6 +32,24 @@ OrbStack is a fast, light, and easy way to run Docker containers on macOS. OrbSt
 brew install orbstack  
 ```
 
+#### Increase The Memory Available To Orbstack
+
+1. Open the OrbStack application.&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+
+2. Open Settings.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="259"><figcaption></figcaption></figure>
+
+3. Click System.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="336"><figcaption></figcaption></figure>
+
+4. Increase memory limit to at least 8 GiB.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ### Install Polytope
 
 Polytope enables you to run and manage your software, underlying databases, pipelines and other software services. It makes it possible to seamlessly run your system anywhere, e.g. on your laptop, on your own servers, in your cloud or with any hyperscalar. Website: [https://polytope.com/](https://polytope.com/)
@@ -59,12 +77,12 @@ There are two applications that you need to do this in: your browser and your AP
 
 Uncheck "Validate certificates" in Settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="227"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="227"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="190"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="190"><figcaption></figcaption></figure>
 
 #### Chrome
 
 Go to [chrome://flags/#allow-insecure-localhost](chrome://flags/#allow-insecure-localhost) and click enable.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
