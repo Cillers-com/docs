@@ -12,14 +12,18 @@ This will take a little while the first time (depending on your network speed) a
 
 Watch the logs to see when the system is up and running. The last thing to come up is usually Curity.
 
-### User Interfaces
+### Web User Interfaces
 
-|              |                                                              |                                              |
+When the system has fully initialized you will be able to reach the following web UIs.
+
+| Web UI       | URL                                                          | Credentials                                  |
 | ------------ | ------------------------------------------------------------ | -------------------------------------------- |
 | Web frontend | [http://localhost:8080/](http://localhost:8080/)             |                                              |
 | Curity Admin | [https://localhost:6749/admin](https://localhost:6749/admin) | <p>Username: admin<br>Password: password</p> |
 | Couchbase    | [http://localhost:8091/](http://localhost:8091/)             | <p>Username: admin<br>Password: password</p> |
 | Redpanda     | [http://localhost:8079/](http://localhost:8079/)             |                                              |
+
+### API UI Client
 
 Open insomnia and import the following collection, if you haven't already: [https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json)
 
