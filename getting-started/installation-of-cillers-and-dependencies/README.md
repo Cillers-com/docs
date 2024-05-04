@@ -2,7 +2,7 @@
 
 The easiest way to install Cillers is with Homebrew.&#x20;
 
-Alternatively, you can use our installation shell script, but then you will have to install all software dependencies yourself.  If you want to use our installation shell script, follow these [instructions](installation-with-the-cillers-install-script.md).&#x20;
+Alternatively, you can use our installation shell script, but then you will have to install all software dependencies yourself.  If you want to use our installation shell script, follow these [instructions](altnerative-way-to-install-cillers-the-cillers-install-script.md).&#x20;
 
 ### Installation With Homebrew
 

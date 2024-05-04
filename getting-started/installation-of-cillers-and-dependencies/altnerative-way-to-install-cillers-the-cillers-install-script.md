@@ -1,4 +1,10 @@
-# Installation With The Cillers Install Script
+---
+description: >-
+  Attention: These instructions are only relevant if you have not already
+  installed Cillers using Homebrew.
+---
+
+# Altnerative Way To Install Cillers: The Cillers Install Script
 
 ### Install Software Dependencies
 
