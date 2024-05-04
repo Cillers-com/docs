@@ -1,8 +1,7 @@
-# Documentation
+# Community And Support
 
-If you find any errors in this documentation or would like us to clarify something please do one of the following:
+The best way to reach us and our community is through Discord. We would love if you join us there: [https://discord.gg/awFYddKwCw](https://discord.gg/awFYddKwCw)
 
-* Submit a pull request to [https://github.com/Cillers-com/docs](https://github.com/Cillers-com/docs)
-* Submit an issue at [https://github.com/Cillers-com/docs/issues](https://github.com/Cillers-com/docs/issues)
-* Let us know at Discord: [https://discord.gg/awFYddKwCw](https://discord.gg/awFYddKwCw)
-* Email us at: [hello@cillers.com](mailto:hello@cillers.com)
+### Events
+
+We also organize a lot of events like hackathons, learning labs and parties to engage with developers. Please send an email to [hello@cillers.com](mailto:hello@cillers.com) if you'd like to get invitations to these events or if you'd like to help out as a volunteer or even organize your own Cillers event in your city.&#x20;

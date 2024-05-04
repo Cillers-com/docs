@@ -2,7 +2,8 @@
 
 ## Getting Started
 
-* [Documentation](README.md)
+* [Community And Support](README.md)
+* [Documentation](<README (1).md>)
 * [Prerequisites For Running Cillers On Your Laptop](getting-started/prerequisites-for-running-cillers-on-your-laptop.md)
 * [Special Instructions For Windows Users](getting-started/special-instructions-for-windows-users.md)
 * [Installation of Cillers and Dependencies](getting-started/installation-of-cillers-and-dependencies/README.md)
