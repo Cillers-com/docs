@@ -1,15 +1,13 @@
 # Table of contents
 
-* [Getting Started](README.md)
-  * [Prerequisites For Running Cillers On Your Laptop](getting-started/prerequisites-for-running-cillers-on-your-laptop/README.md)
-    * [Hardware Requirements](getting-started/prerequisites-for-running-cillers-on-your-laptop/hardware-requirements.md)
-    * [Installation Instructions For macOS](getting-started/prerequisites-for-running-cillers-on-your-laptop/installation-instructions-for-macos.md)
-    * [Installation Instructions For Linux](getting-started/prerequisites-for-running-cillers-on-your-laptop/installation-instructions-for-linux.md)
-    * [Installation Instructions For Windows](getting-started/prerequisites-for-running-cillers-on-your-laptop/installation-instructions-for-windows.md)
-  * [Create A Cillers System](getting-started/create-a-cillers-system.md)
-  * [Run Your Cillers System On Your Laptop](getting-started/run-your-cillers-system.md)
-    * [Web Frontend](getting-started/run-your-cillers-system-on-your-laptop/web-frontend.md)
-    * [GraphQL Client](getting-started/run-your-cillers-system-on-your-laptop/graphql-client.md)
-    * [Curity Admin](getting-started/run-your-cillers-system-on-your-laptop/curity-admin.md)
-    * [Couchbase](getting-started/run-your-cillers-system-on-your-laptop/couchbase.md)
-    * [Redpanda](getting-started/run-your-cillers-system-on-your-laptop/redpanda.md)
+## Getting Started
+
+* [Documentation](README.md)
+* [Prerequisites For Running Cillers On Your Laptop](getting-started/prerequisites-for-running-cillers-on-your-laptop.md)
+* [Special Instructions For Windows Users](getting-started/special-instructions-for-windows-users.md)
+* [Installation of Cillers and Dependencies](getting-started/installation-of-cillers-and-dependencies/README.md)
+  * [Installation With The Cillers Install Script](getting-started/installation-of-cillers-and-dependencies/installation-with-the-cillers-install-script.md)
+* [Configuration](getting-started/configuration/README.md)
+  * [Enable Access To Self-Signed Certificates On Localhost](getting-started/configuration/enable-access-to-self-signed-certificates-on-localhost.md)
+  * [Increase Memory Limit For Docker / OrbStack](getting-started/configuration/increase-memory-limit-for-docker-orbstack.md)
+* [Create And Run A New Cillers System](getting-started/create-and-run-a-new-cillers-system.md)
