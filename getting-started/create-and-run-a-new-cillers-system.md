@@ -16,12 +16,12 @@ Watch the logs to see when the system is up and running. The last thing to come 
 
 When the system has fully initialized you will be able to reach the following web UIs.
 
-| Web UI       | URL                                                          | Credentials                                  |
-| ------------ | ------------------------------------------------------------ | -------------------------------------------- |
-| Web frontend | [http://localhost:8080/](http://localhost:8080/)             |                                              |
-| Curity Admin | [https://localhost:6749/admin](https://localhost:6749/admin) | <p>Username: admin<br>Password: password</p> |
-| Couchbase    | [http://localhost:8091/](http://localhost:8091/)             | <p>Username: admin<br>Password: password</p> |
-| Redpanda     | [http://localhost:8079/](http://localhost:8079/)             |                                              |
+| Web UI       | URL                                                          | Credentials                                                                         |
+| ------------ | ------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Web frontend | [http://localhost:8080/](http://localhost:8080/)             | Create a new user in the Curity UI that you are redirected to when clicking login.  |
+| Curity Admin | [https://localhost:6749/admin](https://localhost:6749/admin) | <p>Username: admin<br>Password: password</p>                                        |
+| Couchbase    | [http://localhost:8091/](http://localhost:8091/)             | <p>Username: admin<br>Password: password</p>                                        |
+| Redpanda     | [http://localhost:8079/](http://localhost:8079/)             | N/A                                                                                 |
 
 ### API UI Client
 
