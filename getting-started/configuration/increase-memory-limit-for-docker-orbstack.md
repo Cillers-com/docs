@@ -1,10 +1,6 @@
----
-description: >-
-  You will need at leaste 8GiB to run the full Cillers stack. You may get away
-  with a lot less if you only want to run parts of the Cillers stack.
----
-
 # Increase Memory Limit For Docker / OrbStack
+
+You will need at leaste 8GiB to run the full Cillers stack. You may get away with a lot less if you only want to run parts of the Cillers stack.
 
 This page contains instructions on how to increase memory limit for both [OrbStack](increase-memory-limit-for-docker-orbstack.md#orbstack) and [Docker Desktop](increase-memory-limit-for-docker-orbstack.md#docker-desktop) users.&#x20;
 
