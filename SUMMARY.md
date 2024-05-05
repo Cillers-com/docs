@@ -3,6 +3,7 @@
 ## Getting Started
 
 * [Community And Support](README.md)
+* [TLDR (Too Long, Didn't Read)](getting-started/tldr-too-long-didnt-read.md)
 * [Documentation](<README (1).md>)
 * [Prerequisites For Running Cillers On Your Laptop](getting-started/prerequisites-for-running-cillers-on-your-laptop.md)
 * [Special Instructions For Windows Users](getting-started/special-instructions-for-windows-users.md)
