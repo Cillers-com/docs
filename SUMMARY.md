@@ -10,6 +10,6 @@
 * [Installation of Cillers and Dependencies](getting-started/installation-of-cillers-and-dependencies/README.md)
   * [Altnerative Way To Install Cillers: The Cillers Install Script](getting-started/installation-of-cillers-and-dependencies/altnerative-way-to-install-cillers-the-cillers-install-script.md)
 * [Configuration](getting-started/configuration/README.md)
-  * [Enable Access To Self-Signed Certificates On Localhost](getting-started/configuration/enable-access-to-self-signed-certificates-on-localhost.md)
+  * [Turn Off Certificate Validation For Localhost](getting-started/configuration/turn-off-certificate-validation-for-localhost.md)
   * [Increase Memory Limit For Docker / OrbStack](getting-started/configuration/increase-memory-limit-for-docker-orbstack.md)
 * [Create And Run A New Cillers System](getting-started/create-and-run-a-new-cillers-system.md)
