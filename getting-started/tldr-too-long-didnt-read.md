@@ -1,6 +1,6 @@
-# TLDR (Too Long, Didn't Read)
+# TLDR (Too Long; Didn't Read)
 
-Here is all you need to do to get started with Cillers, but you may want to read through the full Getting Started instruction to ensure a smooth experience.&#x20;
+Here is all you need to do to get started with Cillers, but you may want to read through the full Getting Started documentation to ensure a smooth experience.&#x20;
 
 ```bash
 brew update
@@ -10,3 +10,4 @@ cillers new my-system
 cd my-system
 pt run stack
 ```
+
