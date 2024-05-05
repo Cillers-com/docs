@@ -8,12 +8,12 @@ There are two applications that you need to do this in: your browser and your AP
 
 Uncheck "Validate certificates" in Insomnia's Settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="227"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="227"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="190"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="190"><figcaption></figcaption></figure>
 
 ### Chrome
 
 Go to [chrome://flags/#allow-insecure-localhost](chrome://flags/#allow-insecure-localhost) and click enable.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
