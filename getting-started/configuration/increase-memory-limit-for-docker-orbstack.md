@@ -1,7 +1,7 @@
 ---
 description: >-
   You will need at leaste 8GiB to run the full Cillers stack. You may get away
-  with a lot less if you only want to run parts
+  with a lot less if you only want to run parts of the Cillers stack.
 ---
 
 # Increase Memory Limit For Docker / OrbStack
