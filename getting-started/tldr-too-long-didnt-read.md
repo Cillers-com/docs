@@ -6,6 +6,8 @@ Here is all you typically need to do to get started with Cillers, but you may wa
 brew update
 brew tap polytopelabs/tap
 brew install cillers-com/tap/cillers
+brew install --cask insomnia
+brew install --cask orbstack # if you are a macOS user
 cillers new my-system
 cd my-system
 pt run stack
