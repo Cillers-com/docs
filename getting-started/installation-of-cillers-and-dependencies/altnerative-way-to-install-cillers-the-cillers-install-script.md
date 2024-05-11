@@ -22,9 +22,15 @@ When installing Cillers with the install script you will first need to install a
 
 The Cillers CLI enables you to create a new Cillers system. It will shortly also include support for managing the state of the underlying technologies as well as creating boilerplate code for adding new features to the system.
 
-```bash
-curl -O https://github.com/Cillers-com/cillers-cli/install.sh
-chmod +x install.sh
-./install.sh
-```
+Download the binary, unpack and make it executable.&#x20;
+
+[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-amd64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-amd64.tar.gz)
+
+[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-arm64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-arm64.tar.gz)
+
+[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-amd64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-amd64.tar.gz)
+
+[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-arm64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-arm64.tar.gz)
+
+
 
