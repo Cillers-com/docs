@@ -20,12 +20,12 @@ If you don't already have Homebrew installed, you can install it with the follow
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 2. Install Cillers
-
-The Cillers brew install will also install all of the dependencies for you. You will need to tap Polytope first, since it's not in Homebrew's core tap.
+### 2. Install Cillers And Dependencies
 
 ```bash
-brew tap polytopelabs/tap
+brew install polytopelabs/tap/polytope-cli
 brew install cillers-com/tap/cillers
+brew install --cask insomnia
+brew install --cask orbstack # if you are a macOS user
 ```
 
