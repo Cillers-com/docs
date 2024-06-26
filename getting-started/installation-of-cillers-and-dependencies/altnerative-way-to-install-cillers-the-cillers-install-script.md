@@ -24,13 +24,16 @@ The Cillers CLI enables you to create a new Cillers system. It will shortly also
 
 Download the binary, unpack and make it executable.&#x20;
 
-[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-amd64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-amd64.tar.gz)
+URLs to the binaries for the different platforms:
 
-[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-arm64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-linux-arm64.tar.gz)
+* https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz
+* https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-arm64.tar.gz
+* https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-amd64.tar.gz
+* https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-arm64.tar.gz
 
-[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-amd64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-amd64.tar.gz)
-
-[https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-arm64.tar.gz](https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.10-macos-arm64.tar.gz)
-
-
+```bash
+curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz --output cillers.tar.gz
+tar -xzvf ./cillers.tar.gz
+sudo mv cillers /usr/local/bin
+```
 
