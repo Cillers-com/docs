@@ -13,3 +13,4 @@
   * [Turn Off Certificate Validation For Localhost](getting-started/configuration/turn-off-certificate-validation-for-localhost.md)
   * [Increase Memory Limit For Docker / OrbStack](getting-started/configuration/increase-memory-limit-for-docker-orbstack.md)
 * [Create And Run A New Cillers System](getting-started/create-and-run-a-new-cillers-system.md)
+* [Trouble Shooting](getting-started/trouble-shooting.md)
