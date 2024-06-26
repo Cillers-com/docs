@@ -18,12 +18,14 @@ brew install polytopelabs/tap/polytope-cli
 brew install cillers-com/tap/cillers
 ```
 
-MacOS users also run the following (Cask only works on MacOS so Linux/Windows users will have to install Kong Insomnia manually).
+MacOS users also run the following:
 
 ```bash
 brew install --cask orbstack
 brew install --cask insomnia 
 ```
+
+Cask only works on MacOS, so Linux/Windows users will have to install [Kong Insomnia](https://insomnia.rest/download) manually.
 
 ### Installation Alternative 2: Bash
 
@@ -34,7 +36,7 @@ tar -xzvf ./cillers-cli.tar.gz
 sudo mv cillers-cli /usr/local/bin/cillers
 ```
 
-Note that you will need to install Kong Insomnia manually using this approach.&#x20;
+Note that you will need to install [Kong Insomnia](https://insomnia.rest/download) manually using this approach.&#x20;
 
 ## Running Cillers
 
