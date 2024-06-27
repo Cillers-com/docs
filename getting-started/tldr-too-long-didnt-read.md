@@ -29,14 +29,53 @@ Cask only works on MacOS, so Linux/Windows users will have to install [Kong Inso
 
 ### Installation Alternative 2: Bash
 
-```bash
-curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt chmod +x pt sudo mv pt /usr/local/bin/
-curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz --output cillers-cli.tar.gz
-tar -xzvf ./cillers-cli.tar.gz
-sudo mv cillers-cli /usr/local/bin/cillers
-```
+You can install the Polytope and Cillers CLI binaries directly using the following commands. This process requires that you know which processor architecture you are running on to download the appropriate binaries.&#x20;
 
 Note that you will need to install [Kong Insomnia](https://insomnia.rest/download) manually using this approach.&#x20;
+
+#### Figure out which architecture your processor has
+
+```bash
+uname -m
+```
+
+This command will return the machine hardware name. For example, `x86_64` indicates that you're running on a AMD 64.&#x20;
+
+#### Install AMD 64 Linux Binaries
+
+<pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt 
+</strong><strong>chmod +x pt 
+</strong><strong>sudo mv pt /usr/local/bin/
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz --output cillers-cli.tar.gz
+tar -xzvf ./cillers-cli.tar.gz
+sudo mv cillers-cli /usr/local/bin/cillers
+</code></pre>
+
+#### Install ARM 64 Linux Binaries
+
+Not supported yet by Polytope.&#x20;
+
+#### Install AMD 64 MacOS Binaries
+
+<pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-macos-amd64.gz | gzip -d > pt 
+</strong><strong>chmod +x pt 
+</strong><strong>sudo mv pt /usr/local/bin/
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-amd64.tar.gz --output cillers-cli.tar.gz
+tar -xzvf ./cillers-cli.tar.gz
+sudo mv cillers-cli /usr/local/bin/cillers
+</code></pre>
+
+#### Install ARM 64 MacOS Binaries
+
+<pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-macos-arm64.gz | gzip -d > pt 
+</strong><strong>chmod +x pt 
+</strong><strong>sudo mv pt /usr/local/bin/
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-arm64.tar.gz --output cillers-cli.tar.gz
+tar -xzvf ./cillers-cli.tar.gz
+sudo mv cillers-cli /usr/local/bin/cillers
+</code></pre>
+
+
 
 ## Running Cillers
 
