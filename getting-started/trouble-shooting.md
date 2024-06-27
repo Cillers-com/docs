@@ -6,6 +6,7 @@
 * Insufficient memory allocated to OrbStack/Docker Desktop. You need at least 8GB.&#x20;
 * Running other services that occupy the same ports as are used by Cillers.&#x20;
 * Old processors. Polytope may have problems running on processors older than 2015.&#x20;
+* Polytope doesn't start because another old command called pt installed since before. Read the error message of the brew install polytope command.&#x20;
 
 ## Windows
 
