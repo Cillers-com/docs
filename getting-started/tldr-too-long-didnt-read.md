@@ -72,9 +72,11 @@ sudo mv cillers-cli /usr/local/bin/cillers
 sudo mv cillers-cli /usr/local/bin/cillers
 </code></pre>
 
-
-
 ## Running Cillers
+
+Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `pt run stack` command will otherwise wait until one of them is running.&#x20;
+
+&#x20;And, ensure that you have enough memory allocated for OrbStack/Docker Desktop, at least 8GB.&#x20;
 
 ```bash
 cillers new my-system
@@ -82,9 +84,29 @@ cd my-system
 pt run stack
 ```
 
+The start up will take a few minutes extra the during the first startup, due to downloads of Docker containers and package installations.&#x20;
+
+### Web User Interfaces
+
+When the system has fully initialized you will be able to reach the following web UIs.
+
+| Web UI       | URL                                                          | Credentials                                                                         |
+| ------------ | ------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Web frontend | [http://localhost:8080/](http://localhost:8080/)             | Create a new user in the Curity UI that you are redirected to when clicking login.  |
+| Curity Admin | [https://localhost:6749/admin](https://localhost:6749/admin) | <p>Username: admin<br>Password: password</p>                                        |
+| Couchbase    | [http://localhost:8091/](http://localhost:8091/)             | <p>Username: admin<br>Password: password</p>                                        |
+| Redpanda     | [http://localhost:8079/](http://localhost:8079/)             | N/A                                                                                 |
+
+### API UI Client
+
+Open Insomnia and import the following collection, if you haven't already: [https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json)
+
+Send the hello request. Insomnia should open up a Curity web login page for you. Create an account on your local Curity server using this page, if you haven't already. If you have already created an account, you can just log in.&#x20;
+
 ## Common Problems
 
 * Windows users that have an old version of WSL installed. Make sure you have the latest version of WSL2 installed. Polytope will likely fail otherwise.&#x20;
 * MacOS users that run Docker Desktop instead of OrbStack. Docker Desktop is way more inefficient and will very likely cause problems for you.&#x20;
-* Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `pt run stack` command will otherwise wait until one of them is running.&#x20;
+* Insufficient memory allocated to OrbStack/Docker Desktop. You need at least 8GB.&#x20;
 * Running other services that occupy the same ports as are used by Cillers.&#x20;
+* Old processors. Polytope may have problems running on processors older than 2015.&#x20;
