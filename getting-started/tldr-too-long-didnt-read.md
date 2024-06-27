@@ -4,7 +4,7 @@ Here is all you typically need to do to get started with Cillers, but you may wa
 
 ## Special Preparations For Windows Users
 
-Note that Windows users will need to install WSL2 (Windows Subsystem For Linux) first, and run the commands below in the WSL2 shell. &#x20;
+Note that Windows users will need to install WSL2 (Windows Subsystem For Linux) first, and run the commands below in the WSL2 shell. Here are the official [installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).&#x20;
 
 Windows users also need to enable Docker Desktop WSL2 Backend. See instructions here: [https://docs.docker.com/desktop/wsl/](https://docs.docker.com/desktop/wsl/)&#x20;
 
@@ -105,8 +105,4 @@ Send the hello request. Insomnia should open up a Curity web login page for you.
 
 ## Common Problems
 
-* Windows users that have an old version of WSL installed. Make sure you have the latest version of WSL2 installed. Polytope will likely fail otherwise.&#x20;
-* MacOS users that run Docker Desktop instead of OrbStack. Docker Desktop is way more inefficient and will very likely cause problems for you.&#x20;
-* Insufficient memory allocated to OrbStack/Docker Desktop. You need at least 8GB.&#x20;
-* Running other services that occupy the same ports as are used by Cillers.&#x20;
-* Old processors. Polytope may have problems running on processors older than 2015.&#x20;
+Use our [Trouble Shooting Guide](trouble-shooting.md) if you run into problems. And, please post any issues that you run into on our [Discord server](https://discord.gg/awFYddKwCw).&#x20;
