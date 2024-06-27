@@ -8,7 +8,7 @@ Note that Windows users will need to install WSL2 (Windows Subsystem For Linux) 
 
 Windows users also need to enable Docker Desktop WSL2 Backend. See instructions here: [https://docs.docker.com/desktop/wsl/](https://docs.docker.com/desktop/wsl/)&#x20;
 
-Ensure that you have enough memory allocated for Docker
+Ensure that you have enough memory allocated for Docker: [https://mrakelinggar.medium.com/set-up-configs-like-memory-limits-in-docker-for-windows-and-wsl2-80689997309c](https://mrakelinggar.medium.com/set-up-configs-like-memory-limits-in-docker-for-windows-and-wsl2-80689997309c)
 
 ## Installation&#x20;
 
