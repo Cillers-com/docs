@@ -46,8 +46,7 @@ This command will return the machine hardware name. For example, `x86_64` indica
 <pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt 
 </strong><strong>chmod +x pt 
 </strong><strong>sudo mv pt /usr/local/bin/
-</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz --output cillers-cli.tar.gz
-tar -xzvf ./cillers-cli.tar.gz
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-linux-amd64.tar.gz | tar -xzvf -
 sudo mv cillers-cli /usr/local/bin/cillers
 </code></pre>
 
@@ -60,8 +59,7 @@ Not supported yet by Polytope.&#x20;
 <pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-macos-amd64.gz | gzip -d > pt 
 </strong><strong>chmod +x pt 
 </strong><strong>sudo mv pt /usr/local/bin/
-</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-amd64.tar.gz --output cillers-cli.tar.gz
-tar -xzvf ./cillers-cli.tar.gz
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-amd64.tar.gz | tar -xzvf -
 sudo mv cillers-cli /usr/local/bin/cillers
 </code></pre>
 
@@ -70,8 +68,7 @@ sudo mv cillers-cli /usr/local/bin/cillers
 <pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-macos-arm64.gz | gzip -d > pt 
 </strong><strong>chmod +x pt 
 </strong><strong>sudo mv pt /usr/local/bin/
-</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-arm64.tar.gz --output cillers-cli.tar.gz
-tar -xzvf ./cillers-cli.tar.gz
+</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-v0.0.13-macos-arm64.tar.gz | tar -xzvf -
 sudo mv cillers-cli /usr/local/bin/cillers
 </code></pre>
 
