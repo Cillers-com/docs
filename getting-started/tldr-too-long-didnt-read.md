@@ -84,7 +84,7 @@ cd my-system
 pt run stack
 ```
 
-The start up will take a few minutes extra the during the first startup, due to downloads of Docker containers and package installations.&#x20;
+The start up will take a few minutes extra the during the first startup, due to downloads of Docker containers and package installations. The first startup run takes around 5 to 10 minutes.&#x20;
 
 ### Web User Interfaces
 
