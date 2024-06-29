@@ -21,7 +21,7 @@ brew install --cask orbstack
 brew install --cask insomnia 
 ```
 
-Make sure you have the latest version of Docker installed.
+If you already have docker installed, brew will ask if you want to upgrade it. Answer yes, because we depend on the latest version of Docker to be installed.
 
 ### Launch OrbStack&#x20;
 
