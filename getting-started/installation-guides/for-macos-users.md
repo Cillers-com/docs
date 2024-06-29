@@ -21,6 +21,8 @@ brew install --cask orbstack
 brew install --cask insomnia 
 ```
 
+Make sure you have the latest version of Docker installed.
+
 ### Launch OrbStack&#x20;
 
 **Attention!** Use OrbStack instead of Docker Desktop. Make sure that Docker Desktop is not running. Docker Desktop is much less efficient on macOS than OrbStack. Running Cillers on Docker Desktop will not work unless you have a very powerful computer.&#x20;
