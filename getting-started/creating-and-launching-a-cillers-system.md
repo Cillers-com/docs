@@ -10,7 +10,7 @@ cd my-system
 pt run stack
 ```
 
-You will now see the Polytope Container Runtime UI
+You will now see the Polytope Container Runtime UI.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -18,7 +18,7 @@ Just like in any operating system, some processes run to completion and some sho
 
 Use the guide at the bottom of the Polytope UI to navigate. You will find the Polytope UI to be incredibly helpful and powerful.&#x20;
 
-The start up will take a few minutes extra the during the first startup, due to downloads of Docker containers and package installations. The first startup run takes around 5 to 10 minutes.&#x20;
+The start up will take a few minutes extra during the first startup of your system, due to downloads of Docker containers and package installations. The first startup run takes around 5 to 10 minutes.&#x20;
 
 **Attention!** If you are on a slow network, you may have to restart the "pt run stack" command to get the initialization to complete.&#x20;
 
@@ -32,11 +32,11 @@ You can also use our [Trouble Shooting Guide](trouble-shooting.md).&#x20;
 
 ### Web Frontend
 
-We have a sample web frontend and GraphQL API running that you can use for inspiration. Your sample frontend app is located at: [http://localhost:8080/](http://localhost:8080/). Click the 'Login' link and you will be redirected to a standard Curity login form. Click the "Create account" link at the very bottom.&#x20;
+Our sample frontend app is located at: [http://localhost:8080/](http://localhost:8080/). Click the 'Login' link and you will be redirected to a standard Curity login form. Click the "Create account" link under the form.&#x20;
 
 When logged in you get a form to add products. Test adding a product.&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, open the Couchbase admin web UI to view the product that you created in the db.&#x20;
 
@@ -46,7 +46,7 @@ Your Couchbase Admin Web UI is located at: [http://localhost:8091/](http://local
 
 Click the "Documents" link in the left pane and select "products" in the right-most drop-down under "Keyspace". The product that you added should be in the results.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, let's try adding a product through our event streaming service, Redpanda.&#x20;
 
@@ -56,11 +56,11 @@ Your Redpanda Admin Web UI is located at: [http://localhost:8079/](http://localh
 
 Click on "Topics" in the left pane, and then on "products" in the topics list.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click "Actions" and select "Produce Record".&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Type anything in the "Key" textarea.&#x20;
 
@@ -70,7 +70,7 @@ Select "JSON" as the type and add the product as follows:
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-Click "Produce" at the bottom of the form. Then you can see that the product has been automatically created as well in the Couchbase "products" collection. And, that it shows up in the list of products the web frontend.&#x20;
+Click "Produce" at the bottom of the form. Then you can see that the product has been automatically created in the Couchbase "products" collection. And, that it shows up in the list of products the web frontend.&#x20;
 
 Now, let's add a product using the API Exploration UI, Kong Insomnia.&#x20;
 
@@ -78,17 +78,17 @@ Now, let's add a product using the API Exploration UI, Kong Insomnia.&#x20;
 
 Open the Kong Insomnia application. Click the "Create" button, select "Import.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Click "Url" and paste the following URL: [https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Now, let's add a product. Click "Add Product" in the left pane and click "Send".  Insomnia should open up a Curity login pop-up for you. You can use the username and password that you created for the web frontend. You should get a 200 OK response if all went well. The product should now show up in the web frontend.&#x20;
+Now, let's add a product. Click "Add Product" in the left pane and click "Send".  Insomnia should open up a Curity login pop-up for you. You can use the username and password that you created for the web frontend. You should get a green 200 OK response. The product should now show up in the web frontend.&#x20;
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-### Now you are ready to move on to make some changes to the system.&#x20;
+### Now, you are ready to move on to make some changes to the system.&#x20;
 
 ### Web UI Reference&#x20;
 
@@ -101,5 +101,5 @@ When the system has fully initialized you will be able to reach the following we
 | Couchbase    | [http://localhost:8091/](http://localhost:8091/)             | <p>Username: admin<br>Password: password</p>                                        |
 | Redpanda     | [http://localhost:8079/](http://localhost:8079/)             | N/A                                                                                 |
 
-##
+
 

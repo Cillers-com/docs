@@ -4,7 +4,7 @@
 
 To run Cillers on Windows you need the latest version of WSL2.&#x20;
 
-**Attention!** Make sure you have the **latest version** of WSL2!&#x20;
+**Attention!** If you already have WSL installed on your computer, make sure you have the **latest version**!&#x20;
 
 Here are the official [installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).&#x20;
 
@@ -12,7 +12,7 @@ Here are the official [installation instructions](https://learn.microsoft.com/en
 
 [Install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or check that your current installation is up-to-date.&#x20;
 
-**Attention!** Polytope does not support old versions of Docker.&#x20;
+**Attention!** We do not support old versions of Docker.&#x20;
 
 ### Enable Docker Desktop WSL2 Backend.&#x20;
 

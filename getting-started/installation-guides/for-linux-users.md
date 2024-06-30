@@ -1,6 +1,6 @@
 # For Linux Users
 
-The easiest installation on Linux is to install the appropriate binaries directly using the following commands.&#x20;
+On Linux it is easiest to install the appropriate binaries directly using the following commands.&#x20;
 
 ### Figure Out Which Architecture Your Processor Has
 
@@ -10,7 +10,7 @@ The following command will return the machine hardware name. For example, `x86_6
 uname -m
 ```
 
-Polytope currently only works on AMD 64. Please let us know if you have a ARM64 processor, so we can ask Polytope to prioritize this.&#x20;
+We currently only support AMD 64 for Linux. Please let us know if you have a ARM64 processor, so we know that we should increase priority for supporting ARM64 processors for Linux.&#x20;
 
 ### Install Polytope And Cillers CLI Binaries
 
@@ -37,12 +37,12 @@ Ensure you have at least 8GB memory allocated to Docker Desktop.&#x20;
 
 2. Open settings
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="302"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="302"><figcaption></figcaption></figure>
 
 3. Open Resources
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="250"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="250"><figcaption></figcaption></figure>
 
 4. Increase memory limit to at least 8 GB
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
