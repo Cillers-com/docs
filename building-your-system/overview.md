@@ -5,5 +5,5 @@ The Cillers platform makes it super easy for developers to add functionality in 
 This section on how to build your system on Cillers is therefore structured in two main parts:&#x20;
 
 * [Cillers Core](cillers-core/): How to add functionality using Cillers' opinionated services, structure and tooling.
-* [Cillers Flex](cillers-flex.md): How to add functionality that is outside of the current scope of Cillers opinionated services, structure and tooling.&#x20;
+* [Cillers Flex](cillers-flex.md): How to add functionality that is outside of the current scope of Cillers Core.
 
