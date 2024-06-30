@@ -9,3 +9,7 @@ The Cillers system infrastructure is specified in the `/polytope.yml` file. We l
 We specify what should be run in our stack in the `templates` section.  The `modules` that the `templates` are comprised of are specified in the `modules` section. Each module is an extension of another module that is called with the `args` field. The base module is called `polytope/container`.&#x20;
 
 Modules that should run our code have a `code` field with the path to the code that should be run and a `cmd` field with the entry point command that should be called to run our code.&#x20;
+
+Modules for services, such as databases, contain configuration for how the service should be run including which specific container image should be used.&#x20;
+
+Module can be specified to take params which define the interface for the module. They can be specified my extending modules through the args field. And they can be specified when the module is invoked through the Polytope Container Runtime UI.&#x20;
