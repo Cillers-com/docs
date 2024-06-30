@@ -21,4 +21,7 @@
   * [Quick Start Guide](building-your-system/cillers-core/quick-start-guide/README.md)
     * [Adding A GraphQL Operation](building-your-system/cillers-core/quick-start-guide/adding-a-graphql-operation.md)
     * [Creating A New React Component That Calls The GraphQL API](building-your-system/cillers-core/quick-start-guide/creating-a-new-react-component-that-calls-the-graphql-api.md)
+  * [Data Structure Management](building-your-system/cillers-core/data-structure-management.md)
+  * [Provisioning Your System Infrastructure](building-your-system/cillers-core/provisioning-your-system-infrastructure.md)
+  * [Deploying To Production](building-your-system/cillers-core/deploying-to-production.md)
 * [Cillers Flex](building-your-system/cillers-flex.md)
