@@ -18,7 +18,7 @@ We have implemented the [Token Handler](https://curity.io/resources/learn/the-to
 
 To provide a great developer experience when testing or exploring APIs, we provide a template collection for [Kong Insomnia](https://insomnia.rest/), with all the security settings preconfigured, so that calling access controlled APIs becomes seamless.
 
-### Complete Freedom To Run Your Infrastructure Where You Want To
+### Complete Freedom To Run Your Infrastructure Where You Want
 
 We decided to use a Access Control Management and Identity Provisioning System that can be run anywhere: as a cloud service, on-prem or even on your laptop. Therefore Cillers users can easily stay in compliance with privacy regulations and optimize their use-cases. This also means that developers can run their entire system totally sandboxed on their laptops, so they have minimal risk of causing problems and can work effectively.
 
