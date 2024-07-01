@@ -4,7 +4,7 @@ Security is a top priority for Cillers. We have worked with some of the world's 
 
 ### The Security Architecture
 
-We decided to implement the [Token Handler](https://curity.io/resources/learn/the-token-handler-pattern/) and [Phantom Token](https://curity.io/resources/learn/phantom-token-pattern/) patterns to secure the applications, API gateway and APIs. Here are the main highlights of this approach:&#x20;
+We have implemented the [Token Handler](https://curity.io/resources/learn/the-token-handler-pattern/) and [Phantom Token](https://curity.io/resources/learn/phantom-token-pattern/) patterns to secure the applications, API gateway and APIs. Here are the main highlights of this approach:&#x20;
 
 ⭐ No JWT with personal information is sent to the applications. Instead opaque access tokens, which have no more info than random strings, are used. We don't want to serve JWTs to the applications because they tend to include sensitive personal information, such as personal identifiers. And although JWTs are encoded, so they cannot be read by a human directly, they are not encrypted, so a cyber criminal can easilty decode them to get the sensitive information.\
 \
