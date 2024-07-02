@@ -1,15 +1,18 @@
 # Capabilities
 
+Enterprise-grade software systems need to be versatile and powerful enough to handle the increasingly tough demands of modern data-driven organizations, so they need to encompass a large and multifaceted set of capabilities. They manage vast amounts of diverse data, integrate with other system, require robust security measures, and provide the necessary tools for comprehensive software and infrastructure management.
 
+When starting to build an enterprise-grade system, it is impossible to know which specific capabilities will be needed in the future. If your infrastructure doesn't support the capabilities required by future needs, you will need to complicate your infrastructure over time which will lead to slower and slower development with more and more bugs. This insight has been one of the cornerstones of the Cillers platform design. Hence, you are are as future proof as possible when building your system on Cillers, reducing the risk of complexity creep.
 
-Most enterprise-grade software systems are comprised of or depend on the following capabilities:&#x20;
+The following bullets describe the capabilities and components typically found in enterprise-grade software systems.
 
-* Data storage and processing, including handling lots of different types of data, with different characteristics and use-cases, such as real-time, geographic, time-series, text, vector, columnar. And, now pretty much every system needs to be upgraded with AI capabilities to stay competitive.&#x20;
-* Data integrations with both ingestion from and publishing to other systems.
-* APIs, typically REST, RPC and increasingly GraphQL.&#x20;
-* Web and mobile user-facing applications.
-* Security, including access control, identity provisioning, integration with other identity providers, as well as protection against a large number of different types of attacks.&#x20;
-* Software and infrastructure management, including source control, data structure management, provisioning of resources, testing, integration and deployment.&#x20;
+* **Data storage and processing** in enterprise-grade systems involve handling diverse types of data, each with unique characteristics and use-cases. Data needs to be stored and indexed in many different ways to support different types of use-cases, including SQL queries, vector search, full-text search, columnar, time-series, geographic and binary formats. Some data needs to be accessible in real-time and other data needs to be accessed in huge quantities in a reasonable amount of time. And, an enormous and increasing amount data need to be stored and made available for many different types of analysis in a timely and cost-effective way.&#x20;
+* **Large Language Models (LLMs)** have become essential to most enterprise systems to stay competitive. Due to privacy concerns, many enterprises need to host their own LLMs rather than relying on proprietary cloud-based solutions. Additionally, to effectively support their unique content and service requirements, companies are increasingly training their own specialized LLMs. LLMs also pose a new set of security and privacy challenges.
+* **Data integrations** are crucial for maintaining a good exchange of information across different systems. This process involves both ingestion of data from external sources and publishing of data to other systems. Data often needs to be transformed and processed to align with the specific data models of the system and validated to ensure data integrity. As the number of data streams increase, it becomes increasingly challenging to comprehend the data flows, so good data governance tools are essential.
+* **APIs**: typically REST, RPC and increasingly GraphQL.&#x20;
+* **Web and mobile applications**.
+* **Security,** including access control, identity provisioning, integration with other identity providers, as well as protection against a large number of different types of attacks.&#x20;
+* **Software and infrastructure management,** including source control, data structure management, provisioning of resources, testing, integration and deployment.&#x20;
 
 The [Cillers Core](../building-your-system/cillers-core/) platform includes support for most of these, and will soon support even more. And,  [Cillers Flex](../building-your-system/cillers-flex.md) makes it easy for you to integrate any additional infrastructure capabilities that may be needed for your specific system.&#x20;
 
