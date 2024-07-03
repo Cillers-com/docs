@@ -8,7 +8,7 @@ We have implemented the [Token Handler](https://curity.io/resources/learn/the-to
 
 ⭐ No JWT with personal information is sent to the applications. Instead opaque access tokens, which have no more info than random strings, are used. We don't want to serve JWTs to the applications because they tend to include sensitive personal information, such as personal identifiers. And although JWTs are encoded, so they cannot be read by a human directly, they are not encrypted, so a cyber criminal can easilty decode them to get the sensitive information.\
 \
-⭐ For web applications, the access and CSRF tokens are stored in http-only 1st party cookies, which means that javascript doesn't have access to them, which is a great mitigation for XSS and CSRF attacks as well as token theft. Hence, you can serve your Web Application using a Content Delivery Network (CDN), without sacrificing security. \
+⭐ For web applications, the access and CSRF tokens are stored in http-only 1st party cookies, which means that javascript doesn't have access to them, which is a good mitigation for XSS and CSRF attacks as well as token theft. Hence, you can serve your Web Application using a Content Delivery Network (CDN), without sacrificing security. \
 \
 ⭐ The complexity of the security implementation is to a great extent moved from the application to our OAuth Agent service, with the result that the implementation becomes trivial in the applications and you don't need a dependency on an OAuth library. \
 \
