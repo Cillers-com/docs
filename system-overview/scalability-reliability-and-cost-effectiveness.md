@@ -1,6 +1,6 @@
 # Scalability, Reliability And Cost-Effectiveness
 
-The primary challenge in scaling an enterprise-grade software system and making it reliable, without losing your shirt, is most often related to data storage and retrieval. Hence, we have primarily focused our attention on the selecting the world's best data storage technologies for the purpose of making systems built on the Cillers platform scalable, reliable and cost-effective.
+The primary challenge in scaling an enterprise-grade software system and making it reliable, without losing your shirt, is most often related to data storage and retrieval. Hence, we have primarily focused our attention on selecting the world's best data storage technologies for the purpose of making systems built on the Cillers platform scalable, reliable and cost-effective.
 
 We have selected Couchbase for operational data, because it is typically used to save engineering organizations that face scalability, reliability and cost-effectiveness issues. Couchbase is used to power many of the world's most critical software systems, such as most credit card transactions, logins, bookings, billings, taxis, social media posts, space flights etc.&#x20;
 
