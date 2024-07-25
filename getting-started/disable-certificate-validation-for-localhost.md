@@ -18,7 +18,7 @@ Start the Kong Insomnia application and click on Preferences in the bottom left 
 
 <figure><img src="../.gitbook/assets/image (14).png" alt="" width="375"><figcaption></figcaption></figure>
 
-
+You may need to restart Insomnia for these changes to take effect, if you have tried to fetch tokens before changing these settings.&#x20;
 
 
 
