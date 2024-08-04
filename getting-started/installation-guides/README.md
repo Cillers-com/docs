@@ -13,5 +13,5 @@ The installation procedure differs significantly depending on operating system, 
 Run the Polytope doctor command to see if there are any problems with the basic installation. This command will provide warnings if anything that Polytope depends on is not installed in alignment with their recommendations.
 
 ```bash
-pt run doctor
+pt debug doctor
 ```
