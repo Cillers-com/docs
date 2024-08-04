@@ -80,7 +80,7 @@ Open the Kong Insomnia application. Click the "Create" button, select "Import.&#
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-Click "Url" and paste the following URL: [https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/localhost.json)
+Click "Url" and paste the following URL: [https://cillers-com.github.io/insomnia-cillers-graphql-client/cillers\_graphql\_app\_api\_client.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/cillers\_graphql\_app\_api\_client.json)
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
