@@ -28,4 +28,6 @@ You can now follow the [Installation Guide For Linux Users](for-linux-users.md).
 
 ### Important Special Git Instruction For Windows Users <a href="#important-special-git-instruction-for-windows-users" id="important-special-git-instruction-for-windows-users"></a>
 
-Make sure your git client is not changing line endings, because that will cause problems when collaborating with other developers. We recommend that you use the [Git for Windows](https://git-scm.com/download/win) client.
+Make sure your git client is committing UNIX-style line endings. Otherwise you will have problems working with developers on other operating systems.&#x20;
+
+We recommend that you use the [Git for Windows](https://git-scm.com/download/win) client.
