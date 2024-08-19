@@ -25,24 +25,8 @@ sudo mv cillers-cli /usr/local/bin/cillers
 
 Use the [official installation instructions.](https://insomnia.rest/download)&#x20;
 
-### Ensure You Have The Latest Version Of Docker Installed (Not For Windows Users)
+### Docker (Not Applicable For Windows Users That Should Already Have Followed The Docker Desktop Instructions For Windows)
 
-[Install Docker Desktop](https://docs.docker.com/desktop/install/linux-install/) or check that your installation is up-to-date. Polytope does not support old versions of Docker.&#x20;
+Ensure that docker is installed and up-to-date. Polytope does not support old versions of Docker.&#x20;
 
-Ensure you have at least 8GB memory allocated to Docker Desktop.&#x20;
-
-1. Open the Docker Desktop dashboard
-
-<figure><img src="../../.gitbook/assets/image (12).png" alt="" width="339"><figcaption></figcaption></figure>
-
-2. Open settings
-
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="302"><figcaption></figcaption></figure>
-
-3. Open Resources
-
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="250"><figcaption></figcaption></figure>
-
-4. Increase memory limit to at least 8 GB
-
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+[Installing Docker Desktop](https://docs.docker.com/desktop/install/linux-install/) is optional for Linux users.
