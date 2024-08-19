@@ -18,6 +18,8 @@ Here are the official [installation instructions](https://learn.microsoft.com/en
 
 See instructions here: [https://docs.docker.com/desktop/wsl/](https://docs.docker.com/desktop/wsl/). **Attention!** Make sure you have the **latest version** of Docker.&#x20;
 
+To avoid memory contraint issues, allocate at least 12GB of RAM in the .wslconfig. To avoid very slow startup allocate at least 4 CPUs.&#x20;
+
 ### Ensure that you have enough memory allocated for Docker
 
 Instructions: [https://mrakelinggar.medium.com/set-up-configs-like-memory-limits-in-docker-for-windows-and-wsl2-80689997309c](https://mrakelinggar.medium.com/set-up-configs-like-memory-limits-in-docker-for-windows-and-wsl2-80689997309c)
