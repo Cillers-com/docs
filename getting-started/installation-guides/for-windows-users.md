@@ -8,6 +8,8 @@ To run Cillers on Windows you need the latest version of WSL2.&#x20;
 
 Here are the official [installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).&#x20;
 
+To avoid memory contraint issues, allocate at least 12GB of RAM in the .wslconfig. To avoid very slow startup allocate at least 4 CPUs.&#x20;
+
 ### Install Docker Desktop&#x20;
 
 [Install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or check that your current installation is up-to-date.&#x20;
@@ -17,8 +19,6 @@ Here are the official [installation instructions](https://learn.microsoft.com/en
 ### Enable Docker Desktop WSL2 Backend.&#x20;
 
 See instructions here: [https://docs.docker.com/desktop/wsl/](https://docs.docker.com/desktop/wsl/). **Attention!** Make sure you have the **latest version** of Docker.&#x20;
-
-To avoid memory contraint issues, allocate at least 12GB of RAM in the .wslconfig. To avoid very slow startup allocate at least 4 CPUs.&#x20;
 
 ### Ensure that you have enough memory allocated for Docker
 
