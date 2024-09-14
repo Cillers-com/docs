@@ -16,13 +16,13 @@ We have implemented the [Token Handler](https://curity.io/resources/learn/the-to
 \
 ⭐ The opaque tokens are exchanged for JWTs in our Kong API Gateway, to provide a great developer experience in the API authorization layer.
 
-To provide a great developer experience when testing or exploring APIs, we provide a template collection for [Kong Insomnia](https://insomnia.rest/), with all the security settings preconfigured, so that calling access controlled APIs becomes seamless.
+To provide a great developer experience when testing or exploring APIs, we provide a turn-key GraphQL Client Web UI that operates in the same auth environment as the web app, which means that developers can easily try out their GraphQL queries before using them in the web app.&#x20;
 
 ### Complete Freedom To Run Your Infrastructure Where You Want
 
 We decided to use a Access Control Management and Identity Provisioning System that can be run anywhere: as a cloud service, on-prem or even on your laptop. Therefore Cillers users can easily stay in compliance with privacy regulations and optimize their use-cases. This also means that developers can run their entire system totally sandboxed on their laptops, so they have minimal risk of causing problems and can work effectively.
 
-We chose [Curity](https://curity.io/), because it fullfils the above requirements, is the most capable and has the best developer experience. &#x20;
+We chose [Curity](https://curity.io/), because it fulfills the above requirements, is the most capable and has the best developer experience. &#x20;
 
 ### Credits
 
