@@ -21,10 +21,6 @@ We currently only support AMD 64 for Linux. Please let us know if you have a ARM
 sudo mv cillers-cli /usr/local/bin/cillers
 </code></pre>
 
-### Install Kong Insomnia
-
-Use the [official installation instructions.](https://insomnia.rest/download)&#x20;
-
 ### Docker (Not Applicable For Windows Users That Should Already Have Followed The Docker Desktop Instructions For Windows)
 
 Ensure that docker is installed and up-to-date. Polytope does not support old versions of Docker.&#x20;

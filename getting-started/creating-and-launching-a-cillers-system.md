@@ -10,7 +10,14 @@ cd my-system
 pt run stack
 ```
 
-You will now see the Polytope Container Runtime UI.
+Fine-Tuning Options Depending On RAM
+
+* If you have only 8GB of RAM you may want to run `pt run stack-light` instead to avoid problems caused by memory constraints. This will remove Cillers' event-streaming capabilities.&#x20;
+* if you have 12 GB or RAM or more you can try running `pt run stack-fast` for a faster startup. This will launch all Docker containers at once.&#x20;
+
+### Polytope
+
+You should now see the Polytope Container Runtime UI.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,80 +33,9 @@ When the system is fully initialized, you have a super scalable, reliable, secur
 
 ### Getting Started With Cillers Should Be Trouble Free.
 
-Please reach out for support on our [Discord server](https://discord.gg/awFYddKwCw) if you run into any issues.&#x20;
+We provide free support! You can book a free support call here if you run into any issues: [https://calendly.com/cillers/free-support](https://calendly.com/cillers/free-support)
 
-You can also use our [Trouble Shooting Guide](trouble-shooting.md).&#x20;
-
-### Web Frontend
-
-Our sample frontend app is located at: [http://localhost:8080/](http://localhost:8080/). Click the 'Login' link and you will be redirected to a standard Curity login form. Click the "Create account" link under the form.&#x20;
-
-When logged in you get a form to add products. Test adding a product.&#x20;
-
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-
-Now, open the Couchbase admin web UI to view the product that you created in the db.&#x20;
-
-### Couchbase Admin Web UI
-
-Your Couchbase Admin Web UI is located at: [http://localhost:8091/](http://localhost:8091/). The default username is "admin" and your password is "password".&#x20;
-
-Click the "Documents" link in the left pane and select "products" in the right-most drop-down under "Keyspace". The product that you added should be in the results.&#x20;
-
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-Now, let's try adding a product through our event streaming service, Redpanda.&#x20;
-
-### Redpanda Admin Web UI
-
-Your Redpanda Admin Web UI is located at: [http://localhost:8079/](http://localhost:8079/).&#x20;
-
-Click on "Topics" in the left pane, and then on "products" in the topics list.&#x20;
-
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-
-Click "Actions" and select "Produce Record".&#x20;
-
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
-
-Type anything in the "Key" textarea.&#x20;
-
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-Select "JSON" as the type and add the product as follows:
-
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
-Click "Produce" at the bottom of the form. Then you can see that the product has been automatically created in the Couchbase "products" collection. And, that it shows up in the list of products the web frontend.&#x20;
-
-Now, let's add a product using the API Exploration UI, Kong Insomnia.&#x20;
-
-### Kong Insomnia API Exploration UI
-
-Open the Kong Insomnia application. Click the "Create" button, select "Import.&#x20;
-
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
-Click "Url" and paste the following URL: [https://cillers-com.github.io/insomnia-cillers-graphql-client/v0\_1.json](https://cillers-com.github.io/insomnia-cillers-graphql-client/v0\_1.json)
-
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Now, let's add a product. Click "Add Product" in the left pane and click "Send".  Insomnia should open up a Curity login pop-up for you. You can use the username and password that you created for the web frontend. You should get a green 200 OK response. The product should now show up in the web frontend.&#x20;
-
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-### Now, you are ready to move on to make some changes to the system.&#x20;
-
-### Web UI Reference&#x20;
-
-When the system has fully initialized you will be able to reach the following web UIs.
-
-| Web UI       | URL                                                        | Credentials                                                                         |
-| ------------ | ---------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Web frontend | [http://localhost:8080/](http://localhost:8080/)           | Create a new user in the Curity UI that you are redirected to when clicking login.  |
-| Curity Admin | [http://localhost:6749/admin](http://localhost:6749/admin) | <p>Username: admin<br>Password: password</p>                                        |
-| Couchbase    | [http://localhost:8091/](http://localhost:8091/)           | <p>Username: admin<br>Password: password</p>                                        |
-| Redpanda     | [http://localhost:8079/](http://localhost:8079/)           | N/A                                                                                 |
+You can also reach us at our [Discord server](https://discord.gg/awFYddKwCw) or check out our [Trouble Shooting Guide](trouble-shooting.md).&#x20;
 
 
 
