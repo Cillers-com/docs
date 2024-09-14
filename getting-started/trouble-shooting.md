@@ -1,5 +1,11 @@
 # Trouble Shooting
 
+## Getting Started With Cillers Should Be Trouble Free. <a href="#getting-started-with-cillers-should-be-trouble-free" id="getting-started-with-cillers-should-be-trouble-free"></a>
+
+We provide free support! You can book a free support call here if you run into any issues: [https://calendly.com/cillers/free-support](https://calendly.com/cillers/free-support)
+
+You can also reach us at our [Discord server](https://discord.gg/awFYddKwCw) or check out our [Trouble Shooting Guide](https://docs.cillers.com/getting-started/trouble-shooting).
+
 ## General
 
 * Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `pt run stack` command will otherwise wait until one of them is running.&#x20;
