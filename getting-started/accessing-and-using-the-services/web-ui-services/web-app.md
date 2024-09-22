@@ -6,6 +6,6 @@ Click 'Login' and you will be redirected to a login form. Click the "Create acco
 
 When logged in, you should see our sample form to add items.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Test adding a product and check that it was saved in [Couchbase](couchbase-admin-ui.md).

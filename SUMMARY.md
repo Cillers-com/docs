@@ -23,7 +23,7 @@
     * [Redpanda Admin UI](getting-started/accessing-and-using-the-services/web-ui-services/redpanda-admin-ui.md)
     * [Curity Admin UI](getting-started/accessing-and-using-the-services/web-ui-services/curity-admin-ui.md)
     * [GraphQL Client](getting-started/accessing-and-using-the-services/web-ui-services/graphql-client.md)
-    * [Jupyter](getting-started/accessing-and-using-the-services/web-ui-services/jupyter.md)
+    * [Jupyter Notebooks](getting-started/accessing-and-using-the-services/web-ui-services/jupyter-notebooks.md)
   * [System Services](getting-started/accessing-and-using-the-services/system-services/README.md)
     * [Couchbase Data Platform](getting-started/accessing-and-using-the-services/system-services/couchbase-data-platform.md)
     * [Redpanda Event Streaming Platform](getting-started/accessing-and-using-the-services/system-services/redpanda-event-streaming-platform.md)

@@ -7,4 +7,4 @@
 | [Curity Admin UI](curity-admin-ui.md)       | [http://localhost:6749/admin](http://localhost:6749/admin) | <p>Username: admin<br>Password: password</p>                                        |
 | [Couchbase Admin UI](couchbase-admin-ui.md) | [http://localhost:8091](http://localhost:8091/)            | <p>Username: admin<br>Password: password</p>                                        |
 | [Redpanda Admin UI](redpanda-admin-ui.md)   | [http://localhost:8079](http://localhost:8079/)            | N/A                                                                                 |
-| [Jupyter](jupyter.md)                       | [http://localhost:8888](http://localhost:8888)             | N/A                                                                                 |
+| [Jupyter](jupyter-notebooks.md)             | [http://localhost:8888](http://localhost:8888)             | N/A                                                                                 |
