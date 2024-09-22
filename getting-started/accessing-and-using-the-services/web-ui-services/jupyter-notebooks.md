@@ -34,7 +34,7 @@ We have created a growing library of Jupyter tutorials that is accessible in the
 
 The `/tutorial`, `/work` and`/config`directories are mounted from your Cillers project directory into the container running Jupyter. This means that you can edit these files in Jupyter or using your favorite code editor.&#x20;
 
-But, note that the Cillers Jupyter app is intended to be run in a container that is closely equivalent to the the API app container. The Jupyter notebooks are not intended to be executed on your local operating system, so should not expect them to execute properly in your code editor.&#x20;
+But, note that the Cillers Jupyter app is intended to be run in a container that is closely equivalent to the the API app container. The Jupyter notebooks are not intended to be executed on your local operating system, so you should not expect them to execute properly in your code editor.&#x20;
 
 Here is a table for which directories are mounted:&#x20;
 
