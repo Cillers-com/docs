@@ -12,8 +12,9 @@ pt run stack
 
 Fine-Tuning Options Depending On RAM
 
-* If you have only 8GB of RAM you may want to run `pt run stack-light` instead to avoid problems caused by memory constraints. This will remove Cillers' event-streaming capabilities.&#x20;
-* if you have 12 GB or RAM or more you can try running `pt run stack-fast` for a faster startup. This will launch all Docker containers at once.&#x20;
+* If you have only 8GB of RAM you may want to run `pt run stack-low-memory` instead to avoid problems caused by memory constraints. If you still have memory problems, you can try running `pt run stack-without-redpanda` , which will start the stack without Cillers' event-streaming and integration capabilities.&#x20;
+
+
 
 ### Polytope
 
