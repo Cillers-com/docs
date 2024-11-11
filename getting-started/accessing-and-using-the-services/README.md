@@ -6,7 +6,7 @@ Your Cillers systems consists of two different types of services:  Web UI Servic
 
 | Web UI                                                      | URL                                                        | Credentials                                                                         |
 | ----------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Web frontend](web-ui-services/web-app.md)                  | [http://localhost:8080](http://localhost:8080/)            | Create a new user in the Curity UI that you are redirected to when clicking login.  |
+| [Web frontend](web-ui-services/web-app.md)                  | [http://localhost:11000](http://localhost:11000)           | Create a new user in the Curity UI that you are redirected to when clicking login.  |
 | [GraphQL Client](web-ui-services/graphql-client.md)         | [http://localhost:11001](http://localhost:11001)           | Same auth mechanism as for the web frontend.                                        |
 | [Curity Admin UI](web-ui-services/curity-admin-ui.md)       | [http://localhost:6749/admin](http://localhost:6749/admin) | <p>Username: admin<br>Password: password</p>                                        |
 | [Couchbase Admin UI](web-ui-services/couchbase-admin-ui.md) | [http://localhost:8091](http://localhost:8091/)            | <p>Username: admin<br>Password: password</p>                                        |
