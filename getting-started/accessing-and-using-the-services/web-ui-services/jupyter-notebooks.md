@@ -28,7 +28,7 @@ The Cillers Jupyter setup adheres to these semantics in the following way. Any f
 
 We have created a growing library of Jupyter tutorials that is accessible in the `/tutorials` directory.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Mounted Directories
 

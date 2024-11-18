@@ -8,7 +8,7 @@ Open the `code/app-api/app/graphql.py` file and scroll to the `class Query` decl
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 If you are having trouble with how to structure your query, you can paste your GraphQL operation into ChatGPT.&#x20;
 
