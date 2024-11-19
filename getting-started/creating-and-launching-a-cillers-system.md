@@ -18,6 +18,8 @@ When executing `cillers run` you will start the default stack, `stack-graphql-lo
 
 <table><thead><tr><th width="320">Id</th><th></th></tr></thead><tbody><tr><td>stack-rest-local</td><td>The same as the default stack, but with a REST API instead of a GraphQL API.</td></tr><tr><td>stack-local-low-memory</td><td>For computers with less than 16GB of RAM. It is much slower to start but has a higher chance of successfully starting on machines with low memory. </td></tr><tr><td>stack-local-without-redpanda</td><td>The same as the stack-local-low-memory, but also not running Redpanda to further reduce the memory load. </td></tr></tbody></table>
 
+You can view and edit the stacks in the polytope.yml file.&#x20;
+
 ### Polytope
 
 You should now see the Polytope Container Runtime UI.
