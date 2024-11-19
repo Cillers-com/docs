@@ -1,6 +1,6 @@
 # Creating And Launching A Cillers System
 
-Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `pt run stack` command will just wait for it to start otherwise.&#x20;
+Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `cillers run` command will just wait for it to start otherwise.&#x20;
 
 Create and launch your Cillers system by running the following commands.
 
@@ -12,7 +12,7 @@ cillers run
 
 ### The Default Stack
 
-When executing `cillers run` you will start the default stack, `stack-graphql-local`, which includes a React web app, a Python GraphQL API, the Couchbase data platform, Redpanda event streaming service, including Redpanda Connect for data processing and integrations, OAuth Access Control with Phantom Token Handler pattern using a combination of Curity and Kong.
+When executing `cillers run` you will start the default stack, `stack-graphql-local`, which includes a React web app, a Python GraphQL API, the Couchbase data platform, Redpanda event streaming service, including Redpanda Connect for data processing and integrations, OAuth Access Control with Phantom Token Handler pattern using a combination of Curity and Kong.&#x20;
 
 ### Alternative Stacks
 
