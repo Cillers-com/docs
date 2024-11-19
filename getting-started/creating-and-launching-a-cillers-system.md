@@ -7,14 +7,16 @@ Create and launch your Cillers system by running the following commands.
 ```bash
 cillers new my-system
 cd my-system
-pt run stack
+cillers run
 ```
 
-Fine-Tuning Options Depending On RAM
+### The Default Stack
 
-* If you have only 8GB of RAM you may want to run `pt run stack-low-memory` instead to avoid problems caused by memory constraints. If you still have memory problems, you can try running `pt run stack-without-redpanda` , which will start the stack without Cillers' event-streaming and integration capabilities.&#x20;
+When executing `cillers run` you will start the default stack, `stack-graphql-local`, which includes a React web app, a Python GraphQL API, the Couchbase data platform, Redpanda event streaming service, including Redpanda Connect for data processing and integrations, OAuth Access Control with Phantom Token Handler pattern using a combination of Curity and Kong.
 
+### Alternative Stacks
 
+<table><thead><tr><th width="320">Id</th><th></th></tr></thead><tbody><tr><td>stack-rest-local</td><td>The same as the default stack, but with a REST API instead of a GraphQL API.</td></tr><tr><td>stack-local-low-memory</td><td>For computers with less than 16GB of RAM. It is much slower to start but has a higher chance of successfully starting on machines with low memory. </td></tr><tr><td>stack-local-without-redpanda</td><td>The same as the stack-local-low-memory, but also not running Redpanda to further reduce the memory load. </td></tr></tbody></table>
 
 ### Polytope
 
