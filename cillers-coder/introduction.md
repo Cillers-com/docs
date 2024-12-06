@@ -4,9 +4,9 @@ Welcome to Cillers Coder - a powerful software development tool that allows you 
 
 ### How it Works
 
-At its core, Cillers Coder operates similarly to other code generation tools you may have used. You start by specifying your current development goal or the changes you want to make to your codebase. Cillers Coder then generates a proposed set of code changes that align with your intention.
+Cillers Coder operates similarly to other code generation tools you may have used. You start by specifying your current development goal or the changes you want to make to your codebase. Cillers Coder then generates a proposed set of code changes that align with your intention.
 
-But here's where Cillers Coder really shines - before automatically applying any changes, it provides you with full visibility into all the files that will be created or modified, along with git-style diffs showing the exact changes for existing files. This allows you to review and confirm the changes, ensuring they meet your expectations.
+Before automatically applying any changes, it provides you with full visibility into all the files that will be created or modified, along with git-style diffs showing the exact changes for existing files. This allows you to review and confirm the changes, ensuring they meet your expectations.
 
 ### Generating Code That Fits Your Needs
 
@@ -25,4 +25,6 @@ Despite LLM limitations on output token counts, Cillers Coder is designed to wor
 ### Integration with Cillers Stack
 
 Cillers Coder is purpose-built to enable development of enterprise systems on the Cillers Stack. When you create a new Cillers Stack, Cillers Coder comes integrated out of the box.
+
+We're excited for you to experience the power of Cillers Coder in crafting your software systems. If you have any questions along the way, our team is here to help. Happy coding!
 
