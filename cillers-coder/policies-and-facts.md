@@ -1,6 +1,6 @@
 # Policies And Facts
 
-Policies and Facts are specified in XML files in the `.cillers/coder/policies` and `.cillers/coder/facts` directories with one `policy-group` per file. Both `policy-group and fact-group` elements may contain a `scope` element that specifies for which code the Policies/Facts in the group are applicable to.&#x20;
+Policies and Facts are specified in XML files in the `.cillers/coder/policies` and `.cillers/coder/facts` directories with one `policy-group` or `fact-group`per file. Both `policy-group and fact-group` elements may contain a `scope` element that specifies for which code the Policies/Facts in the group are applicable to.&#x20;
 
 Here is an example of a `policy-group`that is included by default when you run `cillers coder-init.`
 
