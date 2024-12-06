@@ -8,7 +8,7 @@ At its core, Cillers Coder operates similarly to other code generation tools you
 
 But here's where Cillers Coder really shines - before automatically applying any changes, it provides you with full visibility into all the files that will be created or modified, along with git-style diffs showing the exact changes for existing files. This allows you to review and confirm the changes, ensuring they meet your expectations.
 
-### Generating Code that Fits Your Needs
+### Generating Code That Fits Your Needs
 
 Cillers Coder offers several key features to help you generate code that precisely matches your requirements and coding standards:
 
