@@ -8,5 +8,34 @@ You can also use Cillers Coder to develop any software project. To initialize Ci
 
 Open the `.cillers/coder/instructions` file and specify what you want to build or change. Save the file and run `cillers implement` or `cillers i` for short. You will then be presented with a Change Proposal that you can review before applying it to your project.&#x20;
 
+You will get a sense of which types of instructions work best. We recommend that you request relatively small and simple code changes first and then challenge Cillers Coder with larger and more advanced changes to learn what works best. Here are some examples of instructions that have worked well.
+
+```
+Change PrepareCommitMsg function to truncate the diffOutput string to 
+contain a maximum of 500000 characters. 
+Truncate at the last \n character before the 500000 character limit.
+```
+
+```
+Move the helper functions in coder_init.go file to the lib package. 
+```
+
+```
+Change the ProcessResponseImplement function. 
+It should copy the ResponseTime from the AnthropicResponse to the 
+responseImplement.Log.ResponseTime property.
+```
+
+```
+Change the location of the API Key to a folder called .cillers in the 
+users home directory. No need to support legacy location of API Key. 
+Check that the API key exists. 
+Create a new command 'set-api-key' that installs the API Key in the new 
+location. Update the help command accordingly.
+Remove the step to install the API Key as part of the 'coder-init' command. 
+```
+
+Just try it out and learn along the way! Happy prompting!&#x20;
+
 
 
