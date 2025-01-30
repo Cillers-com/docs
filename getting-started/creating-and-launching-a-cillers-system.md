@@ -48,6 +48,8 @@ Type "confirm" and click "Allow Access from Anywhere".&#x20;
 
 You then also need to click "Add Allowed IP".&#x20;
 
+
+
 ![](<../.gitbook/assets/image (2).png>)
 
 
@@ -92,13 +94,11 @@ Use the guide at the bottom of the Polytope UI to navigate. You will find the Po
 
 By default your stack consists of a React web app, a Python GraphQL API, A GraphQL API web client and a Couchbase Capella connection. The React web app and the GraphQL API has some example code that will help you see how to structure your code.&#x20;
 
-You can modify your stack by editing the polytope.yml file. By default the polytope.yml file is a softlink to the default sample config. We recommend that you replace this softlink with the polytope.yml config that suits your needs best. Initially you can just copy the config file that you like in the samples/config\_files directory to your project's root directory.
+You can modify your stack by editing the `polytope.yml` file. By default the `polytope.yml` file is a softlink to the default sample config. We recommend that you replace this softlink with the `polytope.yml` config that suits your needs best. Initially you can just copy the config file that you like in the `samples/config_files` directory to your project's root directory.
 
+By default the API and web app code is loaded from the `samples/code` directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from.&#x20;
 
-
-By default the API and webb app code is loaded from the samples directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from.&#x20;
-
-We are working on making all of the above more streamlined.&#x20;
+### Our top priority now is to make all of the above more streamlined!&#x20;
 
 ### Getting Started With Cillers Should Be Trouble Free.
 
