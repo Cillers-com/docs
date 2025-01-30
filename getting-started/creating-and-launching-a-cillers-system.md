@@ -9,9 +9,9 @@ cillers new my-system
 cd my-system
 ```
 
-### Create A Couchbase Capella Cluster
+### Create A Free Couchbase Capella Cluster
 
-Go to [https://www.couchbase.com/downloads/?family=capella](https://www.couchbase.com/downloads/?family=capella) and sign up.&#x20;
+Go to [https://www.couchbase.com/downloads/?family=capella](https://www.couchbase.com/downloads/?family=capella) and sign up. No credit card is required. Couchbase Capella offers a free tier that you can use.&#x20;
 
 Once you are logged in, create a cluster.&#x20;
 
@@ -29,18 +29,36 @@ It will take a few minutes to launch your cluster. When it is ready, add client 
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
+Run the following command in your terminal in your project directory (the my-system directory if you didn't choose a different name).&#x20;
+
 ```bash
-pt secret add couchbase-username-dev api
-pt secret add couchbase-password-dev <your password>
+pt secret set couchbase-username-dev api
+pt secret set couchbase-password-dev "<your password>"
 ```
 
+Now, you need to open your cluster for access from your IP.&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The easiest option is to click "Allow Access from Anywhere", which is ok for development purposes. For production purposes
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Type "confirm" and click "Allow Access from Anywhere". You then also need to click "Add Allowed IP". ![](<../.gitbook/assets/image (2).png>)
 
 
 
+Update your `polytope.yml`file and specify the connection string. You can find it in the "Connection" view.&#x20;
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+Copy the connection string and change the `couchbase-host`setting at the top of the `polytope.yml`file. Strip the `couchbases://` prefix.&#x20;
 
+Last step is to create a Couchbase bucket under the Data Tools tab. Click "New" under step 1 Bucket. Name the bucket "main". Also click the "Use system generated \_default for scope and collection". Then, click "Create".
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Now, your Capella cluster and your connection to it are ready.&#x20;
 
 ### Launch The Stack
 
@@ -52,9 +70,9 @@ cillers run dev
 
 You should now see the Polytope Container Runtime UI.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Just like in any operating system, some processes run to completion and some should be kept running. You should expect that the following steps should continue to be in the "Running" state: app-api, couchbase, curity, curity-db, kafka-connect, oauth-agent, kong, redpanda, redpanda-console and web-app.&#x20;
+Just like in any operating system, some processes run to completion and some should be kept running.&#x20;
 
 Use the guide at the bottom of the Polytope UI to navigate. You will find the Polytope UI to be incredibly helpful and powerful.&#x20;
 
