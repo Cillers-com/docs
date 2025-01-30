@@ -17,7 +17,7 @@ Once you are logged in, create a cluster.&#x20;
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-Select "Free Tier"&#x20;
+Select "Free"&#x20;
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
@@ -29,38 +29,48 @@ It will take a few minutes to launch your cluster. When it is ready, add client 
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-Run the following command in your terminal in your project directory (the my-system directory if you didn't choose a different name).&#x20;
+Run the following command in your terminal in your project directory (the `my-system` directory if you didn't choose a different name).&#x20;
 
 ```bash
 pt secret set couchbase-username-dev api
-pt secret set couchbase-password-dev "<your password>"
+pt secret set couchbase-password-dev "your password"
 ```
 
 Now, you need to open your cluster for access from your IP.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-The easiest option is to click "Allow Access from Anywhere", which is ok for development purposes. For production purposes
-
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Type "confirm" and click "Allow Access from Anywhere". You then also need to click "Add Allowed IP". ![](<../.gitbook/assets/image (2).png>)
+The easiest option is to click "Allow Access from Anywhere", which can be ok for development purposes. For proper security you would select a restricted set of IP addresses.&#x20;
+
+Type "confirm" and click "Allow Access from Anywhere".&#x20;
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+You then also need to click "Add Allowed IP".&#x20;
+
+![](<../.gitbook/assets/image (2).png>)
 
 
 
-Update your `polytope.yml`file and specify the connection string. You can find it in the "Connection" view.&#x20;
+Look up the connection string to your cluster. You can find it in the "Connect" view. Copy the "Public Connection String."&#x20;
+
+
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Copy the connection string and change the `couchbase-host`setting at the top of the `polytope.yml`file. Strip the `couchbases://` prefix.&#x20;
+Paste the connection string into the`couchbase-host`setting at the top of the `polytope.yml`file. Strip the `couchbases://` prefix.&#x20;
 
-Last step is to create a Couchbase bucket under the Data Tools tab. Click "New" under step 1 Bucket. Name the bucket "main". Also click the "Use system generated \_default for scope and collection". Then, click "Create".
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Last step is to create a Couchbase bucket under the Data Tools tab. Click "New" under step 1 Bucket. Name the bucket "main". Also click the "Use system generated \_default for scope and collection" checkbox under step 2 Scope. Then, click "Create".
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-Now, your Capella cluster and your connection to it are ready.&#x20;
+Now, your Capella cluster and your stack's connection to it are ready to go.&#x20;
 
 ### Launch The Stack
+
+Run the following command in your project's directory (the `my-system` directory unless you named it otherwise).
 
 ```
 cillers run dev
@@ -83,6 +93,8 @@ Use the guide at the bottom of the Polytope UI to navigate. You will find the Po
 By default your stack consists of a React web app, a Python GraphQL API, A GraphQL API web client and a Couchbase Capella connection. The React web app and the GraphQL API has some example code that will help you see how to structure your code.&#x20;
 
 You can modify your stack by editing the polytope.yml file. By default the polytope.yml file is a softlink to the default sample config. We recommend that you replace this softlink with the polytope.yml config that suits your needs best. Initially you can just copy the config file that you like in the samples/config\_files directory to your project's root directory.
+
+
 
 By default the API and webb app code is loaded from the samples directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from.&#x20;
 

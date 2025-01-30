@@ -34,7 +34,7 @@ Allocate at least 8GB to OrbStack.
 
 2. Open Settings.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="259"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="259"><figcaption></figcaption></figure>
 
 3. Click System.&#x20;
 
