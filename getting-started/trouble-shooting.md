@@ -9,7 +9,7 @@ You can also reach us at our [Discord server](https://discord.gg/awFYddKwCw) or 
 ## General
 
 * Make sure that OrbStack (MacOS users) or Docker Desktop (Linux/Windows users) is running. The `pt run stack` command will otherwise wait until one of them is running.&#x20;
-* Insufficient memory allocated to OrbStack/Docker Desktop. You need at least 8GB.&#x20;
+* Insufficient memory allocated to OrbStack/Docker Desktop.&#x20;
 * Running other services that occupy the same ports as are used by Cillers.&#x20;
 * Old processors. Polytope may have problems running on processors older than 2015.&#x20;
 * Polytope doesn't start because another old command called pt installed since before. Read the error message of the brew install polytope command.&#x20;

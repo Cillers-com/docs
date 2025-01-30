@@ -1,2 +1,0 @@
-# Redpanda Event Streaming Platform
-

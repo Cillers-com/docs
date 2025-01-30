@@ -7,18 +7,8 @@ Create and launch your Cillers system by running the following commands.
 ```bash
 cillers new my-system
 cd my-system
-cillers run
+cillers run dev
 ```
-
-### The Default Stack
-
-When executing `cillers run` you will start the default stack, `stack-graphql-local`, which includes a React web app, a Python GraphQL API, the Couchbase data platform, Redpanda event streaming service, including Redpanda Connect for data processing and integrations, OAuth Access Control with Phantom Token Handler pattern using a combination of Curity and Kong.&#x20;
-
-### Alternative Stacks
-
-<table><thead><tr><th width="320">Id</th><th></th></tr></thead><tbody><tr><td>stack-rest-local</td><td>The same as the default stack, but with a REST API instead of a GraphQL API.</td></tr><tr><td>stack-local-low-memory</td><td>For computers with less than 16GB of RAM. It is much slower to start but has a higher chance of successfully starting on machines with low memory. </td></tr><tr><td>stack-local-without-redpanda</td><td>The same as the stack-local-low-memory, but also not running Redpanda to further reduce the memory load. </td></tr></tbody></table>
-
-You can view and edit the stacks in the polytope.yml file.&#x20;
 
 ### Polytope
 
@@ -35,6 +25,14 @@ The start up will take a few minutes extra during the first startup of your syst
 **Attention!** If you are on a slow network, you may have to restart the "pt run stack" command to get the initialization to complete.&#x20;
 
 When the system is fully initialized, you have a super scalable, reliable, secure and cost-effective system infrastructure that can easily be scaled up to serving 100 million requests per second running on your computer. All you need to do now is to add the specific logic that you want for your system. We will soon also make it easy to push your system to production.&#x20;
+
+### The Default Stack
+
+By default your stack consists of a Reach web app, a Python GraphQL API, A GraphQL API web client and a Couchbase Capella connection. The React web app and the GraphQL API has some example code that will help you see how to structure your code.&#x20;
+
+You can modify your stack by editing the polytope.yml file. By defaul the polytope.yml file is a softlink to the default sample config. We recommend that you replace this softlink with the polytope.yml config that suits your needs best.&#x20;
+
+By default the API and webb app code is loaded from the samples directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from. &#x20;
 
 ### Getting Started With Cillers Should Be Trouble Free.
 

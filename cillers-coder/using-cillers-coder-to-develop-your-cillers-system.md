@@ -22,7 +22,7 @@ Try the following instructions in the `code/api-python-graphql`module:&#x20;
 </strong><strong>this as the name value for the item. 
 </strong></code></pre>
 
-You can try the changes using the [GraphQL API client](../getting-started/accessing-and-using-the-services/web-ui-services/graphql-client.md).
+You can try the changes using the [GraphQL API client](broken-reference).
 
 
 
