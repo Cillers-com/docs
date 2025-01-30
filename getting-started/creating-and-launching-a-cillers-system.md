@@ -20,19 +20,17 @@ Just like in any operating system, some processes run to completion and some sho
 
 Use the guide at the bottom of the Polytope UI to navigate. You will find the Polytope UI to be incredibly helpful and powerful.&#x20;
 
-The start up will take a few minutes extra during the first startup of your system, due to downloads of Docker containers and package installations. The first startup run takes around 5 to 10 minutes.&#x20;
-
-**Attention!** If you are on a slow network, you may have to restart the "pt run stack" command to get the initialization to complete.&#x20;
-
-When the system is fully initialized, you have a super scalable, reliable, secure and cost-effective system infrastructure that can easily be scaled up to serving 100 million requests per second running on your computer. All you need to do now is to add the specific logic that you want for your system. We will soon also make it easy to push your system to production.&#x20;
+**Attention!** If you are on a slow network, you may have to restart the "cillers run dev" command to get the initialization to complete.&#x20;
 
 ### The Default Stack
 
-By default your stack consists of a Reach web app, a Python GraphQL API, A GraphQL API web client and a Couchbase Capella connection. The React web app and the GraphQL API has some example code that will help you see how to structure your code.&#x20;
+By default your stack consists of a React web app, a Python GraphQL API, A GraphQL API web client and a Couchbase Capella connection. The React web app and the GraphQL API has some example code that will help you see how to structure your code.&#x20;
 
-You can modify your stack by editing the polytope.yml file. By defaul the polytope.yml file is a softlink to the default sample config. We recommend that you replace this softlink with the polytope.yml config that suits your needs best.&#x20;
+You can modify your stack by editing the polytope.yml file. By default the polytope.yml file is a softlink to the default sample config. We recommend that you replace this softlink with the polytope.yml config that suits your needs best. Initially you can just copy the config file that you like in the samples/config\_files directory to your project's root directory.
 
-By default the API and webb app code is loaded from the samples directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from. &#x20;
+By default the API and webb app code is loaded from the samples directory. We recommend that you create your own api and web app directories in the code directory and work on your code there. You need to change the api and web-app modules in the polytope.yml file and specify where their respective code should be loaded from.&#x20;
+
+We are working on making all of the above more streamlined.&#x20;
 
 ### Getting Started With Cillers Should Be Trouble Free.
 
