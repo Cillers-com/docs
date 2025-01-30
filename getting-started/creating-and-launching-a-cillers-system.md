@@ -7,6 +7,44 @@ Create and launch your Cillers system by running the following commands.
 ```bash
 cillers new my-system
 cd my-system
+```
+
+### Create A Couchbase Capella Cluster
+
+Go to [https://www.couchbase.com/downloads/?family=capella](https://www.couchbase.com/downloads/?family=capella) and sign up.&#x20;
+
+Once you are logged in, create a cluster.&#x20;
+
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+Select "Free Tier"&#x20;
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+Select your preferred cloud and click "Create Cluster".
+
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+It will take a few minutes to launch your cluster. When it is ready, add client access credentials so you can access it. Select "All Buckets", "All Scopes", "Read/Write".&#x20;
+
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+```bash
+pt secret add couchbase-username-dev api
+pt secret add couchbase-password-dev <your password>
+```
+
+
+
+
+
+
+
+
+
+### Launch The Stack
+
+```
 cillers run dev
 ```
 
