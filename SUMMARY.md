@@ -1,15 +1,8 @@
 # Table of contents
 
-## System Overview
-
-* [Development Velocity](README.md)
-* [Capabilities](system-overview/capabilities.md)
-* [Scalability, Reliability And Cost-Effectiveness](system-overview/scalability-reliability-and-cost-effectiveness.md)
-* [Security](system-overview/security.md)
-
 ## Getting Started
 
-* [Hardware Requirements](<README (1).md>)
+* [Hardware Requirements](README.md)
 * [Supported Operating Systems](getting-started/supported-operating-systems.md)
 * [Installation Guides](getting-started/installation-guides/README.md)
   * [For macOS Users](getting-started/installation-guides/for-macos-users.md)
@@ -39,3 +32,10 @@
 * [Getting Started](cillers-coder/getting-started.md)
 * [Using Cillers Coder To Develop Your Cillers System](cillers-coder/using-cillers-coder-to-develop-your-cillers-system.md)
 * [Policies And Facts](cillers-coder/policies-and-facts.md)
+
+## System Overview
+
+* [Development Velocity](<README (1).md>)
+* [Capabilities](system-overview/capabilities.md)
+* [Scalability, Reliability And Cost-Effectiveness](system-overview/scalability-reliability-and-cost-effectiveness.md)
+* [Security](system-overview/security.md)
