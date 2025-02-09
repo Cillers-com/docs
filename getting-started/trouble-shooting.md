@@ -14,6 +14,12 @@ You can also reach us at our [Discord server](https://discord.gg/awFYddKwCw) or 
 * Old processors. Polytope may have problems running on processors older than 2015.&#x20;
 * Polytope doesn't start because another old command called pt installed since before. Read the error message of the brew install polytope command.&#x20;
 
+Run the Polytope doctor command to see if there are any problems with the basic installation. This command will provide warnings if anything that Polytope depends on is not installed in alignment with their recommendations.
+
+```bash
+pt debug doctor
+```
+
 ## Windows
 
 * Running an old version of Windows. Polytope requires Windows 11 at least.&#x20;

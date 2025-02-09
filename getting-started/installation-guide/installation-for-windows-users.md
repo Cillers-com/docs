@@ -1,4 +1,4 @@
-# For Windows Users
+# Installation For Windows Users
 
 ### Install WSL2 (Windows Subsystem For Linux)
 
@@ -26,7 +26,7 @@ Instructions: [https://mrakelinggar.medium.com/set-up-configs-like-memory-limits
 
 ### Continue with the Installation Guide For Linux Users
 
-You can now follow the [Installation Guide For Linux Users](for-linux-users.md). Launch the WSL2 Shell and run the installation commands in there.&#x20;
+You can now follow the [Installation Guide For Linux Users](installation-for-linux-users.md). Launch the WSL2 Shell and run the installation commands in there.&#x20;
 
 ### Important Special Git Instruction For Windows Users <a href="#important-special-git-instruction-for-windows-users" id="important-special-git-instruction-for-windows-users"></a>
 
