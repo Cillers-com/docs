@@ -20,7 +20,7 @@
 
 ## CILLERS SYSTEM DEMO TEMPLATES
 
-* [Kong AI + Gateway Hackathon](cillers-system-demo-templates/kong-ai-+-gateway-hackathon.md)
+* [Kong AI + API Gateway Hackathon](cillers-system-demo-templates/kong-ai-+-api-gateway-hackathon.md)
 
 ## Getting Started
 
