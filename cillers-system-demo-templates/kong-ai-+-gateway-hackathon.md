@@ -20,7 +20,10 @@ While this is a great starting point, we don't want to do all the work for you, 
 
 ## Installing Your Demo Project
 
-Make sure you have all of the Cillers System Demo Template [prerequisites](broken-reference) installed.&#x20;
+Make sure you have all of the Cillers System Demo Template prerequisites installed:
+
+* [Hardware and Operating System](../hardware-and-operating-system.md)
+* [Polytope](../polytope/)&#x20;
 
 Clone the template repo:&#x20;
 
