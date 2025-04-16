@@ -22,7 +22,11 @@ While this is a great starting point, we don't want to do all the work for you, 
 
 Make sure you have all of the Cillers System Demo Template [prerequisites](broken-reference) installed.&#x20;
 
-Clone the template repo: : `git clone https://github.com/Cillers-com/kong-ai-gateway-hackathon.git kong-demo && cd kong-demo`
+Clone the template repo:&#x20;
+
+```bash
+git clone https://github.com/Cillers-com/kong-ai-gateway-hackathon.git kong-demo && cd kong-demo
+```
 
 Follow the [Kong Konnect integration guide](../integrations/kong-konnect.md).
 
