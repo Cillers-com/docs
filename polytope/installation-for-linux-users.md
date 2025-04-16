@@ -1,4 +1,4 @@
-# For Linux Users
+# Installation For Linux Users
 
 On Linux it is easiest to install the appropriate binaries directly using the following commands.&#x20;
 
@@ -12,7 +12,7 @@ uname -m
 
 We currently only support AMD 64 for Linux. Please let us know if you have a ARM64 processor, so we know that we should increase priority for supporting ARM64 processors for Linux.&#x20;
 
-### Install Polytope And Cillers CLI Binaries
+### Install Polytope CLI Binaries
 
 <pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt 
 </strong><strong>chmod +x pt 

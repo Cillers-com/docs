@@ -1,13 +1,32 @@
 # Table of contents
 
+* [Introduction](README.md)
+
+## PREREQUISITES
+
+***
+
+* [Hardware And Operating System](hardware-and-operating-system.md)
+* [Polytope](polytope/README.md)
+  * [Installation For MacOS Users](polytope/installation-for-macos-users.md)
+  * [Installation For Windows Users](polytope/installation-for-windows-users.md)
+  * [Installation For Linux Users](polytope/installation-for-linux-users.md)
+
+## INTEGRATIONS
+
+* [Couchbase Capella](integrations/couchbase-capella.md)
+* [Kong Konnect](integrations/kong-konnect.md)
+* [Opper AI](integrations/opper-ai.md)
+
+## CILLERS SYSTEM DEMO TEMPLATES
+
+* [Kong AI + Gateway Hackathon](cillers-system-demo-templates/kong-ai-+-gateway-hackathon.md)
+
 ## Getting Started
 
-* [Introduction](README.md)
+* [Introduction](<README (1).md>)
 * [Hardware And OS Requirements](getting-started/hardware-and-os-requirements.md)
 * [Installation Guide](getting-started/installation-guide/README.md)
-  * [Installation For MacOS Users](getting-started/installation-guide/installation-for-macos-users.md)
-  * [Installation For Windows Users](getting-started/installation-guide/installation-for-windows-users.md)
-  * [Installation For Linux Users](getting-started/installation-guide/installation-for-linux-users.md)
   * [Setting Up A Free Couchbase Capella Cluster](getting-started/installation-guide/setting-up-a-free-couchbase-capella-cluster.md)
 * [Creating, Configuring And Launching Your System](getting-started/creating-configuring-and-launching-your-system.md)
 * [Reconfiguring Your Cillers System](getting-started/reconfiguring-your-cillers-system.md)
@@ -38,7 +57,7 @@
 
 ## System Overview
 
-* [Development Velocity](<README (1).md>)
+* [Development Velocity](<README (1) (2).md>)
 * [Capabilities](system-overview/capabilities.md)
 * [Scalability, Reliability And Cost-Effectiveness](system-overview/scalability-reliability-and-cost-effectiveness.md)
 * [Security](system-overview/security.md)
