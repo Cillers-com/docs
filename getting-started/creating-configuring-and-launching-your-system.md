@@ -14,13 +14,13 @@ Open the `my-systems` directory in your favorite code editor and have a quick lo
 
 As you can see in the `polytope.yml`file your system is preconfigured with a demo which consists of a web app, an API and a Couchbase Capella component. You can also see that these components are provided with the parameters they need to connect with your Couchbase Capella cluster.&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>polytope.yml</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>polytope.yml</p></figcaption></figure>
 
 Further down in the `polytope.yml`file you can see how the web app and API components load their  code from the `code` directory.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, expand the directory with your API component's code to see the basic structure. As you can see this is a Python app with Poetry as package manager. This is where you will make changes to build your API. We have a whole separate documentation section on how to work with your API component that we will get to later.&#x20;
 
@@ -131,7 +131,7 @@ First, you need a Couchbase Capella cluster. [Follow these instructions on how t
 
 Go to your Capella admin web UI to look up the connection string to your cluster. Click on your cluster and enter the "Connect" view. Copy the "Public Connection String."&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Run the following command in your terminal in your project directory (the `my-system` directory if you didn't choose a different name).&#x20;
 

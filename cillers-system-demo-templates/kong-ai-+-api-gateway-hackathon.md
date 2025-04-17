@@ -1,4 +1,4 @@
-# Kong AI + Gateway Hackathon
+# Kong AI + API Gateway Hackathon
 
 ## Objective
 
@@ -34,6 +34,48 @@ git clone https://github.com/Cillers-com/kong-ai-gateway-hackathon.git kong-demo
 Follow the [Kong Konnect integration guide](../integrations/kong-konnect.md).
 
 Follow the [Opper AI integration guide](../integrations/opper-ai.md).&#x20;
+
+## Configure Your Kong Services And Routes
+
+Go to your Kong Konnect Gateway Manager: [https://cloud.konghq.com/us/gateway-manager/](https://cloud.konghq.com/us/gateway-manager/)
+
+### Add The "api" Service
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXevka_0N5nwjrpL3d4QLM80rqnVMdPNl5UdMYacvQyylgZCg9ppgY2ildT7hXLSSp_H5PLaMLMUewKNGKJ8l_CW6lMY4tUWTzk_HePby-qJIn-8Tr-ahNykXz-1WsT755A0TptGpw?key=jC8T-_XneVuC3ZQq8QXN1Z9t" alt=""><figcaption></figcaption></figure>
+
+Click "Gateway Services" in the left sidebar. Click "New gateway service".
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Specify [http://host.docker.internal:3001](http://host.docker.internal:3002) as Full URL, and "api" as Name. Click “Save”.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Click the “Routes” tab. Click “New route”.&#x20;
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Select Specify “/api”, "/docs", "/redoc" and "/openapi.json" as Paths. Click “View Advanced Fields” and uncheck "Strip Path". Click "Save"&#x20;
+
+### Add The "frontend" Service
+
+Click "Gateway Services". Click "New gateway service".
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Specify [http://host.docker.internal:3002](http://host.docker.internal:3002) as Full URL, and "frontend" as Name. Click “Save”.
+
+Click the "Routes" tab and then "New route".
+
+&#x20;
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Specify "frontend-route" as Name, "/" as Paths. Click "View Advanced Fields". Uncheck "Strip Path". Click "Save".
+
+Click "Gateway Services". It should now look as follows:&#x20;
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ## Start Your Demo
 

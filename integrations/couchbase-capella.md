@@ -4,7 +4,7 @@ description: Setting Up A Free Tier Couchbase Cloud Cluster For Development Purp
 
 # Couchbase Capella
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Sign Up
 
@@ -34,19 +34,19 @@ When your cluster is ready, add client access credentials so you can access it. 
 
 Now, you need to open your cluster for access from your IP.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The easiest option is to click "Allow Access from Anywhere", which can be ok for development purposes. For proper security you would select a restricted set of IP addresses.&#x20;
 
 Type "confirm" and click "Allow Access from Anywhere".&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You then also need to click "Add Allowed IP".&#x20;
 
 
 
-![](<../.gitbook/assets/image (2) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 
 
@@ -54,6 +54,6 @@ You then also need to click "Add Allowed IP".&#x20;
 
 Navigate to the "Data Tools" tab. Click "New" under step 1 Bucket. Name the bucket "main". Also click the "Use system generated \_default for scope and collection" checkbox under step 2 Scope. Then, click "Create".
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You have now created a cluster, created a bucket called main and configured the access to the server so it is ready to use.
