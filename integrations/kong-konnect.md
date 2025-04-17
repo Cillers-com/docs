@@ -31,8 +31,12 @@ Select “Linux (Docker)” as the platform. Click “Generate certificate”.&#
 
 
 ```yaml
-- name: KONG_CLUSTER_CERT
-  value: |-
+  - { name: KONG_CLUSTER_CONTROL_PLANE, value: a6b7f53c23.us.cp0.konghq.com:443 }
+  - { name: KONG_CLUSTER_SERVER_NAME, value: a6b7f53c23.us.cp0.konghq.com }
+  - { name: KONG_CLUSTER_TELEMETRY_ENDPOINT, value: a6b7f53c23.us.tp0.konghq.com:443 }
+  - { name: KONG_CLUSTER_TELEMETRY_SERVER_NAME, value: a6b7f53c23.us.tp0.konghq.com }- name: KONG_CLUSTER_CERT
+  - name: KONG_CLUSTER_CERT
+    value: |-
     -----BEGIN CERTIFICATE-----
     MIIxxx
     xxx
@@ -58,8 +62,7 @@ Select “Linux (Docker)” as the platform. Click “Generate certificate”.&#
  
 ```
 
-\
-Copy the generated certificates and replace the dummy certificates in the polytope.yml file in your project directory. Certificates should of course be stored as secrets, but Polytope does not yet support multiline secrets, will be fixed soon.
+Change the above env variables in the polytope.yml file in your project directory to the values generated. Certificates should of course be stored as secrets, but Polytope does not yet support multiline secrets, will be fixed soon.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXevka_0N5nwjrpL3d4QLM80rqnVMdPNl5UdMYacvQyylgZCg9ppgY2ildT7hXLSSp_H5PLaMLMUewKNGKJ8l_CW6lMY4tUWTzk_HePby-qJIn-8Tr-ahNykXz-1WsT755A0TptGpw?key=jC8T-_XneVuC3ZQq8QXN1Z9t" alt=""><figcaption></figcaption></figure>
 
