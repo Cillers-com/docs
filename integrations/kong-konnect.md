@@ -28,7 +28,7 @@ Select “Self-Managed Hybrid” and specify the name. Click “Next Step”
 
 Select “Linux (Docker)” as the platform. Click “Generate certificate”.&#x20;
 
-
+Open your polytope.yml file in your project directory.&#x20;
 
 ```yaml
   - { name: KONG_CLUSTER_CONTROL_PLANE, value: a6b7f53c23.us.cp0.konghq.com:443 }
@@ -62,4 +62,4 @@ Select “Linux (Docker)” as the platform. Click “Generate certificate”.&#
  
 ```
 
-Change the above env variables in the polytope.yml file in your project directory to the values generated. Certificates should of course be stored as secrets, but Polytope does not yet support multiline secrets, will be fixed soon.
+Change the above env variables to the values generated. Certificates should of course be stored as secrets, but Polytope does not yet support multiline secrets yet. This will be fixed soon.
