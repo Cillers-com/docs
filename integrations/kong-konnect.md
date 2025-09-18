@@ -28,37 +28,16 @@ Select “Self-Managed Hybrid” and specify the name. Click “Next Step”
 
 Select “Linux (Docker)” as the platform. Click “Generate certificate”.&#x20;
 
-Open your polytope.yml file in your project directory.&#x20;
+Store the server name and certificate in your Polytope vault by running the following command in your system project directory.
 
-```yaml
-  - { name: KONG_CLUSTER_CONTROL_PLANE, value: a6b7f53c23.us.cp0.konghq.com:443 }
-  - { name: KONG_CLUSTER_SERVER_NAME, value: a6b7f53c23.us.cp0.konghq.com }
-  - { name: KONG_CLUSTER_TELEMETRY_ENDPOINT, value: a6b7f53c23.us.tp0.konghq.com:443 }
-  - { name: KONG_CLUSTER_TELEMETRY_SERVER_NAME, value: a6b7f53c23.us.tp0.konghq.com }
-    value: |-
-    -----BEGIN CERTIFICATE-----
-    MIIxxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    -----END CERTIFICATE-----
-- name: KONG_CLUSTER_CERT_KEY
-  value: |-
-    -----BEGIN PRIVATE KEY-----
-    MIGxxx
-    xxx
-    xxx
-    xxx
-    -----END PRIVATE KEY-----
- 
+```bash
+pt value set kong-cluster-server-name THE_PROVIDED_SERVER_NAME
+pt value set kong-cluster-telemetry-server-name THE_PROVIDED_TELEMETRY_SERVER_NAME
+pt secret set --raw kong-server-cert '-----BEGIN CERTIFICATE-----
+THE PROVIDED CERTIFICATE
+-----END CERTIFICATE-----'
+pt secret set --raw kong-server-cert-key '-----BEGIN PRIVATE KEY-----
+THE PROVIDED CERTIFICATE KEY
+-----END PRIVATE KEY-----'
 ```
 
-Change the above env variables to the values generated. Certificates should of course be stored as secrets, but Polytope does not yet support multiline secrets yet. This will be fixed soon.
