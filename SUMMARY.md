@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [What is Bluetext?](what-is-bluetext.md)
 
 ## PREREQUISITES
 
@@ -64,8 +65,9 @@
 
 ## Getting started with Bluetext
 
-* [Setting Up Your Project](getting-started-with-bluetext/setting-up-your-project.md)
+* [Getting Started](getting-started-with-bluetext/getting-started.md)
+* [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext.md)
 
 ## Examples
 
-* [Simple Full-Stack Webapp](examples/simple-full-stack-webapp.md)
+* [Simple Full-Stack App](examples/simple-full-stack-app.md)

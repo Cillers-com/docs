@@ -1,5 +1,5 @@
 # Introduction
 
-Cillers makes it easy to build software system demos. With Cillers System Demo Templates you can focus your time and brainpower on building the functionality you want to build for your demo instead of figuring out how to setup your system infrastructure.
+Bluetext makes it easy to build software system demos. Bluetext templates you can focus your time and brainpower on building the functionality you want to build for your demo instead of figuring out how to setup your system infrastructure.&#x20;
 
 Cillers is built on [Polytope](https://polytope.com), which makes it easy to configure and maintain container-based systems.  Polytope supports both Docker and Kubernetes and will soon support other popular container types. This means that you can run your stack and pipelines in an optimized way in all of your environments. And, you can run your system on any computer or cloud infrastructure without having to install and manage the different components — all you need is support for Docker or Kubernetes and Polytope. So, with Cillers you avoid all system and programming language versioning and installation headaches. No more need for virtual environments! You can even run a Polytope-based system directly from a remote repository.
