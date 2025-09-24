@@ -1,6 +1,6 @@
 # How to Work With Bluetext
 
-This guide outlines the core principles for working effectively with Bluetext. Adopting this workflow will help you build robust, maintainable applications faster while retaining complete control over your code.
+This guide outlines the core principles for working effectively with Bluetext. Adopting this workflow will help you build robust, maintainable applications faster, while retaining complete control over your code.
 
 Bluetext is designed as a tool for capable developers, and is not targeted torwards non-programmers. It's not an "autopilot" that generates entire applications from a single prompt.&#x20;
 

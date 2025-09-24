@@ -1,10 +1,10 @@
 ---
 description: >-
   A Step-by-step guide to set up Polytope with Bluetext, run the MCP server, and
-  connect coding agents like Claude Code and Clein.
+  connect coding agents like Claude Code and Cline.
 ---
 
-# Setting Up Your Project
+# Getting Started
 
 ### 1. Setup
 
@@ -14,34 +14,40 @@ Make sure to have Polytope installed and setup on your computer. You can find in
 * [For Windows users](../polytope/installation-for-windows-users.md)
 * [For Linux users](../polytope/installation-for-linux-users.md)
 
-first create a new directory for your project, and make a polytope.yml file inside it that contains the following:
+first create a new directory for your project. &#x20;
+
+We recommend you Initialise the git repository in the project directory. To do so, run the following command.
+
+```bash
+git init
+```
+
+Then, make a Polytope.yml file inside it that contains the following:
 
 ```yaml
 include:
   - repo: gh:bluetext-io/bluetext
 ```
 
-Initialise the git repository in the project directory. To do that, you need to be standing in your project directory and run the following command:
+MCP tools defined by bluetext are available to Polytope through the inclusion of the Bluetext repo in this file. We can now run the MCP server to use Bluetext with your favourite coding agent. These tools will be used by your agent to create the app. To do this, run the following command in your terminal.&#x20;
 
-```bash
-git init
-```
-
-This initialises the git repository and informs polytope where the root of the project is. Polytope treats the polytope.yml file at the root as the source from which to discover modules and tools. MCP tools defined by bluetext are available to Polytope through the inclusion of the Bluetext repo in this file.
-
-We can now run the MCP server to use Bluetext with your favourite coding agent. These tools will be used by Claude to create the app. To do this, run the following command in your terminal.&#x20;
+### 2. Running the MCP
 
 ```bash
 pt run --mcp
 ```
 
-To connect ClaudeCode to your MCP, run the following command&#x20;
+This command locates the highest-level polytope.yml file in your filesystem or git repository. This file becomes the main Polytope configuration that defines which tools are available.
+
+### 3. Connecting the agent
+
+To connect Claude Code to your MCP, run the following command:&#x20;
 
 ```
 claude mcp add polytope-mcp http://localhost:31338/mcp
 ```
 
-To connect Clein to your MCP, change your clein\_mcp\_settings to say the following
+To connect Cline to your MCP, change your cline\_mcp\_settings to say the following
 
 ```
 {

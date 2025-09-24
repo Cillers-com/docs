@@ -2,13 +2,13 @@
 
 ### Install WSL2 (Windows Subsystem For Linux)
 
-To run Cillers on Windows you need the latest version of WSL2.&#x20;
+To run Polytope on Windows you need the latest version of WSL2.&#x20;
 
 **Attention!** If you already have WSL installed on your computer, make sure you have the **latest version**!&#x20;
 
 Here are the official [installation instructions](https://learn.microsoft.com/en-us/windows/wsl/install).&#x20;
 
-To avoid memory contraint issues, allocate at least 12GB of RAM in the .wslconfig. To avoid very slow startup allocate at least 4 CPUs.&#x20;
+To avoid memory contraint issues, allocate at least 12GB of RAM in the .wslconfig. To avoid very slow startup allocate at least 4 CPUs cores.&#x20;
 
 ### Install Docker Desktop&#x20;
 
