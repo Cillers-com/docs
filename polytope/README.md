@@ -4,7 +4,7 @@
 
 Cillers System Demo Templates are built on [Polytope](https://www.polytope.com) which provides an amazing developer experience for running and orchestrating all of your services and automation
 
-Polytope is the easiest way to build, run, and iterate on your software. It gives you a unified interface for running all your services and workflows (CI, DataOps, MLOps, DevOps, ...) - on your machine, in the cloud or on-prem.
+Polytope is the easiest way to build, run, and iterate on your software. It gives you a unified interface for running all your services and workflows (CI, DataOps, MLOps, DevOps, ...) - on your machine, in the cloud or on-prem. This interface has been made accessible to your agents through MCP tools.
 
 ## Installing Polytope ​
 

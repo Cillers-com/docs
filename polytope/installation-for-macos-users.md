@@ -14,12 +14,19 @@ You can install Homebrew with the following command (source: [https://brew.sh/](
 
 ```bash
 brew update
-brew install polytopelabs/tap/polytope-cli
 brew install docker
 brew install --cask orbstack
 ```
 
-If you already have docker installed, brew will ask if you want to upgrade it. Answer yes, because we depend on the latest version of Docker to be installed.
+If you already have docker installed, brew will ask if you want to upgrade it. Answer yes, because we depend on the latest version of Docker to be installed.&#x20;
+
+### **Install Polytope**
+
+To install the latest release of Polytope, run the following command in your terminal.
+
+```
+curl -s https://polytope.com/install.sh | sh -s
+```
 
 ### Launch OrbStack&#x20;
 
