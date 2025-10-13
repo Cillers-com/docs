@@ -6,15 +6,15 @@ description: >-
 
 # Getting Started
 
-### 1. Setup
-
 Make sure to have Polytope installed and setup on your computer. You can find instructions on how to do so here:
 
 * [For macOS users](../polytope/installation-for-macos-users.md)
 * [For Windows users](../polytope/installation-for-windows-users.md)
 * [For Linux users](../polytope/installation-for-linux-users.md)
 
-first create a new directory for your project. &#x20;
+### 1. Setup
+
+First create a new directory for your project. &#x20;
 
 We recommend you Initialise the git repository in the project directory. To do so, run the following command.
 
