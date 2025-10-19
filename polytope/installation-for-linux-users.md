@@ -17,9 +17,7 @@ We currently only support AMD 64 for Linux. Please let us know if you have a ARM
 <pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt 
 </strong><strong>chmod +x pt 
 </strong><strong>sudo mv pt /usr/local/bin/
-</strong>curl https://storage.googleapis.com/cillers-cli/cillers-cli-latest-linux-amd64.tar.gz | tar -xzvf -
-sudo mv cillers-cli /usr/local/bin/cillers
-</code></pre>
+</strong></code></pre>
 
 ### Docker (Not Applicable For Windows Users That Should Already Have Followed The Docker Desktop Instructions For Windows)
 
