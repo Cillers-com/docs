@@ -51,6 +51,14 @@ include <tunables/global>
 EOT
 ```
 
+**Enable unpriviledeged user namespaces**
+
+Run
+
+```bash
+echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+```
+
 **Install rootless Docker**
 
 ```bash
