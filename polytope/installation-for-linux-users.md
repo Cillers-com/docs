@@ -75,6 +75,12 @@ export PATH="$HOME/bin:$PATH"
 export DOCKER_HOST="unix:///run/user/$UID/docker.sock"
 ```
 
+**Load the \~/.bashrc**
+
+```bash
+source ~/.bashrc
+```
+
 **Start the rootless Docker daemon**
 
 ```bash
