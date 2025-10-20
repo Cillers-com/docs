@@ -14,10 +14,9 @@ We currently only support AMD 64 for Linux. Please let us know if you have a ARM
 
 ### Install Polytope CLI Binaries
 
-<pre class="language-bash"><code class="lang-bash"><strong>curl https://polytope.com/releases/polytope-cli-latest-linux-amd64.gz | gzip -d > pt 
-</strong><strong>chmod +x pt 
-</strong><strong>sudo mv pt /usr/local/bin/
-</strong></code></pre>
+```bash
+curl -s https://polytope.com/install.sh | sh -s
+```
 
 ### Docker&#x20;
 
