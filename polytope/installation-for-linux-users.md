@@ -28,9 +28,15 @@ Docker needs to run in rootless mode on Linux. Otherwise files created in mounte
 
 #### Rootless Docker on Ubuntu
 
-This assumes that you have Ubuntu version 24+
+This assumes that you have Ubuntu version 24+.
 
-Create an AppArmor Profile for rootlesskit by running the following block of commands.
+**Install Prerequisites**
+
+```bash
+sudo apt -y install uidmap
+```
+
+**Create an AppArmor Profile for rootlesskit by running the following block of commands.**
 
 ```bash
 APPARMOR_FILE="/etc/apparmor.d/home.$USER.bin.rootlesskit"
