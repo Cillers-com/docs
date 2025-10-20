@@ -53,8 +53,6 @@ EOT
 
 **Enable unpriviledeged user namespaces**
 
-Run
-
 ```bash
 echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 ```
@@ -71,6 +69,21 @@ curl -fsSL https://get.docker.com/rootless | sh
 export PATH="$HOME/bin:$PATH"
 export DOCKER_HOST="unix:///run/user/$UID/docker.sock"
 ```
+
+**Start the rootless Docker daemon**
+
+```bash
+systemctl --user start docker
+```
+
+**Test the Docker daemon**
+
+```bash
+docker info
+docker run hello-world
+```
+
+
 
 #### **Docker Desktop**
 
