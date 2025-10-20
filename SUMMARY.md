@@ -70,4 +70,5 @@
 
 ## Examples
 
+* [Workshop Prompts](examples/workshop-prompts.md)
 * [Simple Full-Stack App](examples/simple-full-stack-app.md)
