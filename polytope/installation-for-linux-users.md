@@ -19,8 +19,51 @@ We currently only support AMD 64 for Linux. Please let us know if you have a ARM
 </strong><strong>sudo mv pt /usr/local/bin/
 </strong></code></pre>
 
-### Docker (Not Applicable For Windows Users That Should Already Have Followed The Docker Desktop Instructions For Windows)
+### Docker&#x20;
 
+**This section is not applicable to Windows users, since they should already have followed the Docker Desktop instructions for Windows.** \
+\
 Ensure that docker is installed and up-to-date. Polytope does not support old versions of Docker.&#x20;
+
+Docker needs to run in rootless mode on Linux. Otherwise files created in mounted directories by code running in containers will be owned by the root user so the user will not have access to the created files.&#x20;
+
+#### Rootless Docker on Ubuntu
+
+This assumes that you have Ubuntu version 24+
+
+Create an AppArmor Profile for rootlesskit by running the following block of commands.
+
+```bash
+APPARMOR_FILE="/etc/apparmor.d/home.$USER.bin.rootlesskit"
+USER_HOME=$(eval echo ~$USER)
+
+cat <<EOT | sudo tee "$APPARMOR_FILE"
+# ref: https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces
+abi <abi/4.0>,
+include <tunables/global>
+
+~/bin/rootlesskit flags=(unconfined) {
+  userns,
+
+  # Site-specific additions and overrides. See local/README for details.
+  include if exists <local/home.$USER.bin.rootlesskit>
+}
+EOT
+```
+
+**Install rootless Docker**
+
+```bash
+curl -fsSL https://get.docker.com/rootless | sh
+```
+
+**Add the following lines to `~/.bashrc`**
+
+```bash
+export PATH="$HOME/bin:$PATH"
+export DOCKER_HOST="unix:///run/user/$UID/docker.sock"
+```
+
+#### **Docker Desktop**
 
 [Installing Docker Desktop](https://docs.docker.com/desktop/install/linux-install/) is optional for Linux users.
