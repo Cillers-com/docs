@@ -22,7 +22,7 @@ We recommend you Initialise the git repository in the project directory. To do s
 git init
 ```
 
-Then, make a Polytope.yml file inside it that contains the following:
+Then, make a polytope.yml file inside it that contains the following:
 
 ```yaml
 include:
