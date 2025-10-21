@@ -15,7 +15,7 @@ We are first going to create a portfolio website for a UX designer with project 
 
 **Prompt 1:**&#x20;
 
-{% code overflow="wrap" fullWidth="true" %}
+{% code overflow="wrap" fullWidth="false" %}
 ```markup
 Use Polytope to generate an API for a portfolio website using REST endpoints for the following resources: Project (fields: title, description, skills, started_at, finished_at). Configure Couchbase to store the data and populate it with at least three example entries.
 ```
