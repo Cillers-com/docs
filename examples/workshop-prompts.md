@@ -7,9 +7,11 @@ description: >-
 
 # Workshop Prompts
 
+Feel free to experiment with your project if you finish generating before we move onto the next one together! Bluetext is designed to generate apps in an extendable way, which allows you to pick up the project from any time during the development with fresh context - whether you are coding solo or with an agent. We have created a git repository with final generated versions of each project, just incase you face issues with generation. You can access them from here: [https://github.com/dinoh100/WorkshopExperiments.git](https://github.com/dinoh100/WorkshopExperiments.git)
+
 ## 1. Portfolio Website
 
-We are going to create a portfolio website for a UX designer with project cards that show project details, skills developed, the date, and more. We will also integrate couchbase to store the project data.&#x20;
+We are first going to create a portfolio website for a UX designer with project cards that show project details, skills developed, date, and more. We will also integrate Couchbase to store the project data.&#x20;
 
 **Prompt 1:**&#x20;
 
@@ -29,7 +31,7 @@ Create a frontend for our app
 
 ## 2. Zip File Compression Webapp
 
-Now, we will make a full-stack webapp that allows you to upload a file, compress them to a zip file, and download the ZIP file.&#x20;
+Now, we will make a full-stack webapp that allows you to upload a file, compress it to a zip file, and download the ZIP file.&#x20;
 
 **Prompt 1:**
 
@@ -65,7 +67,7 @@ Store newly zipped files into a couchbase database.
 
 ## 3. Snake Game!
 
-For this app, we are going to make a fun snake game, and have the scores stored persistently in CouchBase
+For this app we are going to make a fun snake game, and have the scores stored persistently in Couchbase
 
 **Prompt 1**
 
@@ -85,78 +87,61 @@ Generate a frontend to play the snake game
 
 ## Temporal&#x20;
 
-The next few projects will demonstrate how straightforward it is to get Temporal working with Bluetext. We will start by integrating it into projects we already created, and then go on to Create some new projects with Temporal.
+The next few projects will demonstrate how straightforward it is to get Temporal working with Bluetext. We will start by integrating Temporal into a project we already created, and will then move on to create some new projects from scratch with Temporal integration.
 
 ## 1. Temporal Integration with Zip Webapp
 
-Now we will re-create our Zip Compression webapp, whilst implementing Temporal from the beginning.
+Now we will re-create our zip compression webapp, but this time we will be implementing Temporal from the beginning. Note that we are using a slightly different prompting style this time.
 
-Prompt 1:
+**Prompt 1:**
 
 {% code overflow="wrap" %}
 ```
-Implement a REST API for a file compression app with these endpoints:
-- **POST /files**: Accept one or more files. Returns archiveId. 
-- **GET /files**: Returns all uploaded fileIds on default. 
-- **GET /files/{fileId}**: Returns the current state, metadata (filename, size, timestamps), and, when available, a download URL or location for the archive containing it.
+Implement a REST API for a file compression app with the following resources:
+- Files (States: `uploading`, `archiving`, `deleting`, `deleted`, `failed`)
+- Archives (States: `queued`, `compressing`, `idle`, `downloading`, `failed`)
 
-- **GET /archives:** returns alls archiveIds.
-- **GET /archives/{archiveId}**: Returns archive `state`, `metadata` (e.g., contained files, total size, timestamp), and `downloadUrl` (if `done`).
-- **GET /archives/{archiveId}/download**: Direct download. Only available if `archive_completed`.
-
-Store all files in memory. Delete them when processed. 
-
-Use Temporal to manage all state and long‑running tasks:
-
-Files
-- `uploading` 
-- `archiving` 
-- `deleting` 
-- `done` 
-- `failed`
-
-Archives
-- `queued`
-- `compressing`
-- `done`
-- `downloading`
-- `failed`
+Delete files when compressed into an archive, store archives in couchbase, and use temporal to manage state.
 ```
 {% endcode %}
 
-Prompt 2:&#x20;
+**Prompt 2:**&#x20;
 
 {% code overflow="wrap" %}
 ```markup
-create a frontend for our app.
+Create a frontend for our app
 ```
 {% endcode %}
 
-Prompt 3:
+## 2. Social Media Text Optimisation Webapp
+
+For our final webapp, we are going to generate a webapp that takes text as an input, and re-articulates it in the styles of Linkedin, Twitter/X, and Instagram.&#x20;
+
+Before prompting we must set the API key for open router. Do this by entering the following command in your terminal, in the same directory we will be creating the project from.
+
+```
+pt secrets set openrouter-api-key YOUR_API_KEY
+```
+
+**Prompt 1:**&#x20;
 
 {% code overflow="wrap" %}
-```markup
-Store newly zipped files into a CouchBase database.
+```
+Implement an API for an app that uses AI to rephrase text in the styles of Linkedin, Twitter, and Instagram. Setup the API to retrieve a open router API key through an environment variable for the text generation. Chose gemini 2.5 pro as the model to generate the text. Once you added the API service, you can inject the open router API key by adding the line `- { name: OPENROUTER_API_KEY, value: pt.secret openrouter-api-key }` to the modules `polytope.yml` file. The API will have the following endpoints: 
+
+POST /api/jobs 
+GET /api/jobs/{jobId}/status 
+GET /api/jobs/{jobId}/twitter 
+GET /api/jobs/{jobId}/linkedin 
+GET /api/jobs/{jobId}/instagram 
+
+States should be managed with Temporal
 ```
 {% endcode %}
 
-## 2. Clothes Ordering E-Commerce Platform with Temporal Integration
-
-We will now create a webapp that allows you to place orders on a clothing website, switch to admin view to manage orders, and manage workflows with temporal.
-
-Prompt 1: \
-Generate an API for a clothes ordering platform with the following REST endpoints\
 
 
-&#x20;**`GET /api/products`**&#x20;
 
-**`POST /api/orders`**&#x20;
-
-**`GET /api/orders`**&#x20;
-
-Add Temporal to the API to mange order state changes (uploading, compressing, completed), and store clothing Items in Couchbase
-
-Prompt 2:
 
 
 
