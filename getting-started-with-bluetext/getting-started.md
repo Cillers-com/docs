@@ -6,7 +6,7 @@ description: >-
 
 # Getting Started
 
-Make sure to have Polytope installed and setup on your computer. You can find instructions on how to do so here:
+Make sure to have Polytope installed and set up on your computer. You can find instructions on how to do so here:
 
 * [For macOS users](../polytope/installation-for-macos-users.md)
 * [For Windows users](../polytope/installation-for-windows-users.md)
@@ -29,7 +29,10 @@ include:
   - repo: gh:bluetext-io/bluetext
 ```
 
-MCP tools defined by bluetext are available to Polytope through the inclusion of the Bluetext repo in this file. We can now run the MCP server to use Bluetext with your favourite coding agent. These tools will be used by your agent to create the app. To do this, run the following command in your terminal.&#x20;
+The MCP tools defined by Bluetext are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.\
+
+
+To start the server, run the following command in your terminal:
 
 ### 2. Running the MCP
 
