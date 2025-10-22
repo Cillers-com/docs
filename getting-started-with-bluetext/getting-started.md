@@ -53,7 +53,7 @@ claude mcp add polytope-mcp http://localhost:31338/mcp
 
 **Setup for Cline**
 
-To connect Cline to your MCP, change your cline\_mcp\_settings to say the following
+To connect Cline to the MCP server, configure your cline\_mcp\_settings as follows:
 
 ```
 {
@@ -68,3 +68,4 @@ To connect Cline to your MCP, change your cline\_mcp\_settings to say the follow
 }
 ```
 
+To navigate to this file from the Cline chat interface, select "MCP Servers" from the top, then navigate to the "Configure" tab, and from the bottom select "Configure MCP Servers".&#x20;
