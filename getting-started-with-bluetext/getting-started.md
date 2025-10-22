@@ -14,9 +14,9 @@ Make sure to have Polytope installed and set up on your computer. You can find i
 
 ### 1. Setup
 
-First create a new directory for your project. &#x20;
+First, create a new directory for your project. &#x20;
 
-We recommend you Initialise the git repository in the project directory. To do so, run the following command.
+We recommend you Initialise the git repository in the project directory. To do so, run the following command in your new directory.
 
 ```bash
 git init
@@ -29,12 +29,11 @@ include:
   - repo: gh:bluetext-io/bluetext
 ```
 
-The MCP tools defined by Bluetext are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.\
-
-
-To start the server, run the following command in your terminal:
+The MCP tools defined by Bluetext are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.
 
 ### 2. Running the MCP
+
+To start the server, run the following command in your terminal:
 
 ```bash
 pt run --mcp
