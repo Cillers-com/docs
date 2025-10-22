@@ -73,7 +73,7 @@ For this app we are going to make a fun snake game, and have the scores stored p
 
 {% code overflow="wrap" %}
 ```markup
-Prepare a REST API with scores as resource for a snake game.
+Prepare a REST API with scores as resource for a snake game. The scores should be stored in Couchbase
 ```
 {% endcode %}
 
