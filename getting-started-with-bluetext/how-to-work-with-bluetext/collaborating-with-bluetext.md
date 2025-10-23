@@ -10,5 +10,5 @@ When using Bluetext in a team environment, we recommend starting by creating a b
 
 You can then use Git to coordinate work—for example, one team member might handle the frontend while others focus on the database or API.
 
-To keep collaboration smooth, make small, frequent commits and regularly pull updates from the main branch. This minimizes merge conflicts and keeps changes easy to manage. A good practice is to pull the latest code and commit your updates after finishing a task or switching contexts. If you’re clearing your context, that’s also a great time to sync with the repository and resolve any conflicts.
+To keep collaboration smooth, make small, frequent commits and regularly pull updates from the main branch. This minimizes merge conflicts and keeps changes easy to manage. A good practice is to pull the latest code and commit your updates after finishing a task or switching contexts in your coding agent. If you’re clearing your context, that’s also a great time to sync with the repository and resolve any conflicts.
 
