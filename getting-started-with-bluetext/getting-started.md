@@ -72,7 +72,13 @@ To connect Cline to the MCP server, configure your cline\_mcp\_settings as follo
 
 To navigate to this file from the Cline chat interface, select "MCP Servers" from the top, then navigate to the "Configure" tab, and from the bottom select "Configure MCP Servers".&#x20;
 
-### 4. Prompting
+### 4. Flight Check
+
+Before you start prompting, there are a few checks you can do to test that the Polytope and the Bluetext repository are set up correctly. First, to see if your agent is connected to the polytope MCP server, you can simply ask your coding agent: "do you have access to the Polytope MCP server?".&#x20;
+
+After this, you can ask "which Bluetext tools are available to you?" if you see tools like add-api, add-frontend etc, bluetext is successfully configured! if you only see tools like describe-container and describe-job, you have not configured the bluetext repo in the polytope.yml file correctly.
+
+### 5. Prompting
 
 Once you have your Polytope MCP running, and you have ensured your agent is connected to the MCP server, you can start to tell your agent what to create! Once you have prompted your agent, it will ask you to approve tool calls that look similar to the following:&#x20;
 
@@ -90,7 +96,7 @@ pt run default --mcp
 ```
 {% endcode %}
 
-## 5. Incorrect Configuration
+## 6. Incorrect Configuration
 
 If Polytope and Bluetext are not set up correctly, your configuration or output files will look different from the expected structure. The examples below illustrate common signs of incorrect setup, so you can quickly identify and fix any issues before proceeding.
 
@@ -111,3 +117,4 @@ An example of the file structure resulting from an incorrect configuration may l
 Most of the time, scripts will not be executed when using Bluetext. If Bluetext is configured correctly, the coding agent will primarily use tool calls to interact with the running application. If it is not configured correctly, you might see the coding agent attempt to execute commands directly on your machine. The only commands you should see running locally are curl commands.
 
 The sole purpose of running curl commands directly on your machine is to test whether your services are reachable from outside the containers.
+
