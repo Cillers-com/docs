@@ -128,7 +128,7 @@ Delete files when compressed into an archive, store archives in couchbase.
 ```
 {% endcode %}
 
-**Prompt 2:**&#x20;
+**Prompt 3:**&#x20;
 
 {% code overflow="wrap" %}
 ```markup
