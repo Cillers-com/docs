@@ -29,7 +29,7 @@ include:
   - repo: gh:bluetext-io/bluetext
 ```
 
-The MCP tools defined by Bluetext are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.
+Bluetext is a repository of predefined MCP tools, and these tools are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.
 
 ### 2. Running the MCP
 
@@ -43,7 +43,7 @@ This command locates the highest-level polytope.yml file in your filesystem or g
 
 ### 3. Connecting the MCP to an Agent
 
-You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code and Cline work particularly well. This section outlines the setup process for both, allowing you to use your preferred agent.
+Connecting your coding agent to the MCP server allows the agent to access Polytope’s tooling directly during development. You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code and Cline work particularly well. This section outlines the setup process for both, allowing you to use your preferred agent.
 
 **Setup for Claude Code**
 
