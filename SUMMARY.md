@@ -64,17 +64,17 @@
 * [Scalability, Reliability And Cost-Effectiveness](system-overview/scalability-reliability-and-cost-effectiveness.md)
 * [Security](system-overview/security.md)
 
-## Troubleshooting
-
-* [Flight Check](troubleshooting/flight-check.md)
-* [Common Issues](troubleshooting/common-issues.md)
-
 ## Getting started with Bluetext
 
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
 * How to Work with Bluetext
   * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/how-to-work-with-bluetext.md)
   * [Collaborating With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/collaborating-with-bluetext.md)
+
+## Troubleshooting
+
+* [Flight Check](troubleshooting/flight-check.md)
+* [Common Issues](troubleshooting/common-issues.md)
 
 ## Examples
 
