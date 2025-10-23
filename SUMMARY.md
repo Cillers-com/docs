@@ -66,6 +66,7 @@
 ## Getting started with Bluetext
 
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
+* [Collaborating With Bluetext](getting-started-with-bluetext/collaborating-with-bluetext.md)
 * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext.md)
 
 ## Examples

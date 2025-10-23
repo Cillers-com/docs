@@ -41,7 +41,7 @@ pt run --mcp
 
 This command locates the highest-level polytope.yml file in your filesystem or git repository. This file becomes the main Polytope configuration that defines which tools are available.
 
-### 3. Connecting the MCP to an agent
+### 3. Connecting the MCP to an Agent
 
 You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code and Cline work particularly well. This section outlines the setup process for both, allowing you to use your preferred agent.
 

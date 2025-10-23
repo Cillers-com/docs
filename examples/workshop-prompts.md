@@ -17,11 +17,19 @@ We are first going to create a portfolio website for a UX designer with project 
 
 {% code overflow="wrap" fullWidth="false" %}
 ```markup
-Use Polytope to generate an API for a portfolio website using REST endpoints for the following resources: Project (fields: title, description, skills, started_at, finished_at). Configure Couchbase to store the data and populate it with at least three example entries.
+Use Polytope to generate an API for a portfolio website using REST endpoints for the following resources: Project (fields: title, description, skills, started_at, finished_at).
 ```
 {% endcode %}
 
 **Prompt 2:**
+
+{% code overflow="wrap" %}
+```markup
+Configure Couchbase to store the data and populate it with at least three example entries.
+```
+{% endcode %}
+
+**Prompt 3:**
 
 {% code overflow="wrap" %}
 ```markup
@@ -44,8 +52,7 @@ Implement a REST API for a file compression app with these endpoints:
 
 - **GET /archives:** returns alls archiveIds.
 - **GET /archives/{archiveId}**: Returns archive `state`, `metadata` (e.g., contained files, total size, timestamp), and `downloadUrl` (if `done`).
-- **GET /archives/{archiveId}/download**: Direct download. Only available if `archive_completed`.
-Store archives in Couchbase. Delete uncompressed files when finished processing. 
+- **GET /archives/{archiveId}/download**: Direct download. Only available if `archive_completed`
 ```
 {% endcode %}
 
@@ -53,7 +60,7 @@ Store archives in Couchbase. Delete uncompressed files when finished processing.
 
 {% code overflow="wrap" %}
 ```markup
-create a frontend for our app.
+Create a frontend for our app.
 ```
 {% endcode %}
 
@@ -73,7 +80,7 @@ For this app we are going to make a fun snake game, and have the scores stored p
 
 {% code overflow="wrap" %}
 ```markup
-Prepare a REST API with scores as resource for a snake game. The scores should be stored in Couchbase
+Prepare a REST API with scores as resource for a snake game.
 ```
 {% endcode %}
 
@@ -81,7 +88,15 @@ Prepare a REST API with scores as resource for a snake game. The scores should b
 
 {% code overflow="wrap" %}
 ```markup
-Generate a frontend to play the snake game
+Set up Couchbase to store the high-scores.
+```
+{% endcode %}
+
+**Prompt 3**
+
+{% code overflow="wrap" %}
+```markup
+Generate a frontend to play the snake game.
 ```
 {% endcode %}
 
@@ -101,7 +116,15 @@ Implement a REST API for a file compression app with the following resources:
 - Files (States: `uploading`, `archiving`, `deleting`, `deleted`, `failed`)
 - Archives (States: `queued`, `compressing`, `idle`, `downloading`, `failed`)
 
-Delete files when compressed into an archive, store archives in couchbase, and use temporal to manage state.
+Use temporal to manage state.
+```
+{% endcode %}
+
+**Prompt 2:**&#x20;
+
+{% code overflow="wrap" %}
+```
+Delete files when compressed into an archive, store archives in couchbase.
 ```
 {% endcode %}
 
