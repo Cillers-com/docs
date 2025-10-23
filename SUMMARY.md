@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [What is Bluetext?](what-is-bluetext.md)
+* [Bluetext Architecture](bluetext-architecture.md)
 
 ## PREREQUISITES
 
