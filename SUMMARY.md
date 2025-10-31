@@ -80,4 +80,4 @@
 
 * [Workshop Prompts](examples/workshop-prompts.md)
 * [Simple Full-Stack App](examples/simple-full-stack-app.md)
-* [Full-Stack Hello World Temporal](examples/full-stack-hello-world-temporal.md)
+* [Full-Stack Travel App With Temporal](examples/full-stack-travel-app-with-temporal.md)
