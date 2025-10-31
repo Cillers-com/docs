@@ -1,7 +1,5 @@
 ---
-description: >-
-  Prompts for creating a full-stack hello world app with Temporal to manage
-  state.
+description: Prompts for creating a full-stack travel webapp with Temporal to manage state.
 ---
 
 # Full-Stack Hello World Temporal
