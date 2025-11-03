@@ -41,4 +41,4 @@ Because every service is containerized with sensible defaults, you get a predict
 
 
 
-Consult the [Simple Full-Stack App](../../examples/simple-full-stack-app.md) section for an example of Bluetext being used in practice
+Consult the [Simple Full-Stack App](../../examples/simple-full-stack-hello-world-app.md) section for an example of Bluetext being used in practice
