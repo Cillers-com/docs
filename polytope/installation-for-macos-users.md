@@ -1,6 +1,6 @@
 # Installation For MacOS Users
 
-Brew makes it super easy to install Cillers and all dependencies on macOS.&#x20;
+Brew makes it super easy to install Polytope and all dependencies on macOS.&#x20;
 
 ### Install Brew
 
