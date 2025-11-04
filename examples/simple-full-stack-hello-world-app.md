@@ -8,7 +8,7 @@ description: >-
 
 ### Overview
 
-This example sets up a simple full-stack web application. The webapp consists of
+This example sets up a simple full-stack web application. The webapp consists of:
 
 **React (with React Router, shadcn/ui components, running with Bun)** – frontend that fetches and displays the message
 
@@ -64,7 +64,7 @@ To take our webapp one step further, we will implement Couchbase to store the st
 
 {% code overflow="wrap" %}
 ```markup
-Integrate Couchbase. Modify the API endpoint to fetch and return a "Hello World" message from a Couchbase document.
+Integrate Couchbase. Modify the API endpoint to fetch and return a "Hello World" message from a Couchbase document.    
 ```
 {% endcode %}
 
@@ -94,4 +94,4 @@ Integrate Temporal. Create a workflow and activity to fetch the message from Cou
 ```
 {% endcode %}
 
-In effect, this introduces Temporal’s workflow orchestration into the stack, making message retrieval more resilient, traceable, and scalable for more complex processes in the future.
+In effect, this introduces Temporal’s workflow orchestration into the stack, making message retrieval more resilient, traceable, and scalable for more complex processes in the future. You can access the UI from the "services" panel in Polytope.

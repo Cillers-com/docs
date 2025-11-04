@@ -78,6 +78,11 @@
 
 ## Examples
 
-* [Workshop Prompts](examples/workshop-prompts.md)
 * [Simple Full-Stack Hello World App](examples/simple-full-stack-hello-world-app.md)
 * [Full-Stack Travel App With Temporal](examples/full-stack-travel-app-with-temporal.md)
+* [Workshop Prompts](examples/workshop-prompts.md)
+
+## Core Supported TEchnologies
+
+* [Temporal](core-supported-technologies/temporal.md)
+* [Couchbase](core-supported-technologies/couchbase.md)
