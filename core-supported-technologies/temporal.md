@@ -14,7 +14,7 @@ Temporal **workflows** describe when things happen and in what order. **Workflow
 
 In the context of an online clothing store, the ordering **workflow** is the process that coordinates the steps of ordering clothes, while the **activities** are the individual steps that make up the **workflow,** for example charging the payment, and sending the confirmation email.
 
-The example below shows an example workflow for a clothes ordering workflow in the Temporal UI, from placing the order, to paying and writing your email for confirmation.
+The example below shows an example workflow for a clothes ordering workflow in the Temporal UI, from placing the order, to paying and entering your email for confirmation.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-11-04 at 15.29.44.png" alt=""><figcaption></figcaption></figure>
 
