@@ -1,7 +1,7 @@
 ---
 description: >-
   A Step-by-step guide to set up Polytope with Bluetext, run the MCP server, and
-  connect coding agents like Claude Code and Cline.
+  connect coding agents like Claude Code, Roo and Cline.
 ---
 
 # Getting Started
@@ -43,9 +43,27 @@ This command locates the highest-level polytope.yml file in your filesystem or g
 
 ### 3. Connecting the MCP to an Agent
 
-Connecting your coding agent to the MCP server allows the agent to access Polytope’s tools directly during development. You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code and Cline work particularly well. This section outlines the setup process for both, allowing you to use your preferred agent.
+Connecting your coding agent to the MCP server allows the agent to access Polytope’s tools directly during development. You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code, Cline and Roo work particularly well. This section outlines the setup process for all three, allowing you to use your preferred agent.
 
-**Setup for Claude Code**
+### **Setup for Roo**
+
+To connect Claude Code to your MCP, configure your mcp\_settings.json file to look like this:
+
+```json
+{
+  "mcpServers": {
+    "polytope": {
+      "type": "streamable-http",
+      "url": "http://localhost:31338/mcp",
+      "disabled": false
+    }
+  }
+}
+```
+
+To navigate to this file, from the Roo UI, "Views and More Actions" then "MCP Servers" then "Edit Global MCP".
+
+### **Setup for Claude Code**
 
 To connect Claude Code to your MCP, run the following command:&#x20;
 
@@ -53,7 +71,7 @@ To connect Claude Code to your MCP, run the following command:&#x20;
 claude mcp add polytope-mcp http://localhost:31338/mcp
 ```
 
-**Setup for Cline**
+### **Setup for Cline**
 
 To connect Cline to the MCP server, configure your cline\_mcp\_settings as follows:
 
@@ -63,7 +81,6 @@ To connect Cline to the MCP server, configure your cline\_mcp\_settings as follo
     "polytope": {
       "type": "streamableHttp",
       "url": "http://localhost:31338/mcp",
-      "alwaysAllow": ["tool3"],
       "disabled": false
     }
   }
