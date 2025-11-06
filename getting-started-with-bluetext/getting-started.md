@@ -63,7 +63,7 @@ To connect Claude Code to your MCP, configure your mcp\_settings.json file to lo
 
 To navigate to this file, from the Roo UI, "Views and More Actions" then "MCP Servers" then "Edit Global MCP".
 
-**NOTE:** Make sure to switch from plan to code mode at the bottom of the Roo UI.
+**NOTE:** To ask questions switch to ask mode, and to generate code you should be in code mode. By default it is set to architect more, which will not help when generating code with Bluetext.
 
 ### **Setup for Claude Code**
 
