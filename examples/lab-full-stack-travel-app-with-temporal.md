@@ -38,11 +38,11 @@ main._default.plans). Couchbase is already running.
 #### 3. Temporal Workflow <a href="#id-3.-frontend" id="id-3.-frontend"></a>
 
 {% code overflow="wrap" %}
-```
+```markup
 Add Temporal for trip lifecycle management. Create a workflow that: logs trip start, waits for a
-signal, then logs completion. Start the workflow in POST /plans (pass plan ID and city). Signal the
-workflow in POST /plans/:id/visited to complete it.
-The rest of the backend is already up and running. 
+signal, then logs completion. Register all activities with the workflow in workflows/init.py
+and pass them to TemporalClient in init/temporal.py. Start the workflow in POST /plans (pass plan ID and city). Signal the workflow in POST /plans/:id/visited to complete it.
+The rest of the backend is already up and running.
 ```
 {% endcode %}
 
