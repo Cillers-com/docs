@@ -81,6 +81,7 @@
 * [Simple Full-Stack Hello World App](examples/simple-full-stack-hello-world-app.md)
 * [Full-Stack Travel App With Temporal](examples/full-stack-travel-app-with-temporal.md)
 * [Workshop Prompts](examples/workshop-prompts.md)
+* [LAB: Full-Stack Travel App With Temporal](examples/lab-full-stack-travel-app-with-temporal.md)
 
 ## Core Supported TEchnologies
 
