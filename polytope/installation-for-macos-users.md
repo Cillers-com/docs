@@ -1,7 +1,5 @@
 # Installation For MacOS Users
 
-Brew makes it super easy to install Polytope and all dependencies on macOS.&#x20;
-
 ### Install Brew
 
 You can install Homebrew with the following command (source: [https://brew.sh/](https://brew.sh/)).
@@ -9,6 +7,8 @@ You can install Homebrew with the following command (source: [https://brew.sh/](
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+Brew makes it super easy to install Polytope and all dependencies on macOS.&#x20;
 
 ### **Install Dependencies**
 

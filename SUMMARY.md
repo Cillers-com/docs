@@ -76,12 +76,12 @@
 * [Flight Check](troubleshooting/flight-check.md)
 * [Common Issues](troubleshooting/common-issues.md)
 
-## Examples
+## Labs
 
-* [Simple Full-Stack Hello World App](examples/simple-full-stack-hello-world-app.md)
-* [Full-Stack Travel App With Temporal](examples/full-stack-travel-app-with-temporal.md)
-* [Workshop Prompts](examples/workshop-prompts.md)
-* [LAB: Full-Stack Travel App With Temporal](examples/lab-full-stack-travel-app-with-temporal.md)
+* [Simple Full-Stack Hello World App](labs/simple-full-stack-hello-world-app.md)
+* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal.md)
+* [Workshop Prompts](labs/workshop-prompts.md)
+* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal-1.md)
 
 ## Core Supported TEchnologies
 

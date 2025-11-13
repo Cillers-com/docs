@@ -1,8 +1,9 @@
 ---
 description: Prompts for creating a full-stack travel webapp with Temporal to manage state.
+hidden: true
 ---
 
-# Full-Stack Hello World Temporal
+# Full-Stack Travel App With Temporal
 
 This app uses an API, a database, and Temporal workflows to let users plan and complete trips to different cities. The API handles data requests, the database stores cities and trip plans, and Temporal manages the workflow from planning a trip to marking it finished.
 
