@@ -21,3 +21,17 @@ The example below shows an example workflow for a clothes ordering workflow in t
 ## **2. Temporal in Bluetext**
 
 Bluetext integrates Temporal through a three-phase tool discovery system. First, **add-temporal** scaffolds and starts the Temporal server, Postgres backend (which stores Temporal data), and UI as Polytope-managed containers. Second, **add-temporal-client** adds the temporal-client library, creates configuration and initialization hooks, and registers the **add-temporal-workflow** tool in polytope.yml, making it discoverable to AI agents. Third, when agents call the workflow tool, it automatically scaffolds complete workflow files with Pydantic models and activities, then registers them for immediate execution. This progressive enhancement enables AI agents to autonomously build Temporal functionality by first establishing server infrastructure, then client connectivity, and finally discovering workflow creation capabilities.
+
+## 3. Setting up a Workflow
+
+Use the following prompt to set up a minimal Temporal workflow and endpoints that demonstrate the basics of starting and signaling a workflow. The **POST /flows** endpoint starts a workflow that simply waits for a confirmation signal, and the **POST /flows/:id/confirm** endpoint sends that signal, causing the workflow to complete immediately.&#x20;
+
+{% code overflow="wrap" %}
+```
+I'm building a dummy API for testing temporal. Create an API with two endpoints:
+  1. POST /flows: creates a temporal workflow that waits for confirmation
+  2. POST /flows/:id/confirm: sends a confirmation for a running workflow (when the workflow receives this signal, it just completes without taking further action)
+```
+{% endcode %}
+
+Send a POST request to /flows to start the workflow; it will appear as Running in the Temporal UI. Then send a POST request to /flows/\<workflowId>/confirm to complete it. After the signal, the workflow will show as Completed in the UI.
