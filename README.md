@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Introduction
 
 Bluetext makes it easy to build software system demos. Bluetext templates you can focus your time and brainpower on building the functionality you want to build for your demo instead of figuring out how to setup your system infrastructure.&#x20;
