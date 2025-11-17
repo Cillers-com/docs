@@ -1,7 +1,7 @@
 ---
 description: >-
   A Step-by-step guide to set up Polytope with Bluetext, run the MCP server, and
-  connect coding agents like Claude Code, Roo and Cline.
+  configure a coding agent of your choice
 ---
 
 # Getting Started
@@ -29,7 +29,7 @@ include:
   - repo: gh:bluetext-io/bluetext
 ```
 
-Bluetext is a repository of predefined MCP tools, and these tools are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.
+The Bluetext tools are made available to Polytope through the inclusion of the Bluetext repository in this file. We can now run the MCP server to use Bluetext with your preferred coding agent. The agent will use these tools to perform development tasks or generate application components.
 
 ### 2. Running the MCP
 
@@ -43,59 +43,20 @@ This command locates the highest-level polytope.yml file in your filesystem or g
 
 ### 3. Connecting the MCP to an Agent
 
-Connecting your coding agent to the MCP server allows the agent to access Polytope’s tools directly during development. You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code, Cline and Roo work particularly well. This section outlines the setup process for all three, allowing you to use your preferred agent.
+Connecting your coding agent to the MCP server allows the agent to access Polytope’s tools directly during development. You can connect the MCP server to any coding agent that supports custom MCP server configuration. Based on our testing, Claude Code, Cline and Roo work particularly well.&#x20;
 
-### **Setup for Roo**
+You can find the specific configuration information for the following agents on our documentation:
 
-To connect Claude Code to your MCP, configure your mcp\_settings.json file to look like this:
+* [Roo](getting-started.md#setup-for-roo)
+* [ClaudeCode](getting-started.md#setup-for-claude-code)
+* [Copilot](coding-agent-configuration/setup-for-copilot.md)
+* [Cline](coding-agent-configuration/setup-for-cline.md)
 
-```json
-{
-  "mcpServers": {
-    "polytope": {
-      "type": "streamable-http",
-      "url": "http://localhost:31338/mcp",
-      "disabled": false
-    }
-  }
-}
-```
-
-To navigate to this file, from the Roo UI, "Views and More Actions" then "MCP Servers" then "Edit Global MCP".
-
-**NOTE:** To ask questions switch to ask mode, and to generate code you should be in code mode. By default it is set to architect more, which will not help when generating code with Bluetext.
-
-### **Setup for Claude Code**
-
-To connect Claude Code to your MCP, run the following command:&#x20;
-
-```
-claude mcp add polytope-mcp http://localhost:31338/mcp
-```
-
-### **Setup for Cline**
-
-To connect Cline to the MCP server, configure your cline\_mcp\_settings as follows:
-
-```
-{
-  "mcpServers": {
-    "polytope": {
-      "type": "streamableHttp",
-      "url": "http://localhost:31338/mcp",
-      "disabled": false
-    }
-  }
-}
-```
-
-To navigate to this file from the Cline chat interface, select "MCP Servers" from the top, then navigate to the "Configure" tab, and from the bottom select "Configure MCP Servers".&#x20;
-
-When&#x20;
+Before proceeding to the next step, ensure you have configured an agent of your choice. Most coding agents have documentation which explains how to set up custom MCP servers, incase you want to use a different agent.
 
 ### 4. Starting to Prompt
 
-Before continuing, you can consult the [flight check](getting-started.md#id-4.-flight-check) document to test if Bluetext, Polytope, and the agent are configured to work. Once you have your Polytope MCP running, and you have ensured your agent is connected to the MCP server, you can start to tell your agent what to create! Once you have prompted your agent, it will ask you to approve tool calls that look similar to the following:&#x20;
+Before continuing, you can consult the [flight check](getting-started.md#id-4.-flight-check) document to test if Bluetext, Polytope, and the agent are configured correctly. Once you have your Polytope MCP running, and you have ensured your agent is connected to the MCP server, you can start to tell your agent what to create! Once you have prompted your agent, it will ask you to approve tool calls that look similar to the following:&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-10-23 at 10.51.31.png" alt=""><figcaption></figcaption></figure>
 

@@ -67,6 +67,11 @@
 ## Getting started with Bluetext
 
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
+* Coding Agent Configuration
+  * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)
+  * [Setup for ClaudeCode](getting-started-with-bluetext/coding-agent-configuration/setup-for-claudecode.md)
+  * [Setup for Copilot](getting-started-with-bluetext/coding-agent-configuration/setup-for-copilot.md)
+  * [Setup for Cline](getting-started-with-bluetext/coding-agent-configuration/setup-for-cline.md)
 * How to Work with Bluetext
   * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/how-to-work-with-bluetext.md)
   * [Collaborating With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/collaborating-with-bluetext.md)
