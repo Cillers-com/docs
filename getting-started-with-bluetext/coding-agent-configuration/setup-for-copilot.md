@@ -1,6 +1,6 @@
 # Setup for Copilot
 
-To connect Copilot agent to the MCP, you need to create a .vscode directory at the root of your project. then create an mcp.json file inside this directory, with the following configuration
+To connect the Copilot agent to the MCP, you can create a .vscode/ directory at the root of your project. Then create an mcp.json file inside this directory, with the following configuration
 
 ```jsonc
 {
@@ -14,4 +14,6 @@ To connect Copilot agent to the MCP, you need to create a .vscode directory at t
 }
 ```
 
-**note**: this setup is slightly different than the other configurations, as this needs to be done for every project before you proceed to start prompting.
+Alternatively, you could could configure the MCP globally, so that the MCP server will be available in every project you open in VS Code or Copilot — without needing any per-project configuration.
+
+To do this, open the command palette by pressing **Cmd + Shift + P**, type "MCP: open user configuration", and paste the same configuration shown above there.
