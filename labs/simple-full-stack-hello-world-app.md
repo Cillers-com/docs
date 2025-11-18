@@ -2,6 +2,7 @@
 description: >-
   An example Bluetext workflow to create a simple Hello World webapp with
   Couchbase, API, and frontend
+hidden: true
 ---
 
 # Simple Full-Stack Hello World App
