@@ -84,7 +84,7 @@ We will now add temporal to manage workflows in our app.&#x20;
 
 {% code overflow="wrap" %}
 ```
-Add Temporal for managing the state of the messages. Create a workflow that starts when the frontend is opened and ends when the final message is loaded. instant messages should be signals, Each long running request like getting the message from the the data base and fetching the response from the AI should be activity.
+Add Temporal for managing the state of the messages. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. each message should be an activity within the workflow
 ```
 {% endcode %}
 
