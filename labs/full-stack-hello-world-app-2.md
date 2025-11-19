@@ -70,7 +70,7 @@ We can now try to implement AI, to add another greeting that uses an LLM to rand
 - { name: GOOGLE_API_KEY, value: "YOUR API KEY HERE" }
 ```
 
-Restart the polytope server, and start it again with **pt run default --mcp** Then prompt your agent with the following:
+To pick up on environment variables, the API container needs to be restarted. You can also restart the polytope server, and start it again with **pt run default --mcp** then prompt your agent with the following:
 
 {% code overflow="wrap" %}
 ```
@@ -88,4 +88,4 @@ Add Temporal for managing the state of the messages. Create a workflow that star
 ```
 {% endcode %}
 
-We can now open the temporal UI, the same way we did for couchbase, and look at the workflow.
+We can now open the temporal UI, the same way we did for couchbase, and look at the workflow that starts each time you refresh the frontend.
