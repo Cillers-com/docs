@@ -14,7 +14,7 @@ Run the quick setup before proceeding from the Bluetext Wizard before proceeding
 
 {% code overflow="wrap" %}
 ```
-I have a frontend running, modify the code to have a smiley face with a text box underneath it that says "hello from the frontend".
+I have a containerised frontend running through Polytope, modify the code to have a smiley face with a text box underneath it that says "hello from the frontend".
 ```
 {% endcode %}
 
@@ -44,9 +44,9 @@ curl -X POST "http://localhost:8000/message?message=your+new+message"
 
 We can create a collection in Couchbase to store another message. This requires us to call multiple tools&#x20;
 
-1. **add-couchbase** (this adds the server)
-2. **add-couchbase-client** (adds client library to the project)
-3. **add-couchbase-models** (scaffolds new couchbase models with CRUD operations and adds database functionality to API) add api to interface with cb client, then can write routes that can populate keyspace. It requires parameters, which you can name messages
+1. **add-couchbase** (creates the code to run the couchbase server and the config-manager, and runs both)
+2. **add-couchbase-client** (adds client library to the API project)
+3. **add-couchbase-models** (scaffolds new couchbase models with CRUD operations and prepares the API to interact with the database). Now we can use those models to write routes that can populate the couchbase collection. The tool requires parameters, which you can name: **messages.**
 
 **Note**: some tools are added to the list of tools dynamically, for example **add-couchbase-client** adds **add-couchbase-models** to the list of available tools. To view these new tools, press refresh in the MCP tools section of the wizard.
 
@@ -54,7 +54,7 @@ We can then prompt the coding agent with the following:
 
 {% code overflow="wrap" %}
 ```
-Couchbase is running and configured in my app. Add a message in main.default.messages to hold a hello from couchbase message. change the frontend to add this message underneath.
+Couchbase is running and configured in my app in Polytope. Add a message in main.default.messages to hold a hello from couchbase message. change the frontend to add this message underneath.
 ```
 {% endcode %}
 
