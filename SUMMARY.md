@@ -83,7 +83,7 @@
 
 ## Labs
 
-* [Full-Stack Hello World App](labs/full-stack-hello-world-app.md)
+* [Full-Stack Hello World App 2](labs/full-stack-hello-world-app-2.md)
 * [Simple Full-Stack Hello World App](labs/simple-full-stack-hello-world-app.md)
 * [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal.md)
 * [Workshop Prompts](labs/workshop-prompts.md)
