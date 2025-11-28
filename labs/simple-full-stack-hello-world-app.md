@@ -23,7 +23,7 @@ The system stores "Hello World" in Couchbase, retrieves it via the API, and rend
 
 ### 1. Setup
 
-Before starting your project, you need to consult the [Getting Started](broken-reference) document, which explains how to install Polytope, initialize your project directory and git repository, configure MCP servers, and connect tools like ClaudeCode and Clein.
+Before starting your project, you need to consult the [Getting Started](/broken/pages/zdXVHt54hjr7fcBUJQDF) document, which explains how to install Polytope, initialize your project directory and git repository, configure MCP servers, and connect tools like ClaudeCode and Clein.
 
 ### 2. Generating the API with bluetext
 

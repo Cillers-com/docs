@@ -72,4 +72,4 @@ pt run default --mcp
 ```
 {% endcode %}
 
-If you suspect Bluetext or Polytope are not configured correctly, you can consult the [troubleshooting](broken-reference) documentation.
+If you suspect Bluetext or Polytope are not configured correctly, you can consult the [troubleshooting](/broken/pages/IIQEALDMro1f0lab0oeA) documentation.

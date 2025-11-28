@@ -27,5 +27,5 @@ In short, being connected to the Polytope MCP server allows agents both to make 
 
 Bluetext runs locally through two simple configuration steps. First, your project directory contains a polytope.yml file that references the Bluetext template repository, giving Polytope access to all scaffolding tools. Second, your coding agent (Claude, Cline, etc.) is configured to connect to the Polytope MCP server running on your machine.&#x20;
 
-For detailed setup instructions for different agents and operating systems, consult the [getting started with bluetext](broken-reference) guide.&#x20;
+For detailed setup instructions for different agents and operating systems, consult the [getting started with bluetext](/broken/pages/7ZDR5ZFkZqMbAhE8Cewp) guide.&#x20;
 
