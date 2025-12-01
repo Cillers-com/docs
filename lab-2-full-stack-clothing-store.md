@@ -3,6 +3,7 @@ description: >-
   Applying similar methods as we did in previous lab, we will create a
   full-stack clothing store website which allows us to place orders, with
   workflows managed in temporal
+hidden: true
 ---
 
 # Lab 2: Full Stack Clothing Store
@@ -18,4 +19,8 @@ Now, a polytope.yml file has been created at the root of your directory which ex
 ## 2. API
 
 lets first add the API endpoints.&#x20;
+
+```python
+https://fakestoreapi.com/products
+```
 
