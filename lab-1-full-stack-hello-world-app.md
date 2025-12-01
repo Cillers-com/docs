@@ -6,15 +6,17 @@ description: >-
 
 # Lab 1: Full-Stack Hello World App
 
-## Setup
+## 1. Setup
 
-Before proceeding, make sure you sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run the quick setup.
+Before proceeding, make sure you are sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run this quick setup and make sure to select "Cline (Recommended)" when asked which coding agent you want to configure.&#x20;
 
-## Frontend
+Now, a polytope.yml file has been created at the root of your directory which exposes polytope to bluetext's tools, and Cline has been configured to connect to Polytopes MCP server.
+
+## 2. Frontend
 
 First, we are going to create a frontend that displays a message with a smiley face.
 
-After starting the MCP server from the Bluetext extension, run the **add-frontend** tool. Then, open up Cline and ensure it is connected to polytope by selecting "Manage MCP servers" as shown below.
+After starting the MCP server from the Bluetext extension, run the **add-frontend** tool. Then, open up Cline and ensure it is connected to polytope by selecting "Manage MCP servers"  at the bottom of the Cline UI as shown below.
 
 
 
@@ -30,19 +32,19 @@ I have a containerised frontend running through Polytope, modify the code to hav
 
 After Cline tells us that its finished making these changes, we can inspect the frontend ourselves.
 
-Our frontend is served on our local network through polytope - You can navigate to the services section of the Polytope UI to see where services are hosted. By default, the frontend will always be hosted at https://localhost:51732&#x20;
+Our frontend is served on our local network through polytope - You can navigate to the services section of the Polytope UI to see where certain services are hosted. By default, the frontend will always be hosted at https://localhost:51732&#x20;
 
-Great! now you can see the frontend with the hello world message with a smiley face!
+Great, now you can see the frontend with the hello world message with a smiley face!
 
-## API&#x20;
+## 3. API&#x20;
 
-Next we are going to add an api that has a hardcoded message that says "hello from the API" which gets posted onto the frontend in a seperate text box.
+Next we are going to add an api that has a hardcoded message that says "hello from the API" which gets posted onto the frontend in a separate text box.
 
-Run the **add-api** tool to from the Bluetext Extension. Then, prompt your agent with the following:
+First, run the **add-api** tool to from the Bluetext Extension. Then, prompt your agent with the following:
 
 {% code overflow="wrap" %}
 ```
-list the services to see where what is being hosted. Edit the API to hold a hello from the API message with the following endpoints
+list the services to see where what is being hosted. Edit the API to hold a hello from the API message with the following endpoints:
 GET  /message: returns the hardcoded message
 POST /message: replaces the hardcoded message (optional) 
 
@@ -60,19 +62,19 @@ curl -X POST "http://localhost:3030/message?message=your+new+message"
 
 Next, visit the frontend to check if this second message gets displayed.
 
-## Couchbase
+## 4. Couchbase
 
 We are going to use Couchbase to persistently store a message that says "hello from Couchbase" which will get displayed onto the frontend in a third text box
 
-Using Bluetext, This requires us to call multiple tools&#x20;
+With Bluetext, This requires us to call multiple tools&#x20;
 
-1. **add-couchbase** (creates the code to run the couchbase server and the config-manager, and runs both)
+1. **add-couchbase** (creates the code to run the Couchbase server and the config-manager, and runs both)
 2. **add-couchbase-client** (adds client library to the API project)
 3. **add-couchbase-models** (scaffolds new couchbase models with CRUD operations and prepares the API to interact with the database). Now we can use those models to write routes that can populate the couchbase collection. The tool requires parameters, which you can name: **messages.**
 
 **Note**: some tools are added to the list of tools dynamically, for example **add-couchbase-client** adds **add-couchbase-models** to the list of available tools. To view these new tools, press refresh in the MCP tools section of the wizard.
 
-in modules/\<api-name>-api/src/couchbase/models/messages.py import the datetime module at the top of the file together with the other built in module imports.&#x20;
+in modules/\<api-name>-api/src/couchbase/models/messages.py, import the datetime module at the top of the file together with the other built in module imports.&#x20;
 
 ```python
 from datetime import datetime
@@ -115,16 +117,27 @@ Congratulations! We successfully set up our API to handle requests for storing d
 Notice how the coding agent made use of `curl` commands. `curl` allows us to make requests to APIs or websites to GET, POST, UPDATE or DELETE data from them.&#x20;
 {% endhint %}
 
-You can now navigate to the Couchbase UI to see the changes. Couchbase UI is served on our local network through Polytope and can be accessed through the address defined in the services section in Polytope. In your browser you can navigate to the address specified (e.g. https://localhost:8091). You will now be prompted to log in. For development purposes we inject the login credentials as environment variables into the couchbase server set to username: **user** and password: **password.** On the lefthand side you will see the the section `documents` . Click on it and select our `messages` collection in the third dropdown defining our keyspace. You should now see the message we just promped our coding agent to create. We can change this message from within the Couchbase UI to say something else, then go back to our frontend and view the message.
+You can now navigate to the Couchbase UI to see the changes. In your browser you can navigate to the address specified in the services section of the Polytope UI (https://localhost:8091). You will now be prompted to log in. For development purposes we inject the login credentials as environment variables into the couchbase server set to username: **user** and password: **password.** On the lefthand side you will see the the section `documents` . Click on it and select our `messages` collection in the third dropdown defining our keyspace. You should now see the message we just promped our coding agent to create. We can change this message from within the Couchbase UI to say something else, then go back to our frontend and view the message.
 
-## Temporal
+## 5. Temporal
 
-We will now add temporal to manage workflows in our app.&#x20;
+We will now add temporal to manage workflows in our app. Temporal will act as a reliable manager that ensures your the multi-step process of fetching messages from different sources is executed correctly.
+
+Just like with Couchbase, We will run three different tools from the Bluetext Extension:
+
+* add-temporal
+* add-temporal-client
+* add-temporal workflow (named messages workflow)
+
+Once the temporal server is running, the client has been added to our project, and we have created the messagesflow.py workflow file, we can prompt Cline with the following.
 
 {% code overflow="wrap" %}
 ```
-Add Temporal for managing the state of the messages. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. each message should be an activity within the workflow
+I have Temporal up and running and I have create a messagesflow.py workflow file. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. each message should be an activity within the workflow.
 ```
 {% endcode %}
 
-We can now open the temporal UI, the same way we did for couchbase, and look at the workflow that starts each time you refresh the frontend.
+We can now open the temporal UI, the same way we did for couchbase, and look at the workflow that starts each time you refresh the frontend. You should see something like this:
+
+<figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 15.10.33.png" alt=""><figcaption></figcaption></figure>
+
