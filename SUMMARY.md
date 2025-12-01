@@ -97,6 +97,4 @@
 ***
 
 * [Bluetext Cheat Sheet](bluetext-cheat-sheet.md)
-* [Lab 1 - Full Stack Hello World App](lab-1-full-stack-hello-world-app.md)
-* [Lab 2 - Full stack Travel App + Temporal](lab-2-full-stack-travel-app-+-temporal.md)
-* [Lab 1: Full-Stack Hello World App](lab-1-full-stack-hello-world-app-1.md)
+* [Lab 1: Full-Stack Hello World App](lab-1-full-stack-hello-world-app.md)
