@@ -52,11 +52,17 @@ We can then prompt the coding agent with the following:
 
 {% code overflow="wrap" %}
 ```
-Couchbase is running and configured in my app in Polytope. Add a message in main.default.messages to hold a hello from couchbase message. change the frontend to add this message underneath.
+We created a model called messages. Now, add the fields Author (string) and Message (string) created at (datetime) in api/src/couchbase/models and REST endpoints.
 ```
 {% endcode %}
 
-When this is done, you can navigate to the couchbase UI. The adress can be found in the services section in Polytope. To log in, use the credentials **user** and **password**\
+{% code overflow="wrap" %}
+```
+Now, use this endpoint to seed the collection with a message that says "hello from Couchbase"
+```
+{% endcode %}
+
+When this is done, you can navigate to the Couchbase UI. The adress can be found in the services section in Polytope. To log in, use the credentials **user** and **password**\
 \
 When this is done you can navigate to the couchbase.yml, make a change, and check the couchbase UI.
 
