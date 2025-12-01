@@ -6,7 +6,7 @@ description: >-
 
 # Lab 1: Full-Stack Hello World App
 
-## Setup
+## TSetup
 
 Before proceeding, make sure you sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run the quick setup.
 
@@ -15,6 +15,8 @@ Before proceeding, make sure you sitting in a new, empty directory, which we wil
 First, we are going to create a frontend that displays a message with a smiley face.
 
 After starting the MCP server from the Bluetext extension, run the **add-frontend** tool. Then, open up Cline and ensure it is connected to polytope by selecting "Manage MCP servers" as shown below.
+
+
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
@@ -107,6 +109,8 @@ Notice how the coding agent made use of `curl` commands. `curl` allows us to mak
 {% endhint %}
 
 You can now navigate to the Couchbase UI to see the changes. Couchbase UI is served on our local network through Polytope and can be accessed through the address defined in the services section in Polytope. In your browser you can navigate to the address specified (e.g. https://localhost:8091). You will now be prompted to log in. For development purposes we inject the login credentials as environment variables into the couchbase server set to username: **user** and password: **password.** On the lefthand side you will see the the section `documents` . Click on it and select our `messages` collection in the third dropdown defining our keyspace. You should now see the message we just promped our coding agent to create. We can change this message from within the Couchbase UI to say something else, then go back to our frontend and view the message.
+
+## Temporal
 
 We will now add temporal to manage workflows in our app.&#x20;
 
