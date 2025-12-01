@@ -72,7 +72,13 @@ Using Bluetext, This requires us to call multiple tools&#x20;
 
 **Note**: some tools are added to the list of tools dynamically, for example **add-couchbase-client** adds **add-couchbase-models** to the list of available tools. To view these new tools, press refresh in the MCP tools section of the wizard.
 
-in modules/\<api-name>-api/src/couchbase/models/messages.py import the datetime module at the top of the file together with the other built in module imports. Then add the follwing fields to the messages class at the bottom of the file:
+in modules/\<api-name>-api/src/couchbase/models/messages.py import the datetime module at the top of the file together with the other built in module imports.&#x20;
+
+```python
+from datetime import datetime
+```
+
+Then add the following fields to the messages class at the bottom of the file:
 
 ```python
 class MessagesModel(CouchbaseModel):
@@ -99,6 +105,7 @@ Add the following data to the database using the endpoints we just created.
 message: "hello from couchbase" 
 author: "couchbase" 
 created_at: time of creation (now)
+Fetch the message from the API and display it on the frontend in a third textbox
 ```
 {% endcode %}
 
