@@ -14,13 +14,14 @@ Before proceeding, make sure you are sitting in a new, empty directory, which we
 
 Now, a polytope.yml file has been created at the root of your directory which exposes polytope to bluetext's tools, and Cline has been configured to connect to Polytopes MCP server.
 
-
-
 ## 2. API
 
-lets first add the API endpoints.&#x20;
+First lets add an API. Then, lets add an endpoint that fetches from this to our already established API. Lets add a get endpoint for the following, and ask the agent to fetch the output to our added API:&#x20;
 
 ```python
 https://fakestoreapi.com/products
 ```
 
+## 3. Frontend
+
+Lets display this information in the frontend, and add the option to&#x20;

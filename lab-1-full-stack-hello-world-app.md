@@ -1,7 +1,7 @@
 ---
 description: >-
-  Using Bluetext to make a full stack app by incrementally adding, and
-  integrating services like Couchbase, a FastAPI, and Temporal.
+  Using Bluetext to make a full stack app by incrementally adding services like
+  Couchbase, a FastAPI, and Temporal.
 hidden: true
 ---
 
@@ -122,9 +122,9 @@ You can now navigate to the Couchbase UI to see the changes. In your browser you
 
 ## 5. Temporal
 
-We will now add temporal to manage workflows in our app. Temporal will act as a reliable manager that ensures your the multi-step process of fetching messages from different sources is executed correctly.
+We will now add temporal to manage workflows in our app. Temporal will act as a reliable manager that ensures the multi-step process of fetching messages from different sources is executed correctly.
 
-Just like with Couchbase, We will run three different tools from the Bluetext Extension:
+Just like with Couchbase, 3e will run three different tools from the Bluetext Extension:
 
 * add-temporal
 * add-temporal-client
@@ -134,7 +134,7 @@ Once the temporal server is running, the client has been added to our project, a
 
 {% code overflow="wrap" %}
 ```
-I have Temporal up and running and I have create a messagesflow.py workflow file. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. each message should be an activity within the workflow.
+I have Temporal up and running and I have create a messagesflow.py workflow file. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. Each message should be an activity within the workflow.
 ```
 {% endcode %}
 
@@ -142,3 +142,4 @@ We can now open the temporal UI, the same way we did for couchbase, and look at 
 
 <figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 15.10.33.png" alt=""><figcaption></figcaption></figure>
 
+As shown in the Temporal UI example above, the workflow begins as soon as the frontend’s base route is visited and completes once both the API and Couchbase messages have been retrieved. These activities ran asynchronously, meaning they executed in parallel, though we could just as easily have awaited them to enforce sequential execution.
