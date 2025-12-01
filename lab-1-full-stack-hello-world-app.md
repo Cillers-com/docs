@@ -6,7 +6,7 @@ description: >-
 
 # Lab 1: Full-Stack Hello World App
 
-## TSetup
+## Setup
 
 Before proceeding, make sure you sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run the quick setup.
 
