@@ -16,7 +16,7 @@ First, we are going to create a frontend that displays a message with a smiley f
 
 After starting the MCP server from the Bluetext extension, run the **add-frontend** tool. Then, open up Cline and ensure it is connected to polytope by selecting "Manage MCP servers" as shown below.
 
-<figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt=""><figcaption></figcaption></figure></div>
 
 You can then prompt the agent with the following:&#x20;
 
