@@ -16,12 +16,18 @@ Now, a polytope.yml file has been created at the root of your directory which ex
 
 ## 2. Adding API
 
-Lets first create our main API, which will be used for fetching cloting items and information about them from the dataset. Run the add-api tool, and prompt claude with the Following. Don't forget to check if Polytope is connected to Cline
+Lets first create our main API, which will be used for fetching cloting items and information about them from the dataset and displaying them on the frontend, also for creating and cancelling orders. Run the add-api tool, and prompt Cline with the Following. Don't forget to check if Polytope is connected to Cline
 
 {% code overflow="wrap" %}
 ```python
-I have an API running on localhost:3030. Add the following REST API endpoints to it. GET /products
-GET/products/{id}
+I have an API running on localhost:3030. Add the following REST API endpoints to it. - - `GET /products` - List all clothing items
+- `GET /products/:id` - Get a specific clothing item
+
+- `POST /orders` - Create a new order (Checkout process)
+- `GET /orders` - List all orders (can be filtered by user)
+- `GET /orders/:id` - Get specific order details
+- `POST /orders/:id/cancel` - Cancel an order
+
 ```
 {% endcode %}
 
@@ -46,7 +52,13 @@ Run the add-couchbase tool, and the add-couchbase client tool. We can then go in
 
 Now, if we navigate to the Couchbase UI at localhost:8091, we can see that the collection has been collected. (click on documents on the left)
 
-At the top of the Couchbase UI, you should see an "import" button. On your VM, you will find a clothing\_dataset\_100.json, which we can import from there as a JSON file. also, make sure to select the products collection in your keyspace.
+At the top of the Couchbase UI, you should see an "import" button. On your VM, you will find a clothing\_dataset\_100.json, which we can import from there as a JSON file. also, make sure to select the products collection in your keyspace. Now we can prompt the Agent:&#x20;
+
+{% code overflow="wrap" %}
+```
+Connect the existing GET /products and GET /products/{id} API routes to the Couchbase products collection. Replace the mock data with actual database queries so the API serves real product data.
+```
+{% endcode %}
 
 ## 4. Frontend
 
