@@ -46,9 +46,9 @@ After this, we will be taken to the MCP tools section. Press  "start MCP server"
 
 <div data-with-frame="true"><figure><img src=".gitbook/assets/Screenshot 2025-11-28 at 13.47.18.png" alt=""><figcaption></figcaption></figure></div>
 
-## Demonstrating the workflow with an example app!
+## Common Terminal Commands
 
-Lets create an app\_\_\_ (choose an app)\
-\
-\- as mentioned before the agent can interpret you and call tools, buy we have philosophy you should only use AI when needed, so we will call the required tools ourselves and then ask the agent to make the related changes!
+To make a new directory: `mkdir` &#x20;
+
+To&#x20;
 
