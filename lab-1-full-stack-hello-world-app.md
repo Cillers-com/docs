@@ -41,7 +41,7 @@ Great, now you can see the frontend with the hello world message with a smiley f
 
 Next we are going to add an api that has a hardcoded message that says "hello from the API" which gets posted onto the frontend in a separate text box.
 
-First, run the **add-api** tool to from the Bluetext Extension. Then, prompt your agent with the following:
+First, run the **add-api** tool from the Bluetext Extension. Then, prompt your agent with the following:
 
 {% code overflow="wrap" %}
 ```
@@ -134,7 +134,7 @@ Once the temporal server is running, the client has been added to our project, a
 
 {% code overflow="wrap" %}
 ```
-I have Temporal up and running and I have create a messagesflow.py workflow file. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. Each message should be an activity within the workflow.
+I have Temporal up and running and I have create a messagesflow.py workflow file. Create a workflow that starts when the base route of the frontend is visited by the user and ends when the final message is loaded. The process of each message getting displayed should be an activity within the workflow.
 ```
 {% endcode %}
 
