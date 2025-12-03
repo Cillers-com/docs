@@ -47,7 +47,13 @@ After this, we will be taken to the MCP tools section. Press  "start MCP server"
 
 ## Common Terminal Commands
 
-To make a new directory: `mkdir` &#x20;
+To make a new directory: `mkdir yourprojectname`   &#x20;
 
-To&#x20;
+To navigate to this directory in the terminal: `cd yourprojectname`
+
+To open the project you have navigated to in your terminal in vscode: `code .`&#x20;
+
+To start the polytope MCP server: `pt run --mcp`
+
+To open your old polytope project, in the same directory you created it in: `pt run default --mcp`
 
