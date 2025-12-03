@@ -44,7 +44,7 @@ First, run the **add-api** tool from the Bluetext Extension. Then, prompt your a
 
 {% code overflow="wrap" %}
 ```
-list the services to see where what is being hosted. Edit the API to hold a hello from the API message with the following endpoints:
+list the services to see where what is being hosted. Edit the API to hold a "hello from the API" message with the following endpoints:
 GET  /message: returns the hardcoded message
 POST /message: replaces the hardcoded message (optional) 
 
@@ -52,7 +52,7 @@ Edit the frontend to display this message under the existing one
 ```
 {% endcode %}
 
-we can check the API directly either by visiting this endpoint trough the browser, or by curling the endpoint.&#x20;
+We can check the API directly either by visiting this endpoint trough the browser, or by curling the endpoint.&#x20;
 
 Your agent might ask you to approve a CURL request that would look like the following:&#x20;
 

@@ -3,6 +3,7 @@ description: >-
   We are going use Bluetext to create a number of webapps using the prompts
   below. Starting from simple applications with just one service, we will move
   on to create more complex, full-stack webapps!
+hidden: true
 ---
 
 # Workshop Prompts

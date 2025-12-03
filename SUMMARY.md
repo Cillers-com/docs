@@ -98,4 +98,4 @@
 
 * [Bluetext Cheat Sheet](bluetext-cheat-sheet.md)
 * [Lab 1: Full-Stack Hello World App](lab-1-full-stack-hello-world-app.md)
-* [Lab 2: Full Stack Clothing Store](lab-2-full-stack-clothing-store.md)
+* [Lab 2: Loyalty Points System](lab-2-loyalty-points-system.md)

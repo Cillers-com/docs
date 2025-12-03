@@ -2,6 +2,7 @@
 description: >-
   Using Bluetext to make a full stack app by incrementally adding, and
   integrating services like Couchbase, a FastAPI, and Temporal.
+hidden: true
 ---
 
 # Full-Stack Hello World App 2
