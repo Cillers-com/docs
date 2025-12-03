@@ -3,7 +3,6 @@ description: >-
   Quick reference guide covering what Bluetext is, how it works with Polytope
   and your coding agent, and how to get everything set up so you can start
   building full-stack apps in minutes.
-hidden: true
 ---
 
 # Bluetext Cheat Sheet

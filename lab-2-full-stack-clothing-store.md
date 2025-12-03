@@ -3,7 +3,6 @@ description: >-
   In this lab we will create a full-stack loyalty points system that tracks
   customer orders, manages returns, and awards points for purchases not returned
   in a specific time frame
-hidden: true
 ---
 
 # Lab 2: Full Stack Clothing Store
@@ -104,4 +103,6 @@ We have added a workflow called pointstracker.py. The workflow should start when
 ```
 {% endcode %}
 
-Now, lets head over to the Temporal UI - you can check where its being hosted from the 'services' section of the Polytope UI. You should see a temporal workflow that sleeps for 30 seconds, and if the item is not returned after that, the workflow completes and gives users their points.
+Now, lets head over to the Temporal UI - you can check where its being hosted from the 'services' section of the Polytope UI. You should see a temporal workflow that sleeps for 30 seconds, and if the item is not returned after that, the workflow completes and gives users their points. You should see something like this:
+
+<figure><img src=".gitbook/assets/Screenshot 2025-12-03 at 14.35.54.png" alt=""><figcaption></figcaption></figure>
