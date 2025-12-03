@@ -5,7 +5,7 @@ description: >-
   in a specific time frame
 ---
 
-# Lab 2: Full Stack Clothing Store
+# Lab 2: Loyalty Points System
 
 ## 1. Setup
 
@@ -120,3 +120,27 @@ Currently, our workflow ends abruptly after the return window closes, but real c
 ### 2. Populate the store with Items
 
 Right now, users can only place generic orders, but a real store needs inventory. You can populate your store with some clothing items. You can choose the "quick" path by hardcoding the item details directly into your frontend, or the "full-stack" path by importing a JSON dataset into Couchbase. If you choose the latter, you'll create a new Product model—carefully ensuring the fields you define exactly match the keys in your JSON file—and then upload the data via the Couchbase UI. Create new API endpoints to fetch and serve these items to your application
+
+Your Virtual Machine comes pre-installed with a dataset called clothing\_dataset\_100.json. If you do not want to upload it through the couchbase UI, you can try an alternative approach. To copy the file to the root directory of the running Docker container named "couchbase-couchbase", try the following command:&#x20;
+
+```
+docker cp clothing_dataset_100.json $(docker ps -qf name=couchbase-couchbase):/
+```
+
+then, run this to import it into Couchbase
+
+```
+container: 
+couchbase
+exec
+cbimport json \
+  --format list \
+  --dataset file:///clothing_dataset_100.json \
+  --cluster localhost \
+  --username user \
+  --password password \
+  --bucket main \
+  --scope-collection-exp _default.products \
+  --generate-key %product_id% \
+  --ignore-fields variants
+```
