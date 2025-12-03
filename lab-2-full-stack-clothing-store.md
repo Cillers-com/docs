@@ -1,8 +1,8 @@
 ---
 description: >-
-  Applying similar methods as we did in previous lab, we will create a
-  full-stack clothing store website which allows us to place orders, with
-  workflows managed in temporal.
+  In this lab we will create a full-stack loyalty points system that tracks
+  customer orders, manages returns, and awards points for purchases not returned
+  in a specific time frame
 hidden: true
 ---
 
@@ -12,93 +12,96 @@ hidden: true
 
 Before proceeding, make sure you are sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run this quick setup and make sure to select "Cline (Recommended)" when asked which coding agent you want to configure.&#x20;
 
-Now, a polytope.yml file has been created at the root of your directory which exposes polytope to bluetext's tools, and Cline has been configured to connect to Polytopes MCP server.
+Now, a polytope.yml file has been created at the root of your directory which exposes polytope to bluetext's tools, and Cline has been configured to connect to Polytopes MCP server
 
+## 2. Setting up Core Services
 
+This time, we are going to add all of the services needed for creating our app - we will leave temporal out for now. Lets add the following tools
 
+* add-api (scaffolds and runs FastAPI)
+* add-couchbase (starts the couchbase server)
+* add-couchbase client (Adds Couchbase client library with all interaction functions and registers add-couchbase-model tool to polytope.yml)
+* add-couchbase-model (one for order, and one for customer) (this creates a new python file with a template in which we can define our data fields
+* add-frontend (adds a React Frontend Template to our project)
 
+## 3. Adding fields to our models
 
-* Run all the tools, and create models for order, customer, product
+Couchbase collections get added once we run the add-couchbase-models tool, and now we will add fields in our model files to define their respective attributes. When we add fields to our models, we are defining the schema and validation rules for our data. This ensures that any data entering our system is automatically checked for the correct types (like strings or integers) and is properly formatted before being stored in the database."&#x20;
 
+in api/modules/src/couchbase/models, you will see two different files: **order.py** and **customer.py.** Add the following fields to these files:
 
-
-Customer fields:
-
-
+**customer.py:**
 
 ```python
-    # Document fields
-    id: UUID  # Primary key - required
-    name: str
-    email: str 
-    total_loyalty_points: int
-    created_at: datetime
+class CustomerModel(CouchbaseModel):
+    [...]
+    id: UUID # Primary key - required
+    loyalty_points: int
 ```
 
-Order fields:
+**order.py:**
 
 ```python
- # Document fields
-    id: UUID  # Primary key - required
+import datetime from datetime
+
+class OrderModel(CouchbaseModel):
+    [...]
+    id: UUID # Primary key - required
     customer_id: UUID
-    product_id: int 
-    variant_id: int 
-    quantity: int 
-    unit_price: int 
-    total_price: int 
-    points_to_award: int 
-    status: str 
-    returned_at: Optional[datetime]
-    points_awarded: bool
-    points_awarded_at: Optional[datetime]
-    workflow_id: str
     created_at: datetime
+    returned_at: datetime | None = None # Not set if not returned:
 ```
 
-Import Couchbase\ THESE ARE FIELDS FOR CLOTHES
+We define these attributes so our application knows exactly what data to expect and how to store it in the database (Couchbase). This allows us to reliably save, retrieve, and manipulate records like 'Customers' or 'Orders' throughout our system.
 
-```
-# Document fields
-    id: UUID  # Primary key - required
-    product_id: int
-    product_number: str
-    product_name: str
-    brand: str
-    recommended_retail_price: str
-    country_of_origin: str
-    department: str
-    product_group: str
-    product_group2: Optional[str]
-    product_type: str
-    external_material: Optional[str]
-    internal_material: Optional[str]
-    sole_material: Optional[str]
-    silhouette: Optional[str]
-    function: Optional[str]
-    color: Optional[str]
-    image_urls: list[str]
-    variants: list[Variant]
-```
+## 4. Configuring the API
 
-from the couchbase UI, import the couchbase document and prompt agent with the following:<br>
+Before we prompt, lets make sure Polytope is connected to the&#x20;
+
+Lets refresh the context and create some endpoints to handle the interactions we want to support in our app. Note, we are including a short 30 second time-frame for demo purposes, which simulates the longer, typically 30 day return policies.
 
 {% code overflow="wrap" %}
-````
-I have a fullstack app up and running through Polytope. You can interact with it through mcp tools. For the API I created models for Orders, Customers and Products. Products do not yet have fields defined. Create fields in accordance to my database entries. Below is an example for a product entry in the couchbase db:
-
 ```
-{ "product_id": 3101524, "product_number": "61254-77", "product_name": "Osaka Camo Hw Hood Camo", "brand": "Primitive Skateboarding", "recommended_retail_price": "1229", "country_of_origin": "cn", "department": "men", "product_group": "hoodies and sweatshirts", "product_group2": "hoodies", "product_type": "apparel", "external_material": null, "internal_material": null, "sole_material": null, "silhouette": null, "function": null, "color": "multicolor", "image_urls": [ "https://images.footway.com/02/61254-77_001.png", "https://images.footway.com/02/61254-77_002.png", "https://images.footway.com/02/61254-77_003.png" ], "variants": [ { "variant_id": 3101223, "variant_number": "261254770044", "ean": "0194942352553", "size": "S", "lengthMilliMeter": 300, "widthMilliMeter": 250, "heightMilliMeter": 40, "volumeMilliMeterCubed": 3000000, "weightGram": 500 }, { "variant_id": 3101224, "variant_number": "261254770037", "ean": "0194942352546", "size": "M", "lengthMilliMeter": 300, "widthMilliMeter": 250, "heightMilliMeter": 40, "volumeMilliMeterCubed": 3000000, "weightGram": 500 }, { "variant_id": 3101222, "variant_number": "261254770020", "ean": "0194942352539", "size": "L", "lengthMilliMeter": 300, "widthMilliMeter": 250, "heightMilliMeter": 40, "volumeMilliMeterCubed": 3000000, "weightGram": 500 }, { "variant_id": 3101225, "variant_number": "261254770013", "ean": "0194942352560", "size": "XL", "lengthMilliMeter": 300, "widthMilliMeter": 250, "heightMilliMeter": 40, "volumeMilliMeterCubed": 3000000, "weightGram": 500 }, { "variant_id": 3101140, "variant_number": "261254770006", "ean": "0194942352577", "size": "XXL", "lengthMilliMeter": 300, "widthMilliMeter": 250, "heightMilliMeter": 40, "volumeMilliMeterCubed": 3000000, "weightGram": 500 } ] }
-````
+I am running a full stack app template in Polytope, which you can interact with through mcp tools. Build out the API for a simple loyalty points system where customers earn points for purchases they don't return within a specified time window (30 secs). At /modules/api/src/backend/couchbase/models/ I created models for orders and customers. Create REST endpoints for these resources. Allow filtering order by customer, return state, returned after x days. In addition create:
+
+POST orders/{order_id}/return – mark an order as returned by entering now() into returned_at
+
+I have defined the fields and do not make changes to them
+```
 {% endcode %}
 
-API:
+## 5. Frontend
 
-## Prompt 2
+Lets make changes to our frontend. We already have it up and running on port 51732, and can prompt the agent with the following:
 
-Lets refresh the context and create some endpoints to handle the interactions we want to support in our app.
+{% code overflow="wrap" %}
+```
+I want my frontend to feature an order button on the right, and an order history on the left, with the number of loyalty points on the top. Once the user places an order, the list should show their previous orders in chronological order with a "cancel order" option there. each order should make the loyalty points increase if 30 seconds have passed since the order, if canceleld, then they shouldnt go up. Everything should take place on home.tsx, on the same screen also. Regarding the customer, execute a curl command so we can be logged in as a default customer.
+```
+{% endcode %}
 
-Customer Routes POST /customers - Create new customer GET /customers/{customer\_id} - Get customer by ID (includes total\_loyalty\_points) GET /customers - List all customers (with pagination) GET /customers/{customer\_id}/orders - Get customer's order history
+The reason we asked it to run the CURL command, is so that we do not have to create logic for creating an account on the frontend, and can still showcase the apps features.
 
-Product Routes GET /products/{product\_id} - Get product by ID GET /products - List all products (with pagination, filtering by department/group)
+Great! now lets add temporal to our project
 
-Order Routes POST /orders - Create new order (triggers Temporal workflow) GET /orders/{order\_id} - Get order by ID GET /orders - List all orders (with pagination, filtering by customer) POST /orders/{order\_id}/return - Request return (must be within 30 seconds of order\_date)
+## Temporal
+
+We will now add Temporal to our project. Temporal ensures the workflow is reliably timed and can be retried or signaled independently of API calls.&#x20;
+
+run the temporal tools:
+
+add-temporal
+
+add-temporal-client
+
+add-temporal-model (pointstracker.py)
+
+we can prompt the agent like so:
+
+{% code overflow="wrap" %}
+```
+We have added a workflow called pointstracker.py. The workflow should start when an order is placed then sleep for 30 seconds (representing the return window). If a return happens within those 30 seconds, a signal should wake the workflow, cancel the pending points, and exit. If no return signal is received before the sleep finishes, the workflow should complete and give the points. The worker is listening on the main-task-queue, so make sure to use that.
+```
+{% endcode %}
+
+Now, lets head over to the Temporal UI - you can check where its being hosted from the 'services' section of the Polytope UI. You should see a temporal workflow that sleeps for 30 seconds, and if the item is not returned after that, the workflow completes and gives users their points.
