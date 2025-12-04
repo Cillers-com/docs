@@ -79,7 +79,7 @@ Lets make changes to our frontend. We already have it up and running, and can pr
 
 {% code overflow="wrap" %}
 ```
-I want my frontend to feature an order button on the right, and an order history on the left, with the number of loyalty points on the top. Once the user places an order, the list should show their previous orders in chronological order with a "cancel order" option there. each order should make the loyalty points increase if 30 seconds have passed since the order, if canceleld, then they shouldnt go up. Everything should take place on home.tsx, on the same screen also. Regarding the customer, execute a curl command so we can be logged in as a default customer.
+I want my frontend to feature an order button on the right, and an order history on the left, with the number of loyalty points on the top. Once the user places an order, the list should show their previous orders in chronological order with a "cancel order" option there. Each order should make the loyalty points increase if 30 seconds have passed since the order, if canceleld, then they shouldnt go up. Everything should take place on home.tsx, on the same screen. Regarding the customer, execute a curl command so we can be logged in as a default customer.
 ```
 {% endcode %}
 

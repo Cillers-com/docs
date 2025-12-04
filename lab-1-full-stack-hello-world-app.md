@@ -125,11 +125,11 @@ We will now add temporal to manage workflows in our app. Temporal will act as a 
 
 Just like with Couchbase, 3e will run three different tools from the Bluetext Extension:
 
-* add-temporal
-* add-temporal-client
-* add-temporal workflow (named messages workflow)
+* add-temporal (runs the temporal server)
+* add-temporal-client (adds Temporal library to the project)
+* add-temporal workflow (named messageworkflow) (this adds the temporal workflow file)
 
-Once the temporal server is running, the client has been added to our project, and we have created the messagesflow.py workflow file, we can prompt Cline with the following.
+Once these tools are ran, we can prompt Cline with the following.
 
 {% code overflow="wrap" %}
 ```
