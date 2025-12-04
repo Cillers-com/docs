@@ -20,7 +20,7 @@ After starting the MCP server from the Bluetext extension, run the **add-fronten
 
 
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 You can then prompt the agent with the following:&#x20;
 
@@ -139,6 +139,6 @@ I have Temporal up and running and I have create a messagesflow.py workflow file
 
 We can now open the temporal UI, the same way we did for couchbase, and look at the workflow that starts each time you refresh the frontend. You should see something like this:
 
-<figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 15.10.33.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-12-01 at 15.10.33.png" alt=""><figcaption></figcaption></figure>
 
 As shown in the Temporal UI example above, the workflow begins as soon as the frontend’s base route is visited and completes once both the API and Couchbase messages have been retrieved. These activities ran asynchronously, meaning they executed in parallel, though we could just as easily have awaited them to enforce sequential execution.

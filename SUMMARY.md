@@ -83,6 +83,9 @@
 
 ## Labs
 
+* [Bluetext Cheat Sheet](labs/bluetext-cheat-sheet.md)
+* [Lab 1: Full-Stack Hello World App](labs/lab-1-full-stack-hello-world-app.md)
+* [Lab 2: Loyalty Points System](labs/lab-2-loyalty-points-system.md)
 * [Full-Stack Hello World App 2](labs/full-stack-hello-world-app-2.md)
 * [Simple Full-Stack Hello World App](labs/simple-full-stack-hello-world-app.md)
 * [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal.md)
@@ -93,9 +96,3 @@
 
 * [Temporal](core-supported-technologies/temporal.md)
 * [Couchbase](core-supported-technologies/couchbase.md)
-
-***
-
-* [Bluetext Cheat Sheet](bluetext-cheat-sheet.md)
-* [Lab 1: Full-Stack Hello World App](lab-1-full-stack-hello-world-app.md)
-* [Lab 2: Loyalty Points System](lab-2-full-stack-clothing-store.md)

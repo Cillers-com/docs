@@ -59,7 +59,7 @@ We define these attributes so our application knows exactly what data to expect 
 
 Before we start to prompt, lets make sure Polytope is connected to Cline by selecting "Manage MCP servers"  at the bottom of the Cline UI as shown below.
 
-<div data-with-frame="true"><figure><img src=".gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/Screenshot 2025-12-01 at 14.07.00.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 Lets create some endpoints to handle the interactions we want to support in our app. Note, we are including a short 30 second time-frame for demo purposes, which simulates the longer, typically 30 day return policies. You can then prompt the agent with the following:&#x20;
 
@@ -107,7 +107,7 @@ We have added a workflow called pointstracker.py. The workflow should start when
 
 Now, lets head over to the Temporal UI - you can check where its being hosted from the 'services' section of the Polytope UI. You should see a temporal workflow that sleeps for 30 seconds, and if the item is not returned after that, the workflow completes and gives users their points. You should see something like this when an order is placed and not returned in the 30 second window:
 
-<figure><img src=".gitbook/assets/Screenshot 2025-12-03 at 14.35.54.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-12-03 at 14.35.54.png" alt=""><figcaption></figcaption></figure>
 
 ## Experiment from here!
 
