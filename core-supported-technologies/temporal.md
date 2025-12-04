@@ -35,3 +35,60 @@ I'm building a dummy API for testing temporal. Create an API with two endpoints:
 {% endcode %}
 
 Send a POST request to /flows to start the workflow; it will appear as Running in the Temporal UI. Then send a POST request to /flows/\<workflowId>/confirm to complete it. After the signal, the workflow will show as Completed in the UI.
+
+## 4. Common Patterns and Best Practices
+
+This section covers the most common distributed workflow patterns and how to implement them in Temporal, along with best practices to ensure your system is scalable and maintainable.&#x20;
+
+#### The Sequencer (chain)
+
+This is the simplest pattern where tasks must be executed one after another. If one fails, the process stops (or retries). An example of such a workflow could be charging a payment, where it makes no sense to proceed to the next steps if the payment fails or is cancelled. To implement this in Temporal, we would call activities sequentially using the await (or blocking) syntax.
+
+{% code overflow="wrap" %}
+```python
+await workflow.execute_activity(activityA)
+await workflow.execute_activity(activityB)
+await workflow.execute_activity(activityC)
+```
+{% endcode %}
+
+Temporal automatically persists the state after every step. If activityB fails, the worker crashes, or the DB goes down, Temporal resumes exactly at activityB without re-running activityA.
+
+#### Parallel Execution
+
+If you want to process multiple tasks simoultaneously, and agreggate results when all of them are finished, we implement it in Temporal by starting multiple activity futures in a loop and then awaiting `workflow.wait_all()` to continue only after all tasks have completed. An example of such a workflow could include sending a large number of text messages at once, or uploading multiple mp3 files somewhere simoultaneously
+
+{% code overflow="wrap" %}
+```python
+from temporalio import workflow
+
+@workflow.defn 
+class FanOutFanInWorkflow:
+    @workflow.run 
+    async def run(self, items: list[str]): 
+        futures = [] 
+    
+      
+          # fan out – start all activities without waiting
+        for item in items:
+            fut = workflow.execute_activity(
+                process_item_activity,
+                item,
+                start_to_close_timeout=timedelta(seconds=10),
+            )
+            futures.append(fut)
+
+        # fan in – wait for all to complete
+        results = await workflow.wait_all(futures)
+
+        # continue after all are done
+        return results
+```
+{% endcode %}
+
+#### The Saga (distributed transaction)
+
+When you need data consistency across microservices that cannot share a database transaction, If step 3 fails, you must "undo" steps 1 and 2. If a failure occurs that cannot be fixed by retries, execute Compensations in reverse order. For example, booking a trip where you reserve a flight, hotel, and rental car, and must cancel the previous reservations if a later step fails (for example if there are no cars available).&#x20;
+
+
+
