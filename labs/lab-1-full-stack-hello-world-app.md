@@ -26,7 +26,7 @@ You can then prompt the agent with the following:&#x20;
 
 {% code overflow="wrap" %}
 ```
-I have a containerised frontend running through Polytope, modify the code to have a smiley face with a text box underneath it that says "hello from the frontend".
+I have a react router frontend running with Polytope, you can interact with it using mcp tools. Modify the code in this working dir, to display a smiley face with a text box underneath it that says "hello from the frontend".
 ```
 {% endcode %}
 
