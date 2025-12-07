@@ -10,9 +10,9 @@ Bluetext is for enterprise-grade distributed systems like Ruby on Rails is for b
 
 Bluetext is designed to integrate well with all popular coding agents and LLMs, with the objective to enable developers to reliably build enterprise-grade distributed systems at AI-speed.
 
-Bluetext is still in the early development phase. The primary current use-case for Bluetext is to build demos and PoCs of enterprise-grade systems, trying out game-changing enterprise-grade distributed systems technologies and AI-assisted enterprise coding training.&#x20;
+Bluetext is still in the early development phase. The primary current use-cases for Bluetext is to build demos and PoCs of enterprise-grade systems, trying out relevant game-changing technologies and AI-assisted enterprise software development training.&#x20;
 
-The easiest way to get started with Bluetext is to request a virtual Bluetext Development Machine and follow one of the labs in this documentation. You can make that request on [https://bluetext.io/](https://bluetext.io/). Alternatively, you can use our [getting started guide](getting-started-with-bluetext/getting-started.md) to install Bluetext on your local machine.&#x20;
+The easiest way to get started with Bluetext is to request a virtual Bluetext Development Machine and going through the [hands-on labs](labs/lab-1-full-stack-hello-world-app.md). You can make that request at [https://bluetext.io/](https://bluetext.io/). Alternatively, you can install Bluetext on your local machine by following our [getting started guide](getting-started-with-bluetext/getting-started.md).&#x20;
 
 
 
