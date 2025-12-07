@@ -4,7 +4,7 @@ Bluetext is a development tool which will help you to create enterprise grade di
 
 Bluetext provides templates for scaffolding and integrating full stack applications — this includes frontends, API's, databases, and workflow orchestration services. These templates encode best practices for how these technologies should work together, e.g. database session management, service communication patterns, and error handling. The templates eliminate the trial-and-error phase of connecting distributed system components.&#x20;
 
-For specific information on the core supported technologies, consult the [core supported technologies section](/broken/pages/P8pDsfRhtwqzVF5eML0f) of the Bluetext documentation. For more details on Bluetext's architecture and how it integrates with Polytope and AI coding agents, see [bluetext architecture](bluetext-architecture.md).
+For specific information on the core supported technologies, consult the [core supported technologies section](/broken/pages/P8pDsfRhtwqzVF5eML0f) of the Bluetext documentation. For more details on Bluetext's architecture and how it integrates with Polytope and AI coding agents, see [bluetext architecture](../architecture.md).
 
 
 

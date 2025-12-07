@@ -1,8 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [What is Bluetext?](what-is-bluetext.md)
-* [Bluetext Architecture](bluetext-architecture.md)
+* [Architecture](architecture.md)
 
 ## PREREQUISITES
 
@@ -14,11 +13,48 @@
   * [Installation For Windows Users](polytope/installation-for-windows-users.md)
   * [Installation For Linux Users](polytope/installation-for-linux-users.md)
 
+## Getting started with Bluetext
+
+* [Getting Started](getting-started-with-bluetext/getting-started.md)
+* [Coding Agent Configuration](getting-started-with-bluetext/coding-agent-configuration/README.md)
+  * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)
+  * [Setup for ClaudeCode](getting-started-with-bluetext/coding-agent-configuration/setup-for-claudecode.md)
+  * [Setup for Copilot](getting-started-with-bluetext/coding-agent-configuration/setup-for-copilot.md)
+  * [Setup for Cline](getting-started-with-bluetext/coding-agent-configuration/setup-for-cline.md)
+* [How to Work with Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/README.md)
+  * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/how-to-work-with-bluetext.md)
+  * [Collaborating With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/collaborating-with-bluetext.md)
+
+## Labs
+
+* [Bluetext Cheat Sheet](labs/bluetext-cheat-sheet.md)
+* [Lab 1: Full-Stack Hello World App](labs/lab-1-full-stack-hello-world-app.md)
+* [Lab 2: Loyalty Points System](labs/lab-2-loyalty-points-system.md)
+* [Full-Stack Hello World App 2](labs/full-stack-hello-world-app-2.md)
+* [Simple Full-Stack Hello World App](labs/simple-full-stack-hello-world-app.md)
+* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal.md)
+* [Workshop Prompts](labs/workshop-prompts.md)
+* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal-1.md)
+
+## Troubleshooting
+
+* [Flight Check](troubleshooting/flight-check.md)
+* [Common Issues](troubleshooting/common-issues.md)
+
+## Core Supported TEchnologies
+
+* [Temporal](core-supported-technologies/temporal.md)
+* [Couchbase](core-supported-technologies/couchbase.md)
+
 ## INTEGRATIONS
 
 * [Couchbase Capella](integrations/couchbase-capella.md)
 * [Kong Konnect](integrations/kong-konnect.md)
 * [Opper AI](integrations/opper-ai.md)
+
+## Archive
+
+* [What is Bluetext?](archive/what-is-bluetext.md)
 
 ## CILLERS SYSTEM DEMO TEMPLATES
 
@@ -63,36 +99,3 @@
 * [Capabilities](system-overview/capabilities.md)
 * [Scalability, Reliability And Cost-Effectiveness](system-overview/scalability-reliability-and-cost-effectiveness.md)
 * [Security](system-overview/security.md)
-
-## Getting started with Bluetext
-
-* [Getting Started](getting-started-with-bluetext/getting-started.md)
-* [Coding Agent Configuration](getting-started-with-bluetext/coding-agent-configuration/README.md)
-  * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)
-  * [Setup for ClaudeCode](getting-started-with-bluetext/coding-agent-configuration/setup-for-claudecode.md)
-  * [Setup for Copilot](getting-started-with-bluetext/coding-agent-configuration/setup-for-copilot.md)
-  * [Setup for Cline](getting-started-with-bluetext/coding-agent-configuration/setup-for-cline.md)
-* [How to Work with Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/README.md)
-  * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/how-to-work-with-bluetext.md)
-  * [Collaborating With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/collaborating-with-bluetext.md)
-
-## Troubleshooting
-
-* [Flight Check](troubleshooting/flight-check.md)
-* [Common Issues](troubleshooting/common-issues.md)
-
-## Labs
-
-* [Bluetext Cheat Sheet](labs/bluetext-cheat-sheet.md)
-* [Lab 1: Full-Stack Hello World App](labs/lab-1-full-stack-hello-world-app.md)
-* [Lab 2: Loyalty Points System](labs/lab-2-loyalty-points-system.md)
-* [Full-Stack Hello World App 2](labs/full-stack-hello-world-app-2.md)
-* [Simple Full-Stack Hello World App](labs/simple-full-stack-hello-world-app.md)
-* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal.md)
-* [Workshop Prompts](labs/workshop-prompts.md)
-* [Full-Stack Travel App With Temporal](labs/full-stack-travel-app-with-temporal-1.md)
-
-## Core Supported TEchnologies
-
-* [Temporal](core-supported-technologies/temporal.md)
-* [Couchbase](core-supported-technologies/couchbase.md)
