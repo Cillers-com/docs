@@ -6,6 +6,12 @@ description: >-
 
 # Lab 1: Full-Stack Hello World App
 
+{% hint style="info" %}
+## You can download the repository for this project, and add Temporal yourself to experiment with different activities and workflows.
+
+[https://github.com/bluetext-io/Hello-World-Lab](https://github.com/bluetext-io/Hello-World-Lab)
+{% endhint %}
+
 ## 1. Setup
 
 Before proceeding, make sure you are sitting in a new, empty directory, which we will create our project in. Then, open the Bluetext extension from the activity bar on the left. You will have the option to preform a quick setup which configures your workspace for working with Bluetext and Polytope. Run this quick setup and make sure to select "Cline (Recommended)" when asked which coding agent you want to configure.&#x20;
