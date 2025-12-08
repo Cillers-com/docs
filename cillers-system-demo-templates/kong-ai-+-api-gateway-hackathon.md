@@ -45,7 +45,7 @@ Go to your Kong Konnect Gateway Manager: [https://cloud.konghq.com/us/gateway-ma
 
 Click "Gateway Services" in the left sidebar. Click "New gateway service".
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Specify [http://host.docker.internal:3001](http://host.docker.internal:3002) as Full URL, and "api" as Name. Click “Save”.
 

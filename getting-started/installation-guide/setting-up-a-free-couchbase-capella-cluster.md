@@ -26,13 +26,13 @@ When your cluster is ready, add client access credentials so you can access it. 
 
 Now, you need to open your cluster for access from your IP.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The easiest option is to click "Allow Access from Anywhere", which can be ok for development purposes. For proper security you would select a restricted set of IP addresses.&#x20;
 
 Type "confirm" and click "Allow Access from Anywhere".&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You then also need to click "Add Allowed IP".&#x20;
 

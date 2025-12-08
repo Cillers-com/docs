@@ -4,7 +4,7 @@ description: Setting Up A Free Trial API Gateway With Enterprise Features
 
 # Kong Konnect
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Integrate With Kong Konnect&#x20;
 
