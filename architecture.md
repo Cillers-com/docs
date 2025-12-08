@@ -5,7 +5,9 @@ description: >-
   orchestration, and tool-based workflows.
 ---
 
-# Bluetext Architecture
+# Architecture
+
+<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 ## Polytope
 
