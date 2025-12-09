@@ -49,7 +49,7 @@ class CustomerModel(CouchbaseModel):
 **order.py:**
 
 ```python
-import datetime from datetime
+from datetime import datetime
 
 class OrderModel(CouchbaseModel):
     [...]
