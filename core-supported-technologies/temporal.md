@@ -12,6 +12,12 @@ description: >-
 [https://github.com/bluetext-io/Temporal-Workflow-Demo](https://github.com/bluetext-io/Temporal-Workflow-Demo)
 {% endhint %}
 
+{% hint style="info" %}
+## **You can watch the video that explains Temporal's key concepts and demonstrates how you can add a workflow to your Bluetext projects from here**
+
+[https://youtu.be/nd3wVMt4NzU](https://youtu.be/nd3wVMt4NzU)
+{% endhint %}
+
 ## 1. What is Temporal
 
 Temporal is an open-source workflow orchestration tool which can be used to build long-running, fault-tolerant apps. Developers write workflow steps in normal programming languages, and Temporal guarantees that these steps will eventually complete, even if servers crash, deploy, fail, or lose connectivity. Temporal records workflow execution history as events and can replay code to exactly restore state.&#x20;
