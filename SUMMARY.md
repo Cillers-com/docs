@@ -24,6 +24,7 @@
 * [How to Work with Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/README.md)
   * [How to Work With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/how-to-work-with-bluetext.md)
   * [Collaborating With Bluetext](getting-started-with-bluetext/how-to-work-with-bluetext/collaborating-with-bluetext.md)
+* [Virtual Machines](getting-started-with-bluetext/virtual-machines.md)
 
 ## Labs
 
