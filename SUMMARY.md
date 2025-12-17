@@ -15,6 +15,7 @@
 
 ## Getting started with Bluetext
 
+* [Tech Stack Overview](getting-started-with-bluetext/tech-stack-overview.md)
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
 * [Coding Agent Configuration](getting-started-with-bluetext/coding-agent-configuration/README.md)
   * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)

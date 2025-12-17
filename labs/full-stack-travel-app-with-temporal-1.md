@@ -33,6 +33,8 @@ Plans: id, city, visited (boolean), created_at
 
 {% code overflow="wrap" %}
 ```
+I have a Polytope-orchestrated app up and running, accessible through mcp tools. When you make a change, always check the logs for errors. The api and frontend have hot reload enabled. No need to restart containers manually.
+
 Create these endpoints:
 
 POST /cities - create a new city to visit
