@@ -15,7 +15,14 @@
 
 ## Getting started with Bluetext
 
-* [Tech Stack Overview](getting-started-with-bluetext/tech-stack-overview.md)
+* [Tech Stack Overview](getting-started-with-bluetext/tech-stack-overview/README.md)
+  * [Virtual Machines](getting-started-with-bluetext/tech-stack-overview/virtual-machines.md)
+  * [Coding Agent](getting-started-with-bluetext/tech-stack-overview/coding-agent.md)
+  * [Polytope & MCPs](getting-started-with-bluetext/tech-stack-overview/polytope-and-mcps.md)
+  * [React Router Frontend](getting-started-with-bluetext/tech-stack-overview/react-router-frontend.md)
+  * [Couchbase](getting-started-with-bluetext/tech-stack-overview/couchbase.md)
+  * [Temporal](getting-started-with-bluetext/tech-stack-overview/temporal.md)
+  * [Python FastAPI](getting-started-with-bluetext/tech-stack-overview/python-fastapi.md)
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
 * [Coding Agent Configuration](getting-started-with-bluetext/coding-agent-configuration/README.md)
   * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)
