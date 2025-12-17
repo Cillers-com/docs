@@ -23,3 +23,5 @@ To view the frontend, open the following URL in your browser:
 ```
 http://localhost:51732
 ```
+
+Bluetext uses the bun runtime environment for fast start-up times and an excellent developer experience.
