@@ -18,6 +18,8 @@ modules/your-frontend-name/components/ui
 
 Instead of installing dependencies manually, you (or the coding agent) should use the `add-dependencies` tool, which installs and validates them automatically.
 
+The frontend is configured for hot reload, which allows you to review changes as soon as you save them. This also raises errors early during development for timely fixes. Furthermore, the feature makes manual container restarts obsolete for most use cases.
+
 To view the frontend, open the following URL in your browser:
 
 ```

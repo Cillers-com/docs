@@ -13,16 +13,21 @@
   * [Installation For Windows Users](polytope/installation-for-windows-users.md)
   * [Installation For Linux Users](polytope/installation-for-linux-users.md)
 
+## Tech Stack Overview
+
+* [Virtual Machines](tech-stack-overview/virtual-machines.md)
+* [Coding Agent](tech-stack-overview/coding-agent.md)
+* [Polytope & MCPs](tech-stack-overview/polytope-and-mcps.md)
+* [React Router Frontend](tech-stack-overview/react-router-frontend.md)
+* [Couchbase](tech-stack-overview/couchbase.md)
+* [Temporal](tech-stack-overview/temporal.md)
+* [Python FastAPI](tech-stack-overview/python-fastapi/README.md)
+  * [Couchbase Client](tech-stack-overview/python-fastapi/couchbase-client.md)
+  * [Temporal Client](tech-stack-overview/python-fastapi/temporal-client.md)
+* [Postgres & Twillio](tech-stack-overview/postgres-and-twillio.md)
+
 ## Getting started with Bluetext
 
-* [Tech Stack Overview](getting-started-with-bluetext/tech-stack-overview/README.md)
-  * [Virtual Machines](getting-started-with-bluetext/tech-stack-overview/virtual-machines.md)
-  * [Coding Agent](getting-started-with-bluetext/tech-stack-overview/coding-agent.md)
-  * [Polytope & MCPs](getting-started-with-bluetext/tech-stack-overview/polytope-and-mcps.md)
-  * [React Router Frontend](getting-started-with-bluetext/tech-stack-overview/react-router-frontend.md)
-  * [Couchbase](getting-started-with-bluetext/tech-stack-overview/couchbase.md)
-  * [Temporal](getting-started-with-bluetext/tech-stack-overview/temporal.md)
-  * [Python FastAPI](getting-started-with-bluetext/tech-stack-overview/python-fastapi.md)
 * [Getting Started](getting-started-with-bluetext/getting-started.md)
 * [Coding Agent Configuration](getting-started-with-bluetext/coding-agent-configuration/README.md)
   * [Setup for Roo](getting-started-with-bluetext/coding-agent-configuration/setup-for-roo.md)
